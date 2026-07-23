@@ -15,9 +15,9 @@ import JsonLd from "@/components/seo/JsonLd";
 import LenisProvider from "@/components/ui/LenisProvider";
 import dynamic from 'next/dynamic';
 
-const StickyCTA = dynamic(() => import('@/components/layout/StickyCTA'), { ssr: false });
-const WhatsAppWidget = dynamic(() => import('@/components/layout/WhatsAppWidget'), { ssr: false });
-const CommandPalette = dynamic(() => import('@/components/ui/CommandPalette'), { ssr: false });
+const StickyCTA = dynamic(() => import('@/components/layout/StickyCTA'));
+const WhatsAppWidget = dynamic(() => import('@/components/layout/WhatsAppWidget'));
+const CommandPalette = dynamic(() => import('@/components/ui/CommandPalette'));
 
 const inter = Inter({
   variable: "--font-inter",

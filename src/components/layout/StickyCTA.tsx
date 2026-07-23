@@ -30,6 +30,7 @@ export default function StickyCTA() {
           exit={{ y: 100, opacity: 0 }}
           transition={{ type: 'spring', stiffness: 260, damping: 20 }}
           className="fixed bottom-0 left-0 w-full z-40 bg-slate-950/90 backdrop-blur-md border-t border-[#d4af37]/30 py-4 px-6 md:hidden flex justify-between items-center"
+          aria-label="Download Project Brochure"
         >
           <div className="flex flex-col">
             <span className="text-[#d4af37] text-xs font-bold uppercase tracking-widest">Kolte Patil The Reserve</span>

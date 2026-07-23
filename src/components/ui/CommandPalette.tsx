@@ -71,7 +71,7 @@ export default function CommandPalette() {
 
       <AnimatePresence>
         {isOpen && (
-          <div className="fixed inset-0 z-[100] flex items-start justify-center pt-[10vh] md:pt-[20vh] px-4">
+          <div className="fixed inset-0 z-[100] flex items-start justify-center pt-[10vh] md:pt-[20vh] px-4" role="dialog" aria-modal="true" aria-label="Command Palette Search">
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
