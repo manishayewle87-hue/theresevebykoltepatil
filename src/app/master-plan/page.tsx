@@ -1,6 +1,5 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import JsonLd from "@/components/seo/JsonLd";
 import { Button } from "@/components/ui/Button";
 
 export const metadata = {
@@ -9,16 +8,9 @@ export const metadata = {
 };
 
 export default function MasterPlanPage() {
-  const jsonLdData = {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Master Plan - The Reserve",
-    "description": "Explore the meticulously designed 50-acre master plan of The Reserve."
-  };
-
-  return (
+    return (
     <>
-      <JsonLd data={jsonLdData} />
+      
       <Navbar />
       <main className="flex-1 w-full flex flex-col bg-[#FAF8F3]">
         <section className="pt-40 pb-20 px-6 md:px-12 bg-slate-950">

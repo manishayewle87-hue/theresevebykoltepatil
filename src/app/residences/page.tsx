@@ -1,7 +1,6 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { Button } from "@/components/ui/Button";
-import JsonLd from "@/components/seo/JsonLd";
 import Image from "next/image";
 
 export const metadata = {
@@ -10,15 +9,7 @@ export const metadata = {
 };
 
 export default function ResidencesPage() {
-  const jsonLdData = {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Residences at The Reserve",
-    "description": "Explore the expansive 3 & 4.5 BHK luxury residences at The Reserve.",
-    "url": "https://thereservebykoltepatil.com/residences"
-  };
-
-  const residences = [
+    const residences = [
     {
       id: "3bhk",
       type: "3 Bed Residences",
@@ -41,7 +32,7 @@ export default function ResidencesPage() {
 
   return (
     <>
-      <JsonLd data={jsonLdData} />
+      
       <Navbar />
       <main className="flex-1 w-full flex flex-col bg-[#FAF8F3]">
         

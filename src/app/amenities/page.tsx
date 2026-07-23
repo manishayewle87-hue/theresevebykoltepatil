@@ -1,6 +1,5 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import JsonLd from "@/components/seo/JsonLd";
 
 export const metadata = {
   title: "World-Class Amenities | The Reserve by Kolte Patil",
@@ -8,15 +7,7 @@ export const metadata = {
 };
 
 export default function AmenitiesPage() {
-  const jsonLdData = {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Amenities at The Reserve",
-    "description": "Experience luxury living with our curated world-class amenities.",
-    "url": "https://thereservebykoltepatil.com/amenities"
-  };
-
-  const amenitiesList = [
+    const amenitiesList = [
     {
       category: "Wellness & Spa",
       items: [
@@ -48,7 +39,7 @@ export default function AmenitiesPage() {
 
   return (
     <>
-      <JsonLd data={jsonLdData} />
+      
       <Navbar />
       <main className="flex-1 w-full flex flex-col bg-[#151515] text-white">
         

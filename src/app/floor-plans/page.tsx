@@ -1,6 +1,5 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import JsonLd from "@/components/seo/JsonLd";
 import { Button } from "@/components/ui/Button";
 
 export const metadata = {
@@ -9,21 +8,14 @@ export const metadata = {
 };
 
 export default function FloorPlansPage() {
-  const jsonLdData = {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Floor Plans - The Reserve",
-    "description": "Detailed floor plans for 3 Bed and 4.5 Bed luxury residences."
-  };
-
-  const plans = [
+    const plans = [
     { title: "3 BHK Signature", area: "1,450 sq.ft", image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop" },
     { title: "4.5 BHK Penthouse", area: "2,200 sq.ft", image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2053&auto=format&fit=crop" },
   ];
 
   return (
     <>
-      <JsonLd data={jsonLdData} />
+      
       <Navbar />
       <main className="flex-1 w-full flex flex-col bg-[#151515] text-white">
         <section className="pt-40 pb-20 px-6 md:px-12">
