@@ -39,7 +39,7 @@ export default function Location() {
             transition={{ duration: 1, delay: 0.2 }}
             className="font-sans text-[10px] md:text-xs tracking-[0.4em] uppercase text-[#d4af37] mb-8 block font-bold"
           >
-            The Center of Everything
+            Flats on Sinhagad Road
           </motion.span>
           <motion.h1 
             initial={{ opacity: 0, y: 50 }}
@@ -69,7 +69,7 @@ export default function Location() {
                 <span className="italic text-[#d4af37]">Connectivity.</span>
               </h2>
               <p className="font-sans text-sm text-slate-400 font-light leading-relaxed mb-12">
-                Situated at the nexus of Pune's most rapid urban development, The Reserve offers seamless access to global IT corridors, elite educational institutions, and ultra-premium retail hubs, while maintaining absolute privacy and seclusion.
+                Situated at the nexus of the future Sinhagad Road Development, Kolte Patil The Reserve offers seamless access to the upcoming Pune Ring Road, the new Sinhagad Road Flyover, and global IT corridors. Whether you are looking for flats near Katraj, apartments near Swargate, or premium homes near Kothrud, our strategic location provides unparalleled convenience.
               </p>
 
               <div className="flex flex-col gap-6">

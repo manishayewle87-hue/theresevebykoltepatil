@@ -10,9 +10,9 @@ export default function TheResidences() {
   const heroY = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
 
   const floorplans = [
-    { type: "2 BHK Luxury", size: "750 sq.ft.", price: "Upon Request" },
-    { type: "3 BHK Premium", size: "1,050 sq.ft.", price: "Upon Request" },
-    { type: "3 BHK Signature", size: "1,250 sq.ft.", price: "Upon Request" }
+    { type: "Premium 2 BHK Pune", size: "750 sq.ft.", price: "Upon Request" },
+    { type: "Luxury 3 BHK Pune", size: "1,050 sq.ft.", price: "Upon Request" },
+    { type: "Spacious 3 Bedroom Flat Pune", size: "1,250 sq.ft.", price: "Upon Request" }
   ];
 
   return (
@@ -38,7 +38,7 @@ export default function TheResidences() {
             transition={{ duration: 1, delay: 0.2 }}
             className="font-sans text-[10px] md:text-xs tracking-[0.4em] uppercase text-[#d4af37] mb-8 block font-bold"
           >
-            Bespoke Living
+            Luxury Apartments Pune
           </motion.span>
           <motion.h1 
             initial={{ opacity: 0, y: 50 }}
@@ -62,11 +62,11 @@ export default function TheResidences() {
               transition={{ duration: 1 }}
             >
               <h2 className="font-serif text-4xl md:text-5xl leading-tight mb-8">
-                Master-crafted spaces <br/>
-                <span className="italic text-[#d4af37]">for the discerning few.</span>
+                Premium 2 & 3 BHK <br/>
+                <span className="italic text-[#d4af37]">Flats for Sale Pune.</span>
               </h2>
               <p className="font-sans text-slate-400 font-light leading-relaxed mb-6">
-                Every residence at The Reserve is a testament to meticulous planning and flawless execution. Expansive living areas seamlessly transition into private terraces, offering panoramic views of the Pune skyline.
+                Every luxury residence at Kolte Patil The Reserve is a testament to meticulous planning and flawless execution. Expansive living areas seamlessly transition into private terraces, offering panoramic views of the Pune skyline, setting the standard for premium residential projects in Pune.
               </p>
             </motion.div>
 

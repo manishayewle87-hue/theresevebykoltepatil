@@ -97,6 +97,54 @@ export default function JsonLd() {
               "@type": "Answer",
               "text": "The Reserve offers ultra-luxury 2 & 3 BHK riverside residences."
             }
+          },
+          {
+            "@type": "Question",
+            "name": "Is Sinhagad Road a good place to buy a home?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, Sinhagad Road is highly sought after due to its proximity to nature (Mutha River and NDA hills), rapid infrastructure development, and seamless connectivity to Pune's IT hubs via the upcoming Ring Road."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which builder is best in Pune?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Kolte Patil Developers is considered one of the best and most trusted builders in Pune, with over 30 years of excellence and millions of square feet delivered."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are luxury apartments in Pune?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Luxury apartments in Pune, like those at The Reserve, feature ultra-premium specifications, low density living, massive clubhouses, smart home automation, and IGBC Platinum sustainability ratings."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which area has the highest appreciation in Pune?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Emerging corridors with major upcoming infrastructure, specifically Sinhagad Road, offer some of the highest potential property appreciation in Pune over the next 5-7 years."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much down payment is needed?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Typically, a 10% to 20% down payment is required to book a premium apartment in Pune, depending on the home loan approval and specific project payment plans."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I book a site visit?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You can easily book a site visit for The Reserve by clicking the 'Enquire Now' or 'VIP Concierge' button on our website to connect directly with our sales team."
+            }
           }
         ]
       }

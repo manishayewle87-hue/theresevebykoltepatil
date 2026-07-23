@@ -14,10 +14,10 @@ export default function TheClub() {
   const [activeSpecTab, setActiveSpecTab] = useState(0);
 
   const amenities = [
-    { title: "Infinity Pool", desc: "Temperature-controlled waters overlooking the skyline.", img: "https://images.unsplash.com/photo-1576013551627-11dc5f67e150?q=80&w=2000&auto=format&fit=crop" },
-    { title: "Club Platinum", desc: "Exclusive access to our 5-star resident clubhouse.", img: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=2000&auto=format&fit=crop" },
-    { title: "Zen Gardens", desc: "Curated landscapes designed for absolute tranquility.", img: "https://images.unsplash.com/photo-1558661081-30dbce34907a?q=80&w=2000&auto=format&fit=crop" },
-    { title: "Spa & Wellness", desc: "Holistic wellness center with professional therapists.", img: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2000&auto=format&fit=crop" }
+    { title: "Infinity Swimming Pool", desc: "Apartments with Swimming Pool Pune. Temperature-controlled waters overlooking the skyline.", img: "https://images.unsplash.com/photo-1576013551627-11dc5f67e150?q=80&w=2000&auto=format&fit=crop" },
+    { title: "Luxury Clubhouse", desc: "Apartments with Clubhouse Pune. Exclusive access to our 5-star resident clubhouse and lounges.", img: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=2000&auto=format&fit=crop" },
+    { title: "Wellness Community", desc: "Apartments with Gym Pune and Zen Gardens. Curated landscapes designed for absolute tranquility.", img: "https://images.unsplash.com/photo-1558661081-30dbce34907a?q=80&w=2000&auto=format&fit=crop" },
+    { title: "Spa & Wellness", desc: "Holistic wellness center with professional therapists, setting a new benchmark for luxury living in Pune.", img: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2000&auto=format&fit=crop" }
   ];
 
   const specs = [
@@ -52,7 +52,7 @@ export default function TheClub() {
               transition={{ duration: 1, delay: 0.2 }}
               className="font-sans text-[10px] md:text-xs tracking-[0.4em] uppercase text-[#d4af37] mb-8 block font-bold"
             >
-              Private Sanctuary
+              Luxury Amenities Pune
             </motion.span>
             <motion.h1 
               initial={{ opacity: 0, y: 50 }}
