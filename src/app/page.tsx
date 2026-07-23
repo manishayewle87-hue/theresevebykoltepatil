@@ -101,7 +101,7 @@ export default function Home() {
               </Link>
             </motion.div>
             <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }} className="w-full md:w-1/2 relative h-[60vh] rounded-[4rem] overflow-hidden shadow-2xl group">
-              <Image src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2075&auto=format&fit=crop" alt="The Philosophy" fill className="object-cover group-hover:scale-105 transition-transform duration-1000 ease-out" />
+              <Image priority src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2075&auto=format&fit=crop" alt="The Philosophy" fill className="object-cover group-hover:scale-105 transition-transform duration-1000 ease-out" />
               <div className="absolute bottom-8 -left-4 md:left-8 bg-slate-950/90 backdrop-blur-xl p-8 rounded-[2rem] shadow-xl border border-[#d4af37]/30 max-w-sm group-hover:-translate-y-2 transition-transform duration-700">
                 <span className="font-serif text-5xl text-[#d4af37] block mb-2">30+</span>
                 <span className="font-sans text-[10px] uppercase tracking-widest text-slate-100 font-bold">Years of Excellence</span>

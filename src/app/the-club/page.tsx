@@ -36,7 +36,7 @@ export default function TheClub() {
         {/* Cinematic Parallax Hero */}
         <div className="h-[80vh] w-full relative overflow-hidden flex flex-col justify-center items-center text-center shadow-2xl mb-32 border-b border-[#d4af37]/20">
           <motion.div style={{ y: heroY }} className="absolute inset-0 z-0">
-            <Image 
+            <Image priority 
               src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=2000&auto=format&fit=crop"
               alt="The Club Hero"
               fill

@@ -17,7 +17,7 @@ export default function TheVision() {
       {/* Cinematic Parallax Hero */}
       <div className="h-screen w-full relative overflow-hidden flex flex-col justify-center shadow-2xl">
         <motion.div style={{ y: heroY }} className="absolute inset-0 z-0">
-          <Image 
+          <Image priority 
             src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=2000&auto=format&fit=crop"
             alt="The Vision Hero"
             fill

@@ -22,7 +22,7 @@ export default function TheResidences() {
       {/* Cinematic Hero */}
       <div className="h-[80vh] w-full relative overflow-hidden flex flex-col justify-center items-center text-center shadow-2xl border-b border-[#d4af37]/20">
         <motion.div style={{ y: heroY }} className="absolute inset-0 z-0">
-          <Image 
+          <Image priority 
             src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2000&auto=format&fit=crop"
             alt="The Residences Hero"
             fill
