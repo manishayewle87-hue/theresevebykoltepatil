@@ -15,10 +15,18 @@ export async function generateMetadata({ params }: { params: Promise<{ feature: 
   const resolvedParams = await params;
   const data = projectData[resolvedParams.feature];
   if (!data) return { title: 'Feature Not Found' };
+  
+  const ogUrl = `https://thereserve.koltepatil.digital/api/og?title=${encodeURIComponent(data.title)}`;
+  
   return {
     title: `${data.title} | Kolte Patil The Reserve`,
     description: data.excerpt,
-    keywords: [data.keyword, "Project Details Pune", "Kolte Patil"]
+    keywords: [data.keyword, "Project Details Pune", "Kolte Patil"],
+    openGraph: {
+      title: data.title,
+      description: data.excerpt,
+      images: [{ url: ogUrl, width: 1200, height: 630 }],
+    },
   };
 }
 

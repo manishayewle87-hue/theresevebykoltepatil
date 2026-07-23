@@ -18,9 +18,15 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const resolvedParams = await params;
   try {
     const { meta } = getCompareBySlug(resolvedParams.slug);
+    const ogUrl = `https://thereserve.koltepatil.digital/api/og?title=${encodeURIComponent(meta.title)}`;
     return {
       title: `${meta.title} | Compare Real Estate Pune`,
       description: meta.excerpt,
+      openGraph: {
+        title: meta.title,
+        description: meta.excerpt,
+        images: [{ url: ogUrl, width: 1200, height: 630 }],
+      },
     };
   } catch (e) {
     return {

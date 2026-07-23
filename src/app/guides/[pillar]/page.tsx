@@ -18,9 +18,15 @@ export async function generateMetadata({ params }: { params: Promise<{ pillar: s
   const resolvedParams = await params;
   try {
     const { meta } = getGuideBySlug(resolvedParams.pillar);
+    const ogUrl = `https://thereserve.koltepatil.digital/api/og?title=${encodeURIComponent(meta.title)}`;
     return {
       title: `${meta.title} | Kolte Patil The Reserve Pillar Hub`,
       description: meta.excerpt,
+      openGraph: {
+        title: meta.title,
+        description: meta.excerpt,
+        images: [{ url: ogUrl, width: 1200, height: 630 }],
+      },
     };
   } catch (e) {
     return {
