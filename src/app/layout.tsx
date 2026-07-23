@@ -9,6 +9,7 @@ import ConciergePanel from "@/components/ui/ConciergePanel";
 import AmbientAudio from "@/components/ui/AmbientAudio";
 import Preloader from "@/components/ui/Preloader";
 import NoiseOverlay from "@/components/ui/NoiseOverlay";
+import JsonLd from "@/components/seo/JsonLd";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -24,12 +25,15 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://thereserve.koltepatil.digital'),
-  title: {
-    default: "The Reserve by Kolte Patil | Ultra-Luxury Residences",
-    template: "%s | The Reserve by Kolte Patil",
+  alternates: {
+    canonical: 'https://thereserve.koltepatil.digital',
   },
-  description: "Experience ultra-premium luxury living at The Reserve by Kolte Patil. Master-crafted 3, 4 & 5 BHK residences in Pune designed for the discerning few.",
-  keywords: ["Luxury Real Estate", "Pune", "Kolte Patil", "The Reserve", "Premium Living", "IGBC Platinum"],
+  title: {
+    default: "The Reserve by Kolte Patil | Ultra-Luxury Residences, Sinhgad Road, Pune",
+    template: "%s | The Reserve by Kolte Patil, Sinhgad Road",
+  },
+  description: "Experience ultra-premium luxury living at The Reserve by Kolte Patil in Sinhgad Road, Pune. Master-crafted 3, 4 & 5 BHK residences designed for the discerning few.",
+  keywords: ["Luxury Real Estate Pune", "Sinhgad Road Properties", "Kolte Patil Sinhgad Road", "The Reserve", "Premium Living Pune", "IGBC Platinum"],
   authors: [{ name: "Kolte Patil Developers" }],
   creator: "Kolte Patil",
   publisher: "Kolte Patil",
@@ -37,22 +41,22 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_IN",
     url: "https://thereserve.koltepatil.digital",
-    title: "The Reserve by Kolte Patil | Ultra-Luxury Residences",
-    description: "Experience ultra-premium luxury living at The Reserve by Kolte Patil. Master-crafted 3, 4 & 5 BHK residences.",
+    title: "The Reserve by Kolte Patil | Ultra-Luxury Residences, Sinhgad Road",
+    description: "Experience ultra-premium luxury living at The Reserve by Kolte Patil in Sinhgad Road, Pune.",
     siteName: "The Reserve by Kolte Patil",
     images: [
       {
         url: "/kolte-patil-logo.jpg",
         width: 1200,
         height: 630,
-        alt: "The Reserve by Kolte Patil",
+        alt: "The Reserve by Kolte Patil, Sinhgad Road",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "The Reserve by Kolte Patil | Ultra-Luxury Residences",
-    description: "Experience ultra-premium luxury living at The Reserve by Kolte Patil.",
+    title: "The Reserve by Kolte Patil | Sinhgad Road, Pune",
+    description: "Experience ultra-premium luxury living at The Reserve by Kolte Patil in Sinhgad Road, Pune.",
     images: ["/kolte-patil-logo.jpg"],
     creator: "@koltepatil",
   },
@@ -80,6 +84,7 @@ export default function RootLayout({
       className={`${inter.variable} ${playfair.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col font-sans bg-[var(--background)] text-[var(--foreground)] selection:bg-[#d4af37] selection:text-white">
+        <JsonLd />
         <NoiseOverlay />
         <CursorProvider>
           <ConciergeProvider>
