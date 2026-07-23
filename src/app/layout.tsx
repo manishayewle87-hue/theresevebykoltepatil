@@ -14,6 +14,7 @@ import NoiseOverlay from "@/components/ui/NoiseOverlay";
 import JsonLd from "@/components/seo/JsonLd";
 import StickyCTA from "@/components/layout/StickyCTA";
 import WhatsAppWidget from "@/components/layout/WhatsAppWidget";
+import LenisProvider from "@/components/ui/LenisProvider";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -96,14 +97,16 @@ export default function RootLayout({
         <NoiseOverlay />
         <CursorProvider>
           <ConciergeProvider>
-            <Preloader />
-            <GlobalCursor />
-            <AmbientAudio />
-            <ConciergePanel />
-            <FloatingAction />
-            <SmoothScroll>
-              {children}
-            </SmoothScroll>
+            <LenisProvider>
+              <Preloader />
+              <GlobalCursor />
+              <AmbientAudio />
+              <ConciergePanel />
+              <FloatingAction />
+              <SmoothScroll>
+                {children}
+              </SmoothScroll>
+            </LenisProvider>
           </ConciergeProvider>
         </CursorProvider>
         <GoogleAnalytics gaId="G-XXXXXXXXXX" />
