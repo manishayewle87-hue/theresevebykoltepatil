@@ -57,7 +57,7 @@ export default function SplitText({ text, className = "", delay = 0 }: SplitText
       {words.map((word, index) => (
         <span style={{ display: "inline-flex", overflow: "hidden" }} key={index}>
           {word.split("").map((letter, index) => (
-            <motion.span variants={child} key={index} style={{ display: "inline-block" }}>
+            <motion.span variants={child as any} key={index} style={{ display: "inline-block" }}>
               {letter}
             </motion.span>
           ))}
