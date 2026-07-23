@@ -7,6 +7,8 @@ import Script from 'next/script';
 import AISummaryBox from '@/components/seo/AISummaryBox';
 import InternalLinkingMesh from '@/components/seo/InternalLinkingMesh';
 
+export const revalidate = 3600;
+
 export async function generateStaticParams() {
   const posts = getAllCompares();
   return posts.map((post) => ({

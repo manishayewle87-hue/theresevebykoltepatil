@@ -5,6 +5,8 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 
+export const revalidate = 3600;
+
 export async function generateStaticParams() {
   return Object.keys(projectData).map((feat) => ({
     feature: feat,

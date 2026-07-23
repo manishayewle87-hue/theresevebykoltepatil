@@ -31,6 +31,7 @@ export default function Home() {
             loop
             muted
             playsInline
+            poster="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2075&auto=format&fit=crop"
             className="w-full h-full object-cover opacity-20 filter grayscale"
           >
             <source src="https://player.vimeo.com/external/394627252.hd.mp4?s=d00e57262ba627d3568853c89657f8cfec47fb21&profile_id=174" type="video/mp4" />

@@ -7,6 +7,8 @@ import Script from 'next/script';
 import AISummaryBox from '@/components/seo/AISummaryBox';
 import InternalLinkingMesh from '@/components/seo/InternalLinkingMesh';
 
+export const revalidate = 3600; // ISR: Revalidate every hour
+
 export async function generateStaticParams() {
   const posts = getAllGuides();
   return posts.map((post) => ({

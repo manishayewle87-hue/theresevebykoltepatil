@@ -12,10 +12,12 @@ import AmbientAudio from "@/components/ui/AmbientAudio";
 import Preloader from "@/components/ui/Preloader";
 import NoiseOverlay from "@/components/ui/NoiseOverlay";
 import JsonLd from "@/components/seo/JsonLd";
-import StickyCTA from "@/components/layout/StickyCTA";
-import WhatsAppWidget from "@/components/layout/WhatsAppWidget";
 import LenisProvider from "@/components/ui/LenisProvider";
-import CommandPalette from "@/components/ui/CommandPalette";
+import dynamic from 'next/dynamic';
+
+const StickyCTA = dynamic(() => import('@/components/layout/StickyCTA'), { ssr: false });
+const WhatsAppWidget = dynamic(() => import('@/components/layout/WhatsAppWidget'), { ssr: false });
+const CommandPalette = dynamic(() => import('@/components/ui/CommandPalette'), { ssr: false });
 
 const inter = Inter({
   variable: "--font-inter",
