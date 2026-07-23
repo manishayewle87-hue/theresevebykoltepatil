@@ -69,7 +69,7 @@ export const metadata: Metadata = {
     creator: "@koltepatil",
   },
   verification: {
-    google: "PLACEHOLDER_GSC_VERIFICATION_CODE",
+    google: "_KeXkPdmvdlGxf7txGc-eGMTTLpaxsssiNgaIHAX_IA",
   },
   robots: {
     index: true,
