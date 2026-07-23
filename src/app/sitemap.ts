@@ -2,6 +2,9 @@ import { MetadataRoute } from 'next';
 import { locationData, configData, investmentData, projectData } from '@/lib/seoData';
 import { getAllInsights, getAllGuides, getAllCompares } from '@/lib/mdx';
 
+export const revalidate = 86400; // Harden: Cache at the Edge for 24 hours to prevent CPU exhaustion attacks
+
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://thereserve.koltepatil.digital';
 
