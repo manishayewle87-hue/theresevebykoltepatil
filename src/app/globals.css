@@ -21,9 +21,9 @@
 }
 
 :root {
-  /* Bright Minimalist Background */
-  --background: var(--color-pure-white);
-  --foreground: var(--color-onyx);
+  /* Ultra-Premium Onyx Dark Background */
+  --background: var(--color-onyx);
+  --foreground: var(--color-pure-white);
 }
 
 body {

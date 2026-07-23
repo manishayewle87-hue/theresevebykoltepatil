@@ -7,6 +7,7 @@ import GlobalCursor from "@/components/ui/GlobalCursor";
 import { CursorProvider } from "@/context/CursorContext";
 import { ConciergeProvider } from "@/context/ConciergeContext";
 import ConciergePanel from "@/components/ui/ConciergePanel";
+import FloatingAction from "@/components/ui/FloatingAction";
 import AmbientAudio from "@/components/ui/AmbientAudio";
 import Preloader from "@/components/ui/Preloader";
 import NoiseOverlay from "@/components/ui/NoiseOverlay";
@@ -97,6 +98,7 @@ export default function RootLayout({
             <GlobalCursor />
             <AmbientAudio />
             <ConciergePanel />
+            <FloatingAction />
             <SmoothScroll>
               {children}
             </SmoothScroll>

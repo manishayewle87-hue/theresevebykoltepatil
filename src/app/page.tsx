@@ -91,9 +91,11 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center gap-16 md:gap-24">
             <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} transition={{ duration: 0.8, ease: "easeOut" }} className="w-full md:w-1/2 flex flex-col gap-8">
               <span className="font-sans text-[10px] tracking-[0.4em] uppercase text-[#d4af37] font-bold">The Philosophy</span>
-              <h2 className="font-serif text-5xl md:text-7xl leading-tight bg-clip-text text-transparent bg-gradient-to-r from-[#d4af37] to-yellow-100">Building for the next <span className="italic text-slate-400">100 years.</span></h2>
+              <h2 className="font-serif text-5xl md:text-7xl leading-tight bg-clip-text text-transparent bg-gradient-to-r from-[#d4af37] to-yellow-100">
+                Premium Homes <br/><span className="italic text-slate-400">Sinhgad Road.</span>
+              </h2>
               <p className="font-sans text-lg text-slate-400 leading-relaxed max-w-lg">
-                The Reserve by Kolte Patil is not just a residence; it is a legacy. Designed with a forward-looking vision, it combines timeless architectural brilliance with modern fluidic spaces to create an environment that nurtures generations.
+                Kolte Patil The Reserve is not just a residence; it is a legacy. Designed with a forward-looking vision, these Luxury Flats in Pune combine timeless architectural brilliance with modern fluidic spaces to create an environment that nurtures generations.
               </p>
               <Link href="/the-vision" className="mt-4 flex items-center gap-4 text-xs font-bold uppercase tracking-widest text-slate-100 hover:text-[#d4af37] transition-colors group w-max">
                 Explore Our Vision 
@@ -157,7 +159,7 @@ export default function Home() {
           
           <div className="relative z-10 w-full md:w-1/2 mb-12 md:mb-0">
             <span className="font-sans text-[10px] tracking-[0.4em] uppercase text-[#d4af37] font-bold block mb-4">Location</span>
-            <h2 className="font-serif text-5xl md:text-6xl text-white leading-tight">The Center of <br/><span className="italic text-slate-400">Everything.</span></h2>
+            <h2 className="font-serif text-5xl md:text-6xl text-white leading-tight">New Launch <br/><span className="italic text-slate-400">Apartments Pune.</span></h2>
             <p className="font-sans text-slate-300 mt-6 max-w-md">Strategically located in Pune's most rapidly appreciating corridor, offering seamless access to global IT parks, elite schools, and premium retail hubs.</p>
           </div>
           
