@@ -20,8 +20,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     const { meta } = getInsightBySlug(resolvedParams.slug);
     const ogUrl = `https://thereserve.koltepatil.digital/api/og?title=${encodeURIComponent(meta.title)}`;
     return {
-      title: `${meta.title} | The Reserve Insights`,
-      description: meta.excerpt,
+      title: `${meta.title} | Real Estate Market Trends | The Reserve by Kolte Patil`,
+      description: `${meta.excerpt} Stay ahead of Pune property trends. Read our latest insights and book a consultation with Kolte Patil developers today.`,
       openGraph: {
         title: meta.title,
         description: meta.excerpt,

@@ -51,6 +51,7 @@ export default function Home() {
           
           <div className="relative group">
             <h1 className="font-serif text-6xl md:text-8xl lg:text-[10rem] tracking-tight leading-[0.9] uppercase relative z-10 text-slate-100 drop-shadow-sm">
+              <span className="sr-only">Luxury Apartments on Sinhagad Road</span>
               <AnimatedTextMask text="The Reserve" delay={0.4} />
             </h1>
           </div>

@@ -20,8 +20,8 @@ export async function generateMetadata({ params }: { params: Promise<{ pillar: s
     const { meta } = getGuideBySlug(resolvedParams.pillar);
     const ogUrl = `https://thereserve.koltepatil.digital/api/og?title=${encodeURIComponent(meta.title)}`;
     return {
-      title: `${meta.title} | Kolte Patil The Reserve Pillar Hub`,
-      description: meta.excerpt,
+      title: `${meta.title} | Luxury Apartments Pune | The Reserve by Kolte Patil`,
+      description: `${meta.excerpt} Discover premium amenities and riverside living. Enquire today to learn more about the best real estate investment on Sinhagad Road.`,
       openGraph: {
         title: meta.title,
         description: meta.excerpt,

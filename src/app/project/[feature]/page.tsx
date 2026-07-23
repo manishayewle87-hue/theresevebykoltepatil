@@ -19,9 +19,9 @@ export async function generateMetadata({ params }: { params: Promise<{ feature: 
   const ogUrl = `https://thereserve.koltepatil.digital/api/og?title=${encodeURIComponent(data.title)}`;
   
   return {
-    title: `${data.title} | Kolte Patil The Reserve`,
-    description: data.excerpt,
-    keywords: [data.keyword, "Project Details Pune", "Kolte Patil"],
+    title: `${data.title} | Premium Project Features | The Reserve by Kolte Patil`,
+    description: `${data.excerpt} Experience zero space wastage and world-class amenities. Request the latest pricing and brochure for The Reserve on Sinhagad Road today.`,
+    keywords: [data.keyword, "Project Details Pune", "Kolte Patil", "Luxury Apartments"],
     openGraph: {
       title: data.title,
       description: data.excerpt,
