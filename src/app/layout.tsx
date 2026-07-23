@@ -94,6 +94,9 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${playfair.variable} h-full antialiased`}
     >
+      <head>
+        <meta name="google-site-verification" content="_KeXkPdmvdlGxf7txGc-eGMTTLpaxsssiNgaIHAX_IA" />
+      </head>
       <body className="min-h-full flex flex-col font-sans bg-[var(--background)] text-[var(--foreground)] selection:bg-[#d4af37] selection:text-white">
         <GoogleTagManager gtmId="GTM-XXXXXXX" />
         <JsonLd />
