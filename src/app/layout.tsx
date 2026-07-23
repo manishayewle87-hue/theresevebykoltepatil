@@ -12,6 +12,8 @@ import AmbientAudio from "@/components/ui/AmbientAudio";
 import Preloader from "@/components/ui/Preloader";
 import NoiseOverlay from "@/components/ui/NoiseOverlay";
 import JsonLd from "@/components/seo/JsonLd";
+import StickyCTA from "@/components/layout/StickyCTA";
+import WhatsAppWidget from "@/components/layout/WhatsAppWidget";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -105,6 +107,8 @@ export default function RootLayout({
           </ConciergeProvider>
         </CursorProvider>
         <GoogleAnalytics gaId="G-XXXXXXXXXX" />
+        <StickyCTA />
+        <WhatsAppWidget />
       </body>
     </html>
   );

@@ -13,6 +13,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/the-residences',
     '/location',
     '/insights',
+    '/gallery',
+    '/virtual-tour',
+    '/faq',
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
