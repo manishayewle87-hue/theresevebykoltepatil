@@ -25,6 +25,15 @@ export default function ConciergePanel() {
     
     await submitLead(data);
     
+    // Marketing Bridge: Push conversion event to DataLayer (GTM/GA4/Meta)
+    if (typeof window !== "undefined" && (window as any).dataLayer) {
+      (window as any).dataLayer.push({
+        event: "generate_lead",
+        lead_source: formData.interest || "Organic SEO",
+        project: "The Reserve"
+      });
+    }
+
     setIsSubmitting(false);
     setStep(3); // Success step
     setTimeout(() => {
