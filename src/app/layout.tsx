@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
+import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google';
 import "./globals.css";
 import SmoothScroll from "@/components/layout/SmoothScroll";
 import GlobalCursor from "@/components/ui/GlobalCursor";
@@ -60,6 +61,9 @@ export const metadata: Metadata = {
     images: ["/kolte-patil-logo.jpg"],
     creator: "@koltepatil",
   },
+  verification: {
+    google: "PLACEHOLDER_GSC_VERIFICATION_CODE",
+  },
   robots: {
     index: true,
     follow: true,
@@ -84,6 +88,7 @@ export default function RootLayout({
       className={`${inter.variable} ${playfair.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col font-sans bg-[var(--background)] text-[var(--foreground)] selection:bg-[#d4af37] selection:text-white">
+        <GoogleTagManager gtmId="GTM-XXXXXXX" />
         <JsonLd />
         <NoiseOverlay />
         <CursorProvider>
@@ -97,6 +102,7 @@ export default function RootLayout({
             </SmoothScroll>
           </ConciergeProvider>
         </CursorProvider>
+        <GoogleAnalytics gaId="G-XXXXXXXXXX" />
       </body>
     </html>
   );
