@@ -10,9 +10,9 @@ export default function TheResidences() {
   const heroY = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
 
   const floorplans = [
-    { type: "3 BHK Signature", size: "2,450 sq.ft.", price: "Upon Request" },
-    { type: "4 BHK Reserve", size: "3,800 sq.ft.", price: "Upon Request" },
-    { type: "5 BHK Penthouse", size: "5,500 sq.ft.", price: "Upon Request" }
+    { type: "2 BHK Luxury", size: "750 sq.ft.", price: "Upon Request" },
+    { type: "3 BHK Premium", size: "1,050 sq.ft.", price: "Upon Request" },
+    { type: "3 BHK Signature", size: "1,250 sq.ft.", price: "Upon Request" }
   ];
 
   return (

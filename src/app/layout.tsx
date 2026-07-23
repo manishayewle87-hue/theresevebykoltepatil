@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     default: "The Reserve by Kolte Patil | Ultra-Luxury Residences, Sinhgad Road, Pune",
     template: "%s | The Reserve by Kolte Patil, Sinhgad Road",
   },
-  description: "Experience ultra-premium luxury living at The Reserve by Kolte Patil in Sinhgad Road, Pune. Master-crafted 3, 4 & 5 BHK residences designed for the discerning few.",
+  description: "Experience ultra-premium luxury living at The Reserve by Kolte Patil in Sinhgad Road, Pune. Master-crafted 2 & 3 BHK riverside residences designed for the discerning few.",
   keywords: ["Luxury Real Estate Pune", "Sinhgad Road Properties", "Kolte Patil Sinhgad Road", "The Reserve", "Premium Living Pune", "IGBC Platinum"],
   authors: [{ name: "Kolte Patil Developers" }],
   creator: "Kolte Patil",

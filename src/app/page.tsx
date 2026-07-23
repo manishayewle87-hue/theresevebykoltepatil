@@ -66,11 +66,11 @@ export default function Home() {
         <div className="absolute bottom-4 md:bottom-0 left-1/2 -translate-x-1/2 md:translate-y-1/2 z-30 w-[95%] md:w-[90%] max-w-5xl bg-slate-950/95 backdrop-blur-xl rounded-[2rem] shadow-[0_20px_50px_rgba(212,175,55,0.15)] border border-[#d4af37]/30 p-6 md:p-8 block">
           <div className="grid grid-cols-1 gap-6 md:gap-0 md:grid-cols-3 md:divide-x divide-y md:divide-y-0 divide-slate-800">
             <div className="flex flex-col items-center justify-center text-center px-4 pt-2 md:pt-0">
-              <span className="font-serif text-3xl md:text-4xl text-slate-100 mb-1 md:mb-2">50+</span>
+              <span className="font-serif text-3xl md:text-4xl text-slate-100 mb-1 md:mb-2">21</span>
               <span className="font-sans text-[9px] md:text-[10px] uppercase tracking-widest text-slate-400">Acres of Luxury</span>
             </div>
             <div className="flex flex-col items-center justify-center text-center px-4 pt-4 md:pt-0">
-              <span className="font-serif text-3xl md:text-4xl text-[#d4af37] mb-1 md:mb-2">3 & 4.5</span>
+              <span className="font-serif text-3xl md:text-4xl text-[#d4af37] mb-1 md:mb-2">2 & 3</span>
               <span className="font-sans text-[9px] md:text-[10px] uppercase tracking-widest text-slate-400">BHK Signature Residences</span>
             </div>
             <div className="flex flex-col items-center justify-center text-center px-4 pt-4 md:pt-0">

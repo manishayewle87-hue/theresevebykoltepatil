@@ -112,7 +112,7 @@ export default function ConciergePanel() {
                   </div>
                   
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    {["3 BHK Signature", "4.5 BHK Penthouse", "Schedule Private Tour", "Investment Details"].map((opt) => (
+                    {["2 BHK Luxury", "3 BHK Premium", "Schedule Private Tour", "Investment Details"].map((opt) => (
                       <button 
                         key={opt}
                         onClick={() => setFormData({...formData, interest: opt})}

@@ -46,19 +46,15 @@ export default function RevealFooter() {
           </div>
 
           {/* Contact */}
-          <div className="flex flex-col">
-            <h3 className="text-[10px] uppercase tracking-[0.3em] text-slate-900/30 mb-8 font-bold">Contact</h3>
-            <ul className="space-y-4 font-light text-sm text-slate-900/70">
-              <li>Sinhgad Road, Pune,</li>
-              <li>Maharashtra, India</li>
-              <li className="pt-4">
-                <a href="tel:+910000000000" className="hover:text-[#fd8e03] transition-colors">+91 000 000 0000</a>
-              </li>
-              <li>
-                <a href="mailto:info@thereserve.com" className="hover:text-[#fd8e03] transition-colors">info@thereserve.com</a>
-              </li>
-            </ul>
-          </div>
+            <div className="text-right">
+              <span className="font-serif text-xl text-slate-100 block mb-2">Connect</span>
+              <ul className="space-y-1 font-sans text-xs text-slate-400">
+                <li>Sinhgad Road, Pune</li>
+                <li>Maharashtra 411030</li>
+                <li>MahaRERA: PM1261012600748</li>
+                <li className="mt-4"><a href="mailto:sales@koltepatil.com" className="hover:text-[#d4af37] transition-colors">sales@koltepatil.com</a></li>
+              </ul>
+            </div>
 
           {/* CTA */}
           <div className="flex flex-col items-start">

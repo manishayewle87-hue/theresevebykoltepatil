@@ -4,13 +4,13 @@ import { motion } from "framer-motion";
 
 export default function LuxuryTicker() {
   const keywords = [
-    "ITALIAN MARBLE",
-    "SMART AUTOMATION",
-    "50 ACRES",
-    "BESPOKE FINISHES",
-    "PRIVATE CONCIERGE",
-    "HELIPAD ACCESS",
-    "GLOBAL STANDARDS"
+    "21 Acres of Luxury",
+    "Riverside Greens",
+    "NDA Hill Views",
+    "IGBC Platinum Pre-Certified",
+    "2 & 3 BHK Signature Residences",
+    "Smart Home Automation",
+    "Curated Concierge Services"
   ];
 
   return (

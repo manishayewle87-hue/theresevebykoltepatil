@@ -26,7 +26,7 @@ export default function JsonLd() {
         "@type": "ApartmentComplex",
         "@id": "https://thereserve.koltepatil.digital/#property",
         "name": "The Reserve by Kolte Patil",
-        "description": "Experience ultra-premium luxury living at The Reserve by Kolte Patil in Sinhgad Road, Pune. Master-crafted 3, 4 & 5 BHK residences.",
+        "description": "Experience ultra-premium luxury living at The Reserve by Kolte Patil in Sinhgad Road, Pune. Master-crafted 2 & 3 BHK riverside residences.",
         "url": "https://thereserve.koltepatil.digital",
         "address": {
           "@type": "PostalAddress",
