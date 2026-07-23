@@ -42,6 +42,7 @@ export default function RevealFooter() {
               <li><Link href="#master-plan" className="hover:text-[#d4af37] transition-colors">Masterplan</Link></li>
               <li><Link href="#amenities" className="hover:text-[#d4af37] transition-colors">The Privileges</Link></li>
               <li><Link href="#floor-plans" className="hover:text-[#d4af37] transition-colors">Residences</Link></li>
+              <li><Link href="/insights" className="hover:text-[#d4af37] transition-colors">Insights</Link></li>
             </ul>
           </div>
 

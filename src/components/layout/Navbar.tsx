@@ -40,7 +40,8 @@ export default function Navbar() {
     { name: "The Vision", href: "/the-vision" },
     { name: "Residences", href: "/the-residences" },
     { name: "The Club", href: "/the-club" },
-    { name: "Locality", href: "/location" }
+    { name: "Locality", href: "/location" },
+    { name: "Insights", href: "/insights" }
   ];
 
   return (
