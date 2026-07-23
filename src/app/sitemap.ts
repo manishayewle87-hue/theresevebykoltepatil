@@ -1,5 +1,5 @@
 import { MetadataRoute } from 'next';
-import { locationData, configData, investmentData } from '@/lib/seoData';
+import { locationData, configData, investmentData, projectData } from '@/lib/seoData';
 import { getAllInsights, getAllGuides, getAllCompares } from '@/lib/mdx';
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -71,6 +71,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
+  // 8. Dynamic Project Feature Pages
+  const projectRoutes = Object.keys(projectData).map((feat) => ({
+    url: `${baseUrl}/project/${feat}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.8,
+  }));
+
+  // 9. Interactive SEO Tools
+  const toolRoutes = [
+    '/tools/emi-calculator',
+    '/tools/stamp-duty-calculator',
+  ].map((route) => ({
+    url: `${baseUrl}${route}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.9,
+  }));
+
   return [
     ...staticRoutes,
     ...locationRoutes,
@@ -79,5 +98,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...insightRoutes,
     ...guideRoutes,
     ...compareRoutes,
+    ...projectRoutes,
+    ...toolRoutes,
   ];
 }

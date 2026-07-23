@@ -26,3 +26,11 @@ export const investmentData: Record<string, { title: string; keyword: string; ex
   "best-residential-investment-pune": { title: "Best Residential Investment Pune", keyword: "Investment Property Pune", excerpt: "Invest in Kolte Patil The Reserve for guaranteed rental yields, MahaRERA security, and 100-year legacy architecture." },
   "buy-apartment-pune": { title: "Buy Apartment Pune | Schedule Site Visit", keyword: "Buy Apartment Pune", excerpt: "Ready to buy an apartment in Pune? Schedule a private VIP site visit to The Reserve and experience ultra-luxury living." },
 };
+
+export const projectData: Record<string, { title: string; keyword: string; excerpt: string; }> = {
+  "master-plan": { title: "The Reserve Master Plan", keyword: "Master Plan", excerpt: "Explore the expansive master plan of Kolte Patil The Reserve. Low density living by the Mutha River." },
+  "pricing": { title: "Luxury Apartment Pricing Pune", keyword: "Pricing", excerpt: "View transparent pricing and flexible payment plans for our 2 & 3 BHK signature residences." },
+  "amenities": { title: "Ultra Luxury Amenities Pune", keyword: "Amenities", excerpt: "Discover our 50,000 sq.ft. private clubhouse, infinity pool, and world-class lifestyle amenities." },
+  "security-systems": { title: "Gated Community Security Pune", keyword: "Security Systems", excerpt: "State-of-the-art biometric and 24/7 CCTV security ensures absolute peace of mind for your family." },
+  "sustainability": { title: "IGBC Platinum Sustainable Homes Pune", keyword: "Sustainability Features", excerpt: "Eco-friendly luxury living. Solar heating, rainwater harvesting, and lush green landscapes." },
+};
