@@ -15,6 +15,7 @@ import JsonLd from "@/components/seo/JsonLd";
 import StickyCTA from "@/components/layout/StickyCTA";
 import WhatsAppWidget from "@/components/layout/WhatsAppWidget";
 import LenisProvider from "@/components/ui/LenisProvider";
+import CommandPalette from "@/components/ui/CommandPalette";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -112,6 +113,7 @@ export default function RootLayout({
         <GoogleAnalytics gaId="G-XXXXXXXXXX" />
         <StickyCTA />
         <WhatsAppWidget />
+        <CommandPalette />
       </body>
     </html>
   );
