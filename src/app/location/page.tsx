@@ -24,7 +24,7 @@ export default function Location() {
       <div className="h-[80vh] w-full relative overflow-hidden flex flex-col justify-center items-center text-center shadow-2xl border-b border-[#d4af37]/20">
         <motion.div style={{ y: heroY }} className="absolute inset-0 z-0 bg-slate-900">
           <Image priority 
-            src="https://images.unsplash.com/photo-1449844908441-8829872d2607?q=80&w=2000&auto=format&fit=crop"
+            src="https://www.koltepatil.com/assets/uploads/gallery/178478725029496962.jpg"
             alt="Pune Skyline"
             fill
             className="object-cover opacity-20 mix-blend-luminosity grayscale"

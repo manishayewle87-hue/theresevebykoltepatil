@@ -15,7 +15,7 @@ export default function AmenitiesPage() {
         { name: "Holistic Spa", desc: "Therapy rooms, sauna, and steam facilities designed by wellness experts." },
         { name: "State-of-the-Art Gymnasium", desc: "Equipped with the latest Technogym apparatus and private training studios." }
       ],
-      image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=2120&auto=format&fit=crop"
+      image: "https://www.koltepatil.com/assets/uploads/gallery/178478725029496962.jpg"
     },
     {
       category: "Entertainment & Leisure",
@@ -24,7 +24,7 @@ export default function AmenitiesPage() {
         { name: "The Reserve Club", desc: "An exclusive resident lounge featuring a curated library and cigar room." },
         { name: "Private Dining Area", desc: "A chef's kitchen and dining space for hosting intimate gatherings." }
       ],
-      image: "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=2574&auto=format&fit=crop"
+      image: "https://www.koltepatil.com/assets/uploads/gallery/17847871871558473491.jpg"
     },
     {
       category: "Outdoor & Nature",
@@ -33,7 +33,7 @@ export default function AmenitiesPage() {
         { name: "Sky Promenade", desc: "A 400ft high walkway connecting towers, featuring observation decks." },
         { name: "Kids' Play Sanctuary", desc: "Safe, interactive outdoor spaces designed for cognitive development." }
       ],
-      image: "https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?q=80&w=2574&auto=format&fit=crop"
+      image: "https://www.koltepatil.com/assets/uploads/gallery/1784787123820805146.jpg"
     }
   ];
 

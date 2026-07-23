@@ -31,7 +31,7 @@ export default function MasterPlanPage() {
               {/* Stylized Master Plan Image */}
               <div 
                 className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-105"
-                style={{ backgroundImage: `url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop')` }}
+                style={{ backgroundImage: `url('https://www.koltepatil.com/assets/uploads/gallery/178478725029496962.jpg')` }}
               ></div>
               <div className="absolute inset-0 bg-black/20"></div>
               

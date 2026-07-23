@@ -8,28 +8,28 @@ import { AnimatedReveal } from "./AnimatedReveal";
 const galleryImages = [
   {
     id: "img-1",
-    src: "https://images.unsplash.com/photo-1620668903823-380d525cc401?q=80&w=2000&auto=format&fit=crop",
+    src: "https://www.koltepatil.com/assets/uploads/gallery/178478725029496962.jpg",
     title: "Statuario Marble",
     desc: "Book-matched Italian marble sourced from Carrara.",
     className: "col-span-12 md:col-span-7 h-[60vh]"
   },
   {
     id: "img-2",
-    src: "https://images.unsplash.com/photo-1618220179428-22790b46a0eb?q=80&w=2000&auto=format&fit=crop",
+    src: "https://www.koltepatil.com/assets/uploads/gallery/17847871871558473491.jpg",
     title: "Brushed Champagne",
     desc: "Custom-forged metalwork detailing.",
     className: "col-span-12 md:col-span-5 h-[40vh] md:h-[60vh] md:mt-24"
   },
   {
     id: "img-3",
-    src: "https://images.unsplash.com/photo-1549429188-725350be4cdb?q=80&w=2000&auto=format&fit=crop",
+    src: "https://www.koltepatil.com/assets/uploads/gallery/1784787123820805146.jpg",
     title: "European Oak",
     desc: "Acoustically treated wide-plank flooring.",
     className: "col-span-12 md:col-span-6 h-[50vh]"
   },
   {
     id: "img-4",
-    src: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=2000&auto=format&fit=crop",
+    src: "https://www.koltepatil.com/assets/uploads/gallery/17847870511644671891.jpg",
     title: "The Lounge",
     desc: "Seamless indoor-outdoor transitions.",
     className: "col-span-12 md:col-span-6 h-[50vh] md:-mt-12"

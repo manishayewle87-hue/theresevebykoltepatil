@@ -38,7 +38,7 @@ export default async function LocationMicroMarket({ params }: { params: Promise<
         {/* Abstract Background Layer */}
         <div className="absolute inset-0 z-0 overflow-hidden">
           <Image 
-            src="https://images.unsplash.com/photo-1449844908441-8829872d2607?q=80&w=2000&auto=format&fit=crop"
+            src="https://www.koltepatil.com/assets/uploads/gallery/178478725029496962.jpg"
             alt="Pune Skyline"
             fill
             className="object-cover opacity-10 mix-blend-luminosity grayscale"

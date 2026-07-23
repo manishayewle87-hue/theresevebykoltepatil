@@ -14,7 +14,7 @@ export default function VirtualTourPage() {
     "@type": "VideoObject",
     "name": "Kolte Patil The Reserve - 360 Walkthrough",
     "description": "A comprehensive virtual tour and drone flyover of The Reserve luxury apartments in Pune.",
-    "thumbnailUrl": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=1000",
+    "thumbnailUrl": "https://www.koltepatil.com/assets/uploads/gallery/178478725029496962.jpg",
     "uploadDate": "2026-07-23T08:00:00+08:00",
     "contentUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ", // Placeholder for actual client video
     "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"

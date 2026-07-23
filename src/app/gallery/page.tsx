@@ -10,12 +10,12 @@ export const metadata = {
 };
 
 const images = [
-  { src: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=1000&auto=format&fit=crop", alt: "Kolte Patil The Reserve Exterior Elevation", caption: "Premium Riverside Facade" },
-  { src: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=1000&auto=format&fit=crop", alt: "Luxury Apartment Interior Pune", caption: "Signature 3 BHK Living Room" },
-  { src: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1000&auto=format&fit=crop", alt: "Clubhouse Amenities at The Reserve", caption: "50,000 sq.ft. Private Clubhouse" },
-  { src: "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?q=80&w=1000&auto=format&fit=crop", alt: "Smart Home Features", caption: "Integrated Home Automation" },
-  { src: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1000&auto=format&fit=crop", alt: "Pune Real Estate Investment Views", caption: "Uninterrupted Mutha River Views" },
-  { src: "https://images.unsplash.com/photo-1574360699298-251f93f1d2df?q=80&w=1000&auto=format&fit=crop", alt: "Infinity Pool The Reserve", caption: "Olympic-length Infinity Pool" },
+  { src: "https://www.koltepatil.com/assets/uploads/gallery/178478725029496962.jpg", alt: "Kolte Patil The Reserve Exterior Elevation", caption: "Premium Riverside Facade" },
+  { src: "https://www.koltepatil.com/assets/uploads/gallery/17847871871558473491.jpg", alt: "Luxury Apartment Interior Pune", caption: "Signature 3 BHK Living Room" },
+  { src: "https://www.koltepatil.com/assets/uploads/gallery/1784787123820805146.jpg", alt: "Clubhouse Amenities at The Reserve", caption: "50,000 sq.ft. Private Clubhouse" },
+  { src: "https://www.koltepatil.com/assets/uploads/gallery/17847870511644671891.jpg", alt: "Smart Home Features", caption: "Integrated Home Automation" },
+  { src: "https://www.koltepatil.com/assets/uploads/gallery/17847869771007144168.jpg", alt: "Pune Real Estate Investment Views", caption: "Uninterrupted Mutha River Views" },
+  { src: "https://www.koltepatil.com/assets/uploads/gallery/17847868911484090893.jpg", alt: "Infinity Pool The Reserve", caption: "Olympic-length Infinity Pool" },
 ];
 
 export default function GalleryPage() {

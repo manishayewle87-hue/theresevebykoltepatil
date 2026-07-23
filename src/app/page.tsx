@@ -31,7 +31,7 @@ export default function Home() {
             loop
             muted
             playsInline
-            poster="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2075&auto=format&fit=crop"
+            poster="https://www.koltepatil.com/assets/uploads/gallery/178478725029496962.jpg"
             className="w-full h-full object-cover opacity-20 filter grayscale"
           >
             <source src="https://player.vimeo.com/external/394627252.hd.mp4?s=d00e57262ba627d3568853c89657f8cfec47fb21&profile_id=174" type="video/mp4" />
@@ -105,7 +105,7 @@ export default function Home() {
               </Link>
             </motion.div>
             <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }} className="w-full md:w-1/2 relative h-[60vh] rounded-[4rem] overflow-hidden shadow-2xl group">
-              <Image priority src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2075&auto=format&fit=crop" alt="The Philosophy" fill className="object-cover group-hover:scale-105 transition-transform duration-1000 ease-out" />
+              <Image priority src="https://www.koltepatil.com/assets/uploads/gallery/17847871871558473491.jpg" alt="The Philosophy" fill className="object-cover group-hover:scale-105 transition-transform duration-1000 ease-out" />
               <div className="absolute bottom-8 -left-4 md:left-8 bg-slate-950/90 backdrop-blur-xl p-8 rounded-[2rem] shadow-xl border border-[#d4af37]/30 max-w-sm group-hover:-translate-y-2 transition-transform duration-700">
                 <span className="font-serif text-5xl text-[#d4af37] block mb-2">30+</span>
                 <span className="font-sans text-[10px] uppercase tracking-widest text-slate-100 font-bold">Years of Excellence</span>
@@ -132,10 +132,10 @@ export default function Home() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
             {[
-              { title: "Nature's Embrace", desc: "50 sprawling acres of curated greenery, bio-diverse parks, and serene walking trails right at your doorstep.", img: "https://images.unsplash.com/photo-1584738766473-61c083514bf4?q=80&w=2000&auto=format&fit=crop" },
-              { title: "Automated Homes", desc: "State-of-the-art smart home integration. Control climate, lighting, and security with a single touch.", img: "https://images.unsplash.com/photo-1558002038-1055907df827?q=80&w=2000&auto=format&fit=crop" },
-              { title: "Private Wellness", desc: "An exclusive 50,000 sq.ft. resident club featuring spa pavilions, infinity pools, and holistic wellness zones.", img: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=2000&auto=format&fit=crop" },
-              { title: "Global Standards", desc: "Crafted with imported Italian marble, European fixtures, and bespoke minimalist finishing.", img: "https://images.unsplash.com/photo-1600607688969-a5bfcd64bd28?q=80&w=2000&auto=format&fit=crop" }
+              { title: "Nature's Embrace", desc: "50 sprawling acres of curated greenery, bio-diverse parks, and serene walking trails right at your doorstep.", img: "https://www.koltepatil.com/assets/uploads/gallery/1784787123820805146.jpg" },
+              { title: "Automated Homes", desc: "State-of-the-art smart home integration. Control climate, lighting, and security with a single touch.", img: "https://www.koltepatil.com/assets/uploads/gallery/17847870511644671891.jpg" },
+              { title: "Private Wellness", desc: "An exclusive 50,000 sq.ft. resident club featuring spa pavilions, infinity pools, and holistic wellness zones.", img: "https://www.koltepatil.com/assets/uploads/gallery/17847869771007144168.jpg" },
+              { title: "Global Standards", desc: "Crafted with imported Italian marble, European fixtures, and bespoke minimalist finishing.", img: "https://www.koltepatil.com/assets/uploads/gallery/17847868911484090893.jpg" }
             ].map((feature, i) => (
               <motion.div key={i} initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-50px" }} transition={{ duration: 0.6, delay: i * 0.1 }} className="group relative h-[400px] overflow-hidden rounded-[3rem] shadow-sm hover:shadow-[0_20px_60px_rgba(212,175,55,0.3)] hover:-translate-y-2 transition-all duration-700">
                 <Image src={feature.img} alt={feature.title} fill className="object-cover opacity-80 group-hover:scale-105 transition-transform duration-1000 ease-out" />
@@ -157,7 +157,7 @@ export default function Home() {
       */}
       <section className="relative z-10 bg-slate-950 py-32 px-4 md:px-12">
         <div className="bg-slate-900 rounded-[4rem] py-24 px-8 md:px-20 relative overflow-hidden flex flex-col md:flex-row items-center justify-between shadow-[0_20px_50px_rgba(0,0,0,0.2)]">
-          <motion.div style={{ y: parallaxY }} className="absolute inset-0 opacity-10 bg-[url('https://images.unsplash.com/photo-1449844908441-8829872d2607?q=80&w=2000&auto=format&fit=crop')] bg-cover bg-center mix-blend-overlay"></motion.div>
+          <motion.div style={{ y: parallaxY }} className="absolute inset-0 opacity-10 bg-[url('https://www.koltepatil.com/assets/uploads/overview/17847862141319131306.jpg')] bg-cover bg-center mix-blend-overlay"></motion.div>
           
           <div className="relative z-10 w-full md:w-1/2 mb-12 md:mb-0">
             <span className="font-sans text-[10px] tracking-[0.4em] uppercase text-[#d4af37] font-bold block mb-4">Location</span>
@@ -200,7 +200,7 @@ export default function Home() {
             <div className="group relative w-full h-[60vh] md:h-[70vh] flex items-center justify-center bg-slate-900/50 rounded-[4rem] rounded-br-sm shadow-[0_10px_40px_rgba(0,0,0,0.05)] transition-all duration-700 hover:shadow-[0_20px_80px_rgba(212,175,55,0.3)] hover:-translate-y-2">
               <div className="absolute inset-0 z-0 overflow-hidden rounded-[4rem] rounded-br-sm">
                 <Image 
-                  src="https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=2000&auto=format&fit=crop"
+                  src="https://www.koltepatil.com/assets/uploads/gallery/178478725029496962.jpg"
                   alt="The Vision"
                   fill
                   className="object-cover opacity-70 mix-blend-multiply group-hover:opacity-100 transition-transform duration-1000 group-hover:scale-105 transform ease-out"
@@ -219,7 +219,7 @@ export default function Home() {
             <div className="group relative w-full h-[60vh] md:h-[70vh] flex items-center justify-center bg-slate-900/50 rounded-[4rem] rounded-tl-sm shadow-[0_10px_40px_rgba(0,0,0,0.05)] transition-all duration-700 hover:shadow-[0_20px_80px_rgba(212,175,55,0.3)] hover:-translate-y-2 mt-12">
               <div className="absolute inset-0 z-0 overflow-hidden rounded-[4rem] rounded-tl-sm">
                 <Image 
-                  src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop"
+                  src="https://www.koltepatil.com/assets/uploads/gallery/17847871871558473491.jpg"
                   alt="The Residences"
                   fill
                   className="object-cover opacity-70 mix-blend-multiply group-hover:opacity-100 transition-transform duration-1000 group-hover:scale-105 transform ease-out"
@@ -238,7 +238,7 @@ export default function Home() {
             <div className="group relative w-full h-[60vh] md:h-[70vh] flex items-center justify-center bg-slate-900/50 rounded-[4rem] rounded-bl-sm shadow-[0_10px_40px_rgba(0,0,0,0.05)] transition-all duration-700 hover:shadow-[0_20px_80px_rgba(212,175,55,0.3)] hover:-translate-y-2 mt-12">
               <div className="absolute inset-0 z-0 overflow-hidden rounded-[4rem] rounded-bl-sm">
                 <Image 
-                  src="https://images.unsplash.com/photo-1576013551627-11dc5f67e150?q=80&w=2000&auto=format&fit=crop"
+                  src="https://www.koltepatil.com/assets/uploads/gallery/1784787123820805146.jpg"
                   alt="The Club"
                   fill
                   className="object-cover opacity-70 mix-blend-multiply group-hover:opacity-100 transition-transform duration-1000 group-hover:scale-105 transform ease-out"

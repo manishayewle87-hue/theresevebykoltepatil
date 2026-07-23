@@ -57,7 +57,7 @@ export default function DayNightSlider() {
     >
       {/* Night View (Base Layer) */}
       <div className="absolute inset-0 w-full h-full">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center brightness-50" />
+        <div className="absolute inset-0 bg-[url('https://www.koltepatil.com/assets/uploads/gallery/178478725029496962.jpg')] bg-cover bg-center brightness-50" />
         <div className="absolute top-8 left-8 bg-black/50 backdrop-blur-md px-4 py-2 rounded-full border border-white/10 text-white/80 text-xs tracking-widest uppercase">
           Cinematic Night View
         </div>
@@ -68,7 +68,7 @@ export default function DayNightSlider() {
         className="absolute inset-0 w-full h-full pointer-events-none"
         style={{ clipPath: `polygon(0 0, ${sliderPosition}% 0, ${sliderPosition}% 100%, 0 100%)` }}
       >
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2053&auto=format&fit=crop')] bg-cover bg-center brightness-110" />
+        <div className="absolute inset-0 bg-[url('https://www.koltepatil.com/assets/uploads/gallery/17847871871558473491.jpg')] bg-cover bg-center brightness-110" />
         <div className="absolute top-8 right-8 bg-white/50 backdrop-blur-md px-4 py-2 rounded-full border border-white/20 text-black/80 text-xs tracking-widest uppercase">
           Pristine Day View
         </div>

@@ -8,8 +8,8 @@ export const metadata = {
 
 export default function UpdatesPage() {
   const updates = [
-    { date: "October 2026", status: "Tower A Foundation Complete. Tower B excavation in progress.", image: "https://images.unsplash.com/photo-1541888082470-fa415bbd5c58?q=80&w=2000&auto=format&fit=crop" },
-    { date: "September 2026", status: "Site clearing and boundary wall construction completed.", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2000&auto=format&fit=crop" }
+    { date: "October 2026", status: "Tower A Foundation Complete. Tower B excavation in progress.", image: "https://www.koltepatil.com/assets/uploads/gallery/178478725029496962.jpg" },
+    { date: "September 2026", status: "Site clearing and boundary wall construction completed.", image: "https://www.koltepatil.com/assets/uploads/gallery/17847871871558473491.jpg" }
   ];
 
   return (

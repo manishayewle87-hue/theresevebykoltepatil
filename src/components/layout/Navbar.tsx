@@ -128,7 +128,7 @@ export default function Navbar() {
           >
             {/* Split Screen Image for Tablets */}
             <div className="hidden md:block w-1/2 h-full relative border-r border-slate-800">
-              <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=2000&auto=format&fit=crop')] bg-cover bg-center opacity-40 mix-blend-luminosity"></div>
+              <div className="absolute inset-0 bg-[url('https://www.koltepatil.com/assets/uploads/gallery/178478725029496962.jpg')] bg-cover bg-center opacity-40 mix-blend-luminosity"></div>
               <div className="absolute inset-0 bg-gradient-to-r from-transparent to-slate-950"></div>
             </div>
             

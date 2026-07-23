@@ -23,7 +23,7 @@ export default function TheResidences() {
       <div className="h-[80vh] w-full relative overflow-hidden flex flex-col justify-center items-center text-center shadow-2xl border-b border-[#d4af37]/20">
         <motion.div style={{ y: heroY }} className="absolute inset-0 z-0">
           <Image priority 
-            src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2000&auto=format&fit=crop"
+            src="https://www.koltepatil.com/assets/uploads/gallery/178478725029496962.jpg"
             alt="The Residences Hero"
             fill
             className="object-cover opacity-40 mix-blend-luminosity"
@@ -78,7 +78,7 @@ export default function TheResidences() {
               className="relative h-[60vh] rounded-[3rem] overflow-hidden border border-[#d4af37]/20 shadow-2xl"
             >
               <Image 
-                src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1200&auto=format&fit=crop"
+                src="https://www.koltepatil.com/assets/uploads/gallery/17847871871558473491.jpg"
                 alt="Interior Render"
                 fill
                 className="object-cover opacity-80"

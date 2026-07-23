@@ -56,7 +56,7 @@ export default function InteractiveMasterplan() {
     >
       {/* Background Architectural Map */}
       <Image
-        src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop"
+        src="https://www.koltepatil.com/assets/uploads/gallery/178478725029496962.jpg"
         alt="Masterplan Aerial View"
         fill
         className="object-cover opacity-50 grayscale transition-all duration-1000 group-hover:scale-105 group-hover:opacity-40"

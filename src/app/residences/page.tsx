@@ -17,7 +17,7 @@ export default function ResidencesPage() {
       carpetArea: "1,450 sq.ft.",
       desc: "Designed for modern families, these residences feature expansive living areas, wrap-around balconies, and floor-to-ceiling windows that invite natural light.",
       features: ["Private Foyer", "Walk-in Wardrobe", "Smart Home Automation", "Premium Italian Marble"],
-      image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=2070&auto=format&fit=crop"
+      image: "https://www.koltepatil.com/assets/uploads/gallery/178478725029496962.jpg"
     },
     {
       id: "4bhk",
@@ -26,7 +26,7 @@ export default function ResidencesPage() {
       carpetArea: "2,200 sq.ft.",
       desc: "The pinnacle of luxury living. A sprawling layout featuring dual master suites, a private study, and an ultra-premium kitchen designed for culinary excellence.",
       features: ["Private Elevator Access", "Plunge Pool Option", "Staff Quarters", "Panoramic Views"],
-      image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop"
+      image: "https://www.koltepatil.com/assets/uploads/gallery/17847871871558473491.jpg"
     }
   ];
 

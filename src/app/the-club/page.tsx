@@ -14,10 +14,10 @@ export default function TheClub() {
   const [activeSpecTab, setActiveSpecTab] = useState(0);
 
   const amenities = [
-    { title: "Infinity Swimming Pool", desc: "Apartments with Swimming Pool Pune. Temperature-controlled waters overlooking the skyline.", img: "https://images.unsplash.com/photo-1576013551627-11dc5f67e150?q=80&w=2000&auto=format&fit=crop" },
-    { title: "Luxury Clubhouse", desc: "Apartments with Clubhouse Pune. Exclusive access to our 5-star resident clubhouse and lounges.", img: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=2000&auto=format&fit=crop" },
-    { title: "Wellness Community", desc: "Apartments with Gym Pune and Zen Gardens. Curated landscapes designed for absolute tranquility.", img: "https://images.unsplash.com/photo-1558661081-30dbce34907a?q=80&w=2000&auto=format&fit=crop" },
-    { title: "Spa & Wellness", desc: "Holistic wellness center with professional therapists, setting a new benchmark for luxury living in Pune.", img: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2000&auto=format&fit=crop" }
+    { title: "Infinity Swimming Pool", desc: "Apartments with Swimming Pool Pune. Temperature-controlled waters overlooking the skyline.", img: "https://www.koltepatil.com/assets/uploads/gallery/178478725029496962.jpg" },
+    { title: "Luxury Clubhouse", desc: "Apartments with Clubhouse Pune. Exclusive access to our 5-star resident clubhouse and lounges.", img: "https://www.koltepatil.com/assets/uploads/gallery/17847871871558473491.jpg" },
+    { title: "Wellness Community", desc: "Apartments with Gym Pune and Zen Gardens. Curated landscapes designed for absolute tranquility.", img: "https://www.koltepatil.com/assets/uploads/gallery/1784787123820805146.jpg" },
+    { title: "Spa & Wellness", desc: "Holistic wellness center with professional therapists, setting a new benchmark for luxury living in Pune.", img: "https://www.koltepatil.com/assets/uploads/gallery/17847870511644671891.jpg" }
   ];
 
   const specs = [
@@ -37,7 +37,7 @@ export default function TheClub() {
         <div className="h-[80vh] w-full relative overflow-hidden flex flex-col justify-center items-center text-center shadow-2xl mb-32 border-b border-[#d4af37]/20">
           <motion.div style={{ y: heroY }} className="absolute inset-0 z-0">
             <Image priority 
-              src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=2000&auto=format&fit=crop"
+              src="https://www.koltepatil.com/assets/uploads/gallery/17847869771007144168.jpg"
               alt="The Club Hero"
               fill
               className="object-cover opacity-40 mix-blend-luminosity"

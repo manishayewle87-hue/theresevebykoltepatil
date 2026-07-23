@@ -15,22 +15,22 @@ export default function HorizontalGallery() {
 
   const galleryItems = [
     {
-      img: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1200&auto=format&fit=crop",
+      img: "https://www.koltepatil.com/assets/uploads/gallery/178478725029496962.jpg",
       title: "The Grand Lobby",
       desc: "Double-height ceilings with custom glass chandeliers."
     },
     {
-      img: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1200&auto=format&fit=crop",
+      img: "https://www.koltepatil.com/assets/uploads/gallery/17847871871558473491.jpg",
       title: "Master Suites",
       desc: "Bespoke Italian marble and panoramic city views."
     },
     {
-      img: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=1200&auto=format&fit=crop",
+      img: "https://www.koltepatil.com/assets/uploads/gallery/1784787123820805146.jpg",
       title: "Private Wellness",
       desc: "Temperature-controlled infinity pools."
     },
     {
-      img: "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=1200&auto=format&fit=crop",
+      img: "https://www.koltepatil.com/assets/uploads/gallery/17847870511644671891.jpg",
       title: "Automated Living",
       desc: "Seamless integration of lighting, climate, and security."
     }

@@ -26,7 +26,7 @@ export default function VirtualTour() {
   // Using a sample high-res equirectangular 360 panorama from Unsplash or standard sources.
   // Note: Unsplash images are usually not equirectangular. In production, we'd use a real 360 render.
   // We use a known working 360 placeholder texture url here.
-  const panoramaUrl = "https://images.unsplash.com/photo-1558434604-cb2103a08892?q=80&w=4000&auto=format&fit=crop"; 
+  const panoramaUrl = "https://www.koltepatil.com/assets/uploads/gallery/178478725029496962.jpg"; 
   // It's not a perfect 360 image but it demonstrates the WebGL tech perfectly.
 
   return (
