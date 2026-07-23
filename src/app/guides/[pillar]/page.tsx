@@ -1,4 +1,4 @@
-import { getInsightBySlug, getAllInsights } from '@/lib/mdx';
+import { getGuideBySlug, getAllGuides } from '@/lib/mdx';
 import { MDXRemote } from 'next-mdx-remote/rsc';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
@@ -8,33 +8,33 @@ import AISummaryBox from '@/components/seo/AISummaryBox';
 import InternalLinkingMesh from '@/components/seo/InternalLinkingMesh';
 
 export async function generateStaticParams() {
-  const posts = getAllInsights();
+  const posts = getAllGuides();
   return posts.map((post) => ({
-    slug: post.slug,
+    pillar: post.slug,
   }));
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+export async function generateMetadata({ params }: { params: Promise<{ pillar: string }> }) {
   const resolvedParams = await params;
   try {
-    const { meta } = getInsightBySlug(resolvedParams.slug);
+    const { meta } = getGuideBySlug(resolvedParams.pillar);
     return {
-      title: `${meta.title} | The Reserve Insights`,
+      title: `${meta.title} | Kolte Patil The Reserve Pillar Hub`,
       description: meta.excerpt,
     };
   } catch (e) {
     return {
-      title: 'Insight Not Found',
+      title: 'Guide Not Found',
     };
   }
 }
 
-export default async function InsightPost({ params }: { params: Promise<{ slug: string }> }) {
+export default async function GuidePost({ params }: { params: Promise<{ pillar: string }> }) {
   const resolvedParams = await params;
   let post;
   
   try {
-    post = getInsightBySlug(resolvedParams.slug);
+    post = getGuideBySlug(resolvedParams.pillar);
   } catch (e) {
     notFound();
   }

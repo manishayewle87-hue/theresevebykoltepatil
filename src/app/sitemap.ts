@@ -1,6 +1,6 @@
 import { MetadataRoute } from 'next';
 import { locationData, configData, investmentData } from '@/lib/seoData';
-import { getAllInsights } from '@/lib/mdx';
+import { getAllInsights, getAllGuides, getAllCompares } from '@/lib/mdx';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://thereserve.koltepatil.digital';
@@ -53,11 +53,31 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
+  // 6. Dynamic MDX Guide Pillars
+  const guides = getAllGuides();
+  const guideRoutes = guides.map((guide) => ({
+    url: `${baseUrl}/guides/${guide.slug}`,
+    lastModified: new Date(guide.meta.date),
+    changeFrequency: 'monthly' as const,
+    priority: 0.9,
+  }));
+
+  // 7. Dynamic MDX Compare Hub
+  const compares = getAllCompares();
+  const compareRoutes = compares.map((compare) => ({
+    url: `${baseUrl}/compare/${compare.slug}`,
+    lastModified: new Date(compare.meta.date),
+    changeFrequency: 'monthly' as const,
+    priority: 0.8,
+  }));
+
   return [
     ...staticRoutes,
     ...locationRoutes,
     ...configRoutes,
     ...investmentRoutes,
     ...insightRoutes,
+    ...guideRoutes,
+    ...compareRoutes,
   ];
 }
