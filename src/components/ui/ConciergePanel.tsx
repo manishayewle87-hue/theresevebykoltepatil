@@ -47,6 +47,7 @@ export default function ConciergePanel() {
           {/* Close Button */}
           <button 
             onClick={() => setIsConciergeOpen(false)}
+            aria-label="Close Concierge Panel"
             className="absolute top-12 right-12 text-white/50 hover:text-white transition-colors z-10"
           >
             <span className="font-sans text-[10px] tracking-[0.3em] uppercase">Close [X]</span>
@@ -88,6 +89,7 @@ export default function ConciergePanel() {
                   <div className="flex justify-end">
                     <button 
                       onClick={handleNext}
+                      aria-label="Continue to next step"
                       disabled={!formData.name || !formData.email}
                       className="px-12 py-4 bg-white text-black font-sans text-[10px] tracking-[0.2em] uppercase font-bold hover:bg-[#d4af37] transition-colors disabled:opacity-50"
                     >
@@ -107,7 +109,7 @@ export default function ConciergePanel() {
                   className="flex flex-col gap-12"
                 >
                   <div>
-                    <button onClick={handleBack} className="text-white/50 text-xs mb-8 hover:text-white">&larr; Back</button>
+                    <button onClick={handleBack} aria-label="Go back to previous step" className="text-white/50 text-xs mb-8 hover:text-white">&larr; Back</button>
                     <h2 className="font-serif text-5xl md:text-7xl text-white mb-4">What brings you to The Reserve?</h2>
                   </div>
                   
@@ -116,6 +118,7 @@ export default function ConciergePanel() {
                       <button 
                         key={opt}
                         onClick={() => setFormData({...formData, interest: opt})}
+                        aria-label={`Select ${opt}`}
                         className={`p-8 text-left border transition-all duration-300 ${formData.interest === opt ? 'border-[#d4af37] bg-[#d4af37]/10' : 'border-white/10 hover:border-white/30'}`}
                       >
                         <h4 className="font-serif text-2xl text-white">{opt}</h4>
@@ -127,6 +130,7 @@ export default function ConciergePanel() {
                     <button 
                       onClick={handleSubmit}
                       disabled={!formData.interest || isSubmitting}
+                      aria-label="Submit Concierge Request"
                       className="px-12 py-4 bg-white text-black font-sans text-[10px] tracking-[0.2em] uppercase font-bold hover:bg-[#d4af37] transition-colors disabled:opacity-50"
                     >
                       {isSubmitting ? "Requesting..." : "Request Callback"}

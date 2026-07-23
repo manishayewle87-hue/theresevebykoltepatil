@@ -59,6 +59,46 @@ export default function JsonLd() {
             "value": "True"
           }
         ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://thereserve.koltepatil.digital/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://thereserve.koltepatil.digital"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "The Residences",
+            "item": "https://thereserve.koltepatil.digital/the-residences"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://thereserve.koltepatil.digital/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is The Reserve RERA registered?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. The Reserve is registered under MahaRERA with Registration Number PM1261012600748."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What apartment configurations are available at The Reserve Sinhgad Road?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Reserve offers ultra-luxury 2 & 3 BHK riverside residences."
+            }
+          }
+        ]
       }
     ]
   };

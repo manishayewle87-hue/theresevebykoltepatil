@@ -99,12 +99,15 @@ export default function Navbar() {
           <div className="flex items-center gap-6">
             <button 
               onClick={() => setIsConciergeOpen(true)}
+              aria-label="Open Concierge Panel for Inquiries"
               className="hidden md:flex px-6 py-2 border border-[#d4af37] text-[#d4af37] text-[10px] tracking-[0.2em] uppercase hover:bg-[#d4af37] hover:text-slate-950 transition-cinematic font-bold"
             >
               VIP Concierge
             </button>
             <button 
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              aria-label={isMobileMenuOpen ? "Close navigation menu" : "Open navigation menu"}
+              aria-expanded={isMobileMenuOpen}
               className="text-slate-100 text-xs tracking-[0.3em] uppercase font-bold hover:text-[#d4af37] transition-colors z-[60] relative"
             >
               {isMobileMenuOpen ? "CLOSE" : "MENU"}
