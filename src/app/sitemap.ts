@@ -16,6 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/gallery',
     '/virtual-tour',
     '/faq',
+    '/floor-plans',
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
