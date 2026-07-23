@@ -45,18 +45,54 @@ export default async function GuidePost({ params }: { params: Promise<{ pillar: 
     notFound();
   }
 
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": post.meta.title,
-    "datePublished": post.meta.date,
-    "description": post.meta.excerpt,
-    "image": post.meta.coverImage ? [post.meta.coverImage] : [],
-    "author": [{
-        "@type": "Organization",
-        "name": "Kolte Patil Developers"
-    }]
-  };
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "@id": `https://thereserve.koltepatil.digital/guides/${post.slug}#article`,
+      "isPartOf": {
+        "@id": "https://thereserve.koltepatil.digital/#website"
+      },
+      "headline": post.meta.title,
+      "datePublished": post.meta.date,
+      "dateModified": post.meta.date,
+      "description": post.meta.excerpt,
+      "image": post.meta.coverImage ? [post.meta.coverImage] : [],
+      "author": [{
+          "@type": "Person",
+          "name": "Kolte Patil Expert",
+          "url": "https://thereserve.koltepatil.digital"
+      }],
+      "publisher": {
+        "@id": "https://thereserve.koltepatil.digital/#organization"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": `https://thereserve.koltepatil.digital/guides/${post.slug}#breadcrumb`,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://thereserve.koltepatil.digital"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Guides",
+          "item": "https://thereserve.koltepatil.digital/guides"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": post.meta.title,
+          "item": `https://thereserve.koltepatil.digital/guides/${post.slug}`
+        }
+      ]
+    }
+  ];
 
   const components = {
     h1: (props: any) => <h1 className="font-serif text-4xl mt-12 mb-6 text-white" {...props} />,
