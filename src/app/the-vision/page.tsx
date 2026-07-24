@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 "use client";
 
 import RevealFooter from "@/components/layout/RevealFooter";

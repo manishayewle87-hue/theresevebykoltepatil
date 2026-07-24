@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import { ImageResponse } from 'next/og';
 import { NextRequest } from 'next/server';
 

@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities, @typescript-eslint/no-explicit-any */
 "use client";
 
 import Image from "next/image";

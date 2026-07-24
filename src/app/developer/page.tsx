@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 
 export const metadata = {
   title: "The Developer | Kolte Patil",

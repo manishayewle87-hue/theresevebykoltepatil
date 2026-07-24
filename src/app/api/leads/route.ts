@@ -1,4 +1,15 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { z } from 'zod';
+
+const leadSchema = z.object({
+  name: z.string().min(2, "Name must be at least 2 characters").max(50, "Name is too long").trim(),
+  email: z.string().email("Invalid email format").optional().or(z.literal('')),
+  phone: z.string().regex(/^\+?[\d\s-]{10,14}$/, "Invalid phone format").optional().or(z.literal('')),
+  source: z.string().optional(),
+}).refine(data => data.email || data.phone, {
+  message: "Either email or phone is required",
+  path: ["email"],
+});
 
 // Simple memory-based rate limiter (for demo/serverless warm starts)
 const rateLimitMap = new Map<string, { count: number; timestamp: number }>();
@@ -23,27 +34,17 @@ export async function POST(req: NextRequest) {
     }
 
     const body = await req.json();
-    const { name, email, phone, source } = body;
-
-    // 2. Strict Input Sanitization
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    const phoneRegex = /^\+?[\d\s-]{10,14}$/;
-
-    if (!name || name.trim().length < 2 || name.trim().length > 50) {
-      return NextResponse.json({ error: 'Invalid Name' }, { status: 400 });
+    
+    // 2. Strict Zod Schema Validation
+    const validationResult = leadSchema.safeParse(body);
+    if (!validationResult.success) {
+      return NextResponse.json(
+        { error: validationResult.error.errors[0].message },
+        { status: 400 }
+      );
     }
     
-    if (email && !emailRegex.test(email)) {
-      return NextResponse.json({ error: 'Invalid Email Format' }, { status: 400 });
-    }
-
-    if (phone && !phoneRegex.test(phone)) {
-      return NextResponse.json({ error: 'Invalid Phone Format' }, { status: 400 });
-    }
-
-    if (!email && !phone) {
-      return NextResponse.json({ error: 'Email or Phone is required' }, { status: 400 });
-    }
+    const { name, email, phone, source } = validationResult.data;
 
     // ----------------------------------------------------------------------
     // REAL-TIME CRM WEBHOOK (Salesforce / HubSpot / LeadSquared)
