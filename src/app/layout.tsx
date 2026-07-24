@@ -130,7 +130,9 @@ export default function RootLayout({
               <ConciergePanel />
               <FloatingAction />
               <Navbar />
-              {children}
+              <div className="relative z-10 mb-[100vh] bg-white rounded-b-[3rem] md:rounded-b-[5rem] overflow-hidden shadow-2xl">
+                {children}
+              </div>
               <RevealFooter />
             </LenisProvider>
           </ConciergeProvider>
