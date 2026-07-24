@@ -14,6 +14,8 @@ import Preloader from "@/components/ui/Preloader";
 import NoiseOverlay from "@/components/ui/NoiseOverlay";
 import JsonLd from "@/components/seo/JsonLd";
 import LenisProvider from "@/components/ui/LenisProvider";
+import { PulseProvider } from "@/context/PulseContext";
+import MarketPulseToast from "@/components/ui/MarketPulseToast";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import Script from "next/script";
 import dynamic from 'next/dynamic';
@@ -137,19 +139,22 @@ export default function RootLayout({
         <NoiseOverlay />
         <CursorProvider>
           <ConciergeProvider>
-            <LenisProvider>
-              <Preloader />
-              <Breadcrumbs />
-              <GlobalCursor />
-              <AmbientAudio />
-              <ConciergePanel />
-              <FloatingAction />
-              <Navbar />
-              <div className="relative z-10 isolate transform-gpu mb-[100svh] bg-[#0B2B1B] rounded-b-[3rem] md:rounded-b-[5rem] overflow-hidden shadow-2xl">
-                {children}
-              </div>
-              <RevealFooter />
-            </LenisProvider>
+            <PulseProvider>
+              <LenisProvider>
+                <Preloader />
+                <Breadcrumbs />
+                <GlobalCursor />
+                <AmbientAudio />
+                <ConciergePanel />
+                <FloatingAction />
+                <MarketPulseToast />
+                <Navbar />
+                <div className="relative z-10 isolate transform-gpu mb-[100svh] bg-[#0B2B1B] rounded-b-[3rem] md:rounded-b-[5rem] overflow-hidden shadow-2xl">
+                  {children}
+                </div>
+                <RevealFooter />
+              </LenisProvider>
+            </PulseProvider>
           </ConciergeProvider>
         </CursorProvider>
         {process.env.NEXT_PUBLIC_GA_ID && <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />}
