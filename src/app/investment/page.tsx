@@ -1,7 +1,12 @@
 "use client";
 
 import { Button } from "@/components/ui/Button";
-import InvestmentDashboard from "@/components/ui/InvestmentDashboard";
+import dynamic from 'next/dynamic';
+
+const InvestmentDashboard = dynamic(() => import('@/components/ui/InvestmentDashboard'), {
+  ssr: false,
+  loading: () => <div className="w-full h-[500px] bg-slate-900/50 animate-pulse rounded-[3rem] border border-white/5 flex items-center justify-center text-white/50">Initializing Analytics Engine...</div>
+});
 
 export default function InvestmentPage() {
   return (
