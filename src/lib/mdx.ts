@@ -12,6 +12,7 @@ export interface InsightFrontmatter {
   excerpt: string;
   slug: string;
   coverImage?: string;
+  category?: string;
 }
 
 export function getInsightSlugs() {
