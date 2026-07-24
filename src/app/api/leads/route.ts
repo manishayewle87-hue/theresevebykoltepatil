@@ -60,17 +60,34 @@ export async function POST(req: NextRequest) {
         project: 'The Reserve by Kolte Patil',
         timestamp: new Date().toISOString(),
       };
+      const maxRetries = 3;
+      let attempt = 0;
+      let success = false;
+
+      while (attempt < maxRetries && !success) {
+        try {
+          const crmResponse = await fetch(webhookUrl, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(crmPayload),
+          });
+          
+          if (crmResponse.ok) {
+            success = true;
+            console.log('CRM Webhook successful on attempt:', attempt + 1);
+          } else {
+            console.warn(`CRM Webhook failed with status ${crmResponse.status} on attempt ${attempt + 1}`);
+            attempt++;
+          }
+        } catch (err) {
+          console.error(`CRM Webhook Network Error on attempt ${attempt + 1}:`, err);
+          attempt++;
+        }
+      }
       
-      console.log(`Pushing lead to CRM: ${email || phone}`);
-      
-      const crmResponse = await fetch(webhookUrl, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(crmPayload),
-      });
-      
-      if (!crmResponse.ok) {
-        console.error('CRM Webhook failed with status:', crmResponse.status);
+      if (!success) {
+        // Fallback: Queue to a robust dead-letter queue or log heavily
+        console.error('CRITICAL: CRM Webhook failed after max retries. Lead data:', crmPayload);
       }
     } else {
       console.log("=== CRM WEBHOOK URL NOT SET, SIMULATING LEAD CAPTURE ===");

@@ -3,6 +3,23 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 import Image from 'next/image';
+import Script from 'next/script';
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "RealEstateAgent",
+  "name": "The Reserve by Kolte Patil",
+  "image": "https://www.koltepatil.com/assets/uploads/overview/17847862141319131306.jpg",
+  "description": "Ultra Luxury 3 BHK & 4 BHK Riverside Apartments in Sinhagad Road, Pune.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Sinhagad Road",
+    "addressLocality": "Pune",
+    "addressRegion": "Maharashtra",
+    "addressCountry": "IN"
+  },
+  "priceRange": "₹ 2.5 Cr - ₹ 4 Cr"
+};
 
 export default function OverviewPage() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -16,6 +33,11 @@ export default function OverviewPage() {
 
   return (
     <main ref={containerRef} className="min-h-[200vh] bg-[#0B2B1B] text-white relative selection:bg-[#d4af37] selection:text-[#0B2B1B]">
+      <Script
+        id="overview-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
       
       {/* Hero Section */}
       <section className="h-screen sticky top-0 flex flex-col items-center justify-center overflow-hidden">
@@ -64,12 +86,12 @@ export default function OverviewPage() {
               className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
             >
               <div>
-                <h2 className="text-3xl md:text-5xl font-light mb-6 text-[#e5c158]">A Rare Riverside Setting.</h2>
+                <h2 className="text-3xl md:text-5xl font-light mb-6 text-[#e5c158]">A Rare Riverside Setting in Pune.</h2>
                 <p className="text-lg md:text-xl text-white/70 leading-relaxed font-light">
-                  Spread across <strong className="text-white">21.03 acres</strong> at Wadgaon Budruk, The Reserve brings together river-facing greens, scenic NDA hill views, and a central landscaped boulevard. 
+                  Spread across <strong className="text-white">21.03 acres</strong> at Wadgaon Budruk, The Reserve brings together premium river-facing greens, scenic NDA hill views, and a central landscaped boulevard. 
                 </p>
                 <p className="text-lg md:text-xl text-white/70 leading-relaxed font-light mt-4">
-                  A life where river, hills, sky, and nature converge seamlessly, minutes from the everyday conveniences of Sinhgad Road.
+                  Experience ultra luxury apartments in Pune where river, hills, sky, and nature converge seamlessly, minutes from the everyday conveniences of Sinhagad Road.
                 </p>
               </div>
               <div className="aspect-square bg-forest-950 rounded-2xl border border-white/10 p-8 flex flex-col justify-end relative overflow-hidden group">
@@ -108,9 +130,9 @@ export default function OverviewPage() {
                 </div>
               </div>
               <div className="order-1 md:order-2">
-                <h2 className="text-3xl md:text-5xl font-light mb-6 text-[#e5c158]">Crafted for Openness.</h2>
+                <h2 className="text-3xl md:text-5xl font-light mb-6 text-[#e5c158]">Ultra Luxury 2 & 3 BHK Apartments.</h2>
                 <p className="text-lg md:text-xl text-white/70 leading-relaxed font-light">
-                  Introducing thoughtfully planned 2 & 3 bed residences designed around a core philosophy: absolute spaciousness. 
+                  Introducing thoughtfully planned 2 & 3 BHK luxury residences on Sinhagad Road designed around a core philosophy: absolute spaciousness. Premium real estate crafted for the elite.
                 </p>
                 <ul className="mt-8 space-y-4">
                   {[
