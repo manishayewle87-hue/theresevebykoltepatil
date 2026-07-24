@@ -163,7 +163,7 @@ export default function Home() {
               className="md:col-span-2 md:row-span-2 relative rounded-[3rem] overflow-hidden group shadow-xl bg-white"
               onMouseEnter={() => setCursorType('explore')} onMouseLeave={() => setCursorType('default')}
             >
-              <motion.div className="absolute inset-0 w-full h-[120%]" style={{ y: imgY1 }}>
+              <motion.div className="absolute inset-0 w-full h-[120%]" style={{ y: imgY1 as any }}>
                 <Image src="https://www.koltepatil.com/assets/uploads/gallery/17847869771007144168.jpg" alt="The Club" fill className="object-cover group-hover:scale-105 transition-transform duration-[2s] ease-out" />
               </motion.div>
               <div className="absolute inset-0 bg-gradient-to-t from-[#0B2B1B]/90 via-[#0B2B1B]/10 to-transparent mix-blend-multiply"></div>
@@ -185,7 +185,7 @@ export default function Home() {
                 <p className="font-sans text-[#0B2B1B]/70 font-light leading-relaxed">Sprawling curated greenery, bio-diverse parks, and serene walking trails right at your doorstep.</p>
               </div>
               <div className="relative h-64 w-full rounded-2xl overflow-hidden mt-8 shadow-inner">
-                <motion.div className="absolute inset-0 w-full h-[120%]" style={{ y: imgY2 }}>
+                <motion.div className="absolute inset-0 w-full h-[120%]" style={{ y: imgY2 as any }}>
                   <Image src="https://www.koltepatil.com/assets/uploads/gallery/1784787123820805146.jpg" alt="Greenery" fill className="object-cover group-hover:scale-110 transition-transform duration-[3s]" />
                 </motion.div>
               </div>
@@ -196,8 +196,10 @@ export default function Home() {
               initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
               className="md:col-span-1 md:row-span-1 relative rounded-[3rem] overflow-hidden group shadow-xl bg-white p-8 flex flex-col justify-end"
             >
-              <div className="absolute inset-0 w-full h-[120%] z-0" style={{ y: imgY3 }}>
-                <Image src="https://www.koltepatil.com/assets/uploads/gallery/17847870511644671891.jpg" alt="Smart Home" fill className="object-cover opacity-20 group-hover:opacity-40 transition-opacity duration-1000" />
+              <div className="absolute inset-0 w-full h-[120%] z-0">
+                <motion.div className="w-full h-full" style={{ y: imgY3 as any }}>
+                  <Image src="https://www.koltepatil.com/assets/uploads/gallery/17847870511644671891.jpg" alt="Smart Home" fill className="object-cover opacity-20 group-hover:opacity-40 transition-opacity duration-1000" />
+                </motion.div>
               </div>
               <div className="absolute inset-0 bg-gradient-to-t from-white via-white/60 to-transparent"></div>
               <div className="relative z-10">
@@ -216,7 +218,7 @@ export default function Home() {
                 <p className="font-sans text-white/70 text-sm font-light leading-relaxed">Crafted with imported Italian marble, European fixtures, and bespoke minimalist finishing.</p>
               </div>
               <div className="relative h-full w-full md:w-1/2 min-h-[200px] rounded-[2rem] overflow-hidden">
-                <motion.div className="absolute inset-0 w-full h-[120%]" style={{ y: imgY1 }}>
+                <motion.div className="absolute inset-0 w-full h-[120%]" style={{ y: imgY1 as any }}>
                   <Image src="https://www.koltepatil.com/assets/uploads/gallery/17847868911484090893.jpg" alt="Interior" fill className="object-cover group-hover:scale-105 transition-transform duration-[2s]" />
                 </motion.div>
               </div>
