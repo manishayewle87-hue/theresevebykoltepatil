@@ -11,7 +11,7 @@ const locations = [
 
 export default function LocationPage() {
   return (
-    <main className="min-h-screen bg-forest-900 text-white relative pt-32 pb-24 selection:bg-gold-500 selection:text-forest-900">
+    <main className="min-h-screen bg-[#0B2B1B] text-white relative pt-32 pb-24 selection:bg-[#d4af37] selection:text-[#0B2B1B]">
       <div className="absolute inset-0 bg-[url('/noise.png')] opacity-[0.03] mix-blend-overlay pointer-events-none z-10" />
       
       <div className="container mx-auto px-6 relative z-20">
@@ -22,7 +22,7 @@ export default function LocationPage() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-gold-500 tracking-[0.2em] text-sm uppercase mb-4 font-medium"
+            className="text-[#d4af37] tracking-[0.2em] text-sm uppercase mb-4 font-medium"
           >
             The Connectivity
           </motion.p>
@@ -51,12 +51,12 @@ export default function LocationPage() {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.6 }}
-            className="lg:w-2/3 aspect-video bg-forest-950 rounded-3xl border border-white/10 relative overflow-hidden group w-full"
+            className="lg:w-2/3 aspect-video bg-[#05140D] rounded-3xl border border-white/10 relative overflow-hidden group w-full"
           >
             <div className="absolute inset-0 bg-[url('/noise.png')] opacity-[0.05] mix-blend-overlay" />
             <div className="absolute inset-0 flex items-center justify-center">
                <div className="text-center">
-                  <div className="w-16 h-16 rounded-full border border-gold-500/30 flex items-center justify-center mx-auto mb-6 bg-gold-500/10 text-gold-500">
+                  <div className="w-16 h-16 rounded-full border border-[#d4af37]/30 flex items-center justify-center mx-auto mb-6 bg-[#d4af37]/10 text-[#d4af37]">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
                       <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
@@ -73,7 +73,7 @@ export default function LocationPage() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.8 }}
-              className="text-2xl font-light text-gold-400 mb-6"
+              className="text-2xl font-light text-[#e5c158] mb-6"
             >
               Key Distances
             </motion.h3>
@@ -84,11 +84,11 @@ export default function LocationPage() {
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5, delay: 0.8 + (i * 0.1) }}
-                className="p-6 rounded-2xl bg-white/[0.02] border border-white/5 hover:border-gold-500/30 transition-colors group"
+                className="p-6 rounded-2xl bg-white/[0.02] border border-white/5 hover:border-[#d4af37]/30 transition-colors group"
               >
                 <div className="flex justify-between items-start mb-2">
-                  <h4 className="text-lg text-white font-medium group-hover:text-gold-400 transition-colors">{loc.name}</h4>
-                  <span className="text-sm text-gold-500 bg-gold-500/10 px-3 py-1 rounded-full whitespace-nowrap">{loc.distance}</span>
+                  <h4 className="text-lg text-white font-medium group-hover:text-[#e5c158] transition-colors">{loc.name}</h4>
+                  <span className="text-sm text-[#d4af37] bg-[#d4af37]/10 px-3 py-1 rounded-full whitespace-nowrap">{loc.distance}</span>
                 </div>
                 <p className="text-white/50 text-sm font-light">{loc.desc}</p>
               </motion.div>

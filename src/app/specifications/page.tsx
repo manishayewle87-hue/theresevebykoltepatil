@@ -11,7 +11,7 @@ const specs = [
 
 export default function SpecificationsPage() {
   return (
-    <main className="min-h-screen bg-forest-900 text-white relative pt-32 pb-24 selection:bg-gold-500 selection:text-forest-900">
+    <main className="min-h-screen bg-[#0B2B1B] text-white relative pt-32 pb-24 selection:bg-[#d4af37] selection:text-[#0B2B1B]">
       <div className="absolute inset-0 bg-[url('/noise.png')] opacity-[0.03] mix-blend-overlay pointer-events-none z-10" />
       
       <div className="container mx-auto px-6 relative z-20">
@@ -22,7 +22,7 @@ export default function SpecificationsPage() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-gold-500 tracking-[0.2em] text-sm uppercase mb-4 font-medium"
+            className="text-[#d4af37] tracking-[0.2em] text-sm uppercase mb-4 font-medium"
           >
             The Details
           </motion.p>
@@ -54,11 +54,11 @@ export default function SpecificationsPage() {
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.8, delay: i * 0.1 }}
             >
-              <h3 className="text-2xl font-light text-gold-400 border-b border-white/10 pb-4 mb-6">{spec.category}</h3>
+              <h3 className="text-2xl font-light text-[#e5c158] border-b border-white/10 pb-4 mb-6">{spec.category}</h3>
               <ul className="space-y-4">
                 {spec.details.map((detail, j) => (
                   <li key={j} className="flex items-start">
-                    <div className="w-1.5 h-1.5 rounded-full bg-gold-500 mt-2 mr-4 flex-shrink-0" />
+                    <div className="w-1.5 h-1.5 rounded-full bg-[#d4af37] mt-2 mr-4 flex-shrink-0" />
                     <span className="text-white/80 font-light text-lg">{detail}</span>
                   </li>
                 ))}

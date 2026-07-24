@@ -14,7 +14,7 @@ const amenitiesList = [
 
 export default function AmenitiesPage() {
   return (
-    <main className="min-h-screen bg-forest-900 text-white relative pt-32 pb-24 selection:bg-gold-500 selection:text-forest-900">
+    <main className="min-h-screen bg-[#0B2B1B] text-white relative pt-32 pb-24 selection:bg-[#d4af37] selection:text-[#0B2B1B]">
       <div className="absolute inset-0 bg-[url('/noise.png')] opacity-[0.03] mix-blend-overlay pointer-events-none z-10" />
       
       <div className="container mx-auto px-6 relative z-20">
@@ -25,7 +25,7 @@ export default function AmenitiesPage() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-gold-500 tracking-[0.2em] text-sm uppercase mb-4 font-medium"
+            className="text-[#d4af37] tracking-[0.2em] text-sm uppercase mb-4 font-medium"
           >
             The Lifestyle
           </motion.p>
@@ -56,17 +56,17 @@ export default function AmenitiesPage() {
               whileInView={{ opacity: 1, scale: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.8, delay: i * 0.1 }}
-              className={`${item.colSpan} aspect-[4/3] md:aspect-auto md:min-h-[300px] bg-forest-950 rounded-3xl border border-white/10 p-8 relative overflow-hidden group hover:border-gold-500/30 transition-colors duration-500`}
+              className={`${item.colSpan} aspect-[4/3] md:aspect-auto md:min-h-[300px] bg-[#05140D] rounded-3xl border border-white/10 p-8 relative overflow-hidden group hover:border-[#d4af37]/30 transition-colors duration-500`}
             >
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(212,175,55,0.05)_0%,rgba(10,25,15,0)_100%)] opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
               
               <div className="absolute bottom-8 left-8 right-8 z-10">
-                <h3 className="text-2xl font-light text-white mb-2 group-hover:text-gold-400 transition-colors duration-500">{item.title}</h3>
+                <h3 className="text-2xl font-light text-white mb-2 group-hover:text-[#e5c158] transition-colors duration-500">{item.title}</h3>
                 <p className="text-white/50 text-sm font-light transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">{item.desc}</p>
               </div>
 
               {/* Decorative Element */}
-              <div className="absolute top-8 right-8 w-12 h-12 rounded-full border border-white/10 flex items-center justify-center opacity-50 group-hover:bg-gold-500/10 group-hover:border-gold-500/30 group-hover:text-gold-500 transition-all duration-500">
+              <div className="absolute top-8 right-8 w-12 h-12 rounded-full border border-white/10 flex items-center justify-center opacity-50 group-hover:bg-[#d4af37]/10 group-hover:border-[#d4af37]/30 group-hover:text-[#d4af37] transition-all duration-500">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1} stroke="currentColor" className="w-5 h-5">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
                 </svg>

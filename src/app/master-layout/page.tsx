@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 export default function MasterLayoutPage() {
   return (
-    <main className="min-h-screen bg-forest-900 text-white relative pt-32 pb-24 selection:bg-gold-500 selection:text-forest-900 overflow-hidden">
+    <main className="min-h-screen bg-[#0B2B1B] text-white relative pt-32 pb-24 selection:bg-[#d4af37] selection:text-[#0B2B1B] overflow-hidden">
       {/* Background elements */}
       <div className="absolute inset-0 bg-[url('/noise.png')] opacity-[0.03] mix-blend-overlay pointer-events-none z-10" />
       <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-gold-900/10 rounded-full blur-[120px] pointer-events-none z-0 translate-x-1/3 -translate-y-1/3" />
@@ -16,7 +16,7 @@ export default function MasterLayoutPage() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-gold-500 tracking-[0.2em] text-sm uppercase mb-4 font-medium"
+            className="text-[#d4af37] tracking-[0.2em] text-sm uppercase mb-4 font-medium"
           >
             The Blueprint
           </motion.p>
@@ -43,13 +43,13 @@ export default function MasterLayoutPage() {
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.2, delay: 0.6 }}
-          className="relative aspect-video bg-forest-950 rounded-3xl border border-white/10 overflow-hidden group mb-12"
+          className="relative aspect-video bg-[#05140D] rounded-3xl border border-white/10 overflow-hidden group mb-12"
         >
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(212,175,55,0.05)_0%,rgba(10,25,15,1)_100%)] z-0" />
           
           <div className="absolute inset-0 z-10 flex items-center justify-center">
              <div className="text-center">
-                <div className="w-16 h-16 rounded-full border border-gold-500/30 flex items-center justify-center mx-auto mb-6 bg-gold-500/10 text-gold-500">
+                <div className="w-16 h-16 rounded-full border border-[#d4af37]/30 flex items-center justify-center mx-auto mb-6 bg-[#d4af37]/10 text-[#d4af37]">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5m.75-9 3-3 2.148 2.148A12.061 12.061 0 0 1 16.5 7.605" />
                   </svg>
@@ -83,7 +83,7 @@ export default function MasterLayoutPage() {
               transition={{ duration: 0.8, delay: 0.8 + (i * 0.1) }}
               className="p-8 rounded-2xl bg-white/[0.02] border border-white/5 hover:bg-white/[0.04] transition-colors"
             >
-              <div className="text-gold-500 font-mono text-sm mb-4">0{i+1}</div>
+              <div className="text-[#d4af37] font-mono text-sm mb-4">0{i+1}</div>
               <h3 className="text-xl font-light text-white mb-3">{zone.title}</h3>
               <p className="text-white/60 font-light text-sm leading-relaxed">{zone.desc}</p>
             </motion.div>
