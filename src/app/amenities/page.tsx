@@ -1,15 +1,16 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const amenitiesList = [
-  { title: 'Pickleball Court', desc: 'State-of-the-art courts for active recreation.', colSpan: 'col-span-1 md:col-span-2' },
-  { title: 'Riverside Walkway', desc: 'Tranquil paths tracing the water\'s edge.', colSpan: 'col-span-1 md:col-span-1' },
-  { title: 'Central Landscaped Boulevard', desc: 'A lush green artery connecting the community.', colSpan: 'col-span-1 md:col-span-3' },
-  { title: 'Family Gathering Zones', desc: 'Intimate spaces designed for connection.', colSpan: 'col-span-1 md:col-span-1' },
-  { title: 'Wellness & Leisure', desc: 'Holistic spaces for mind and body rejuvenation.', colSpan: 'col-span-1 md:col-span-2' },
-  { title: 'Landscaped Plazas', desc: 'Architecturally stunning outdoor squares.', colSpan: 'col-span-1 md:col-span-2' },
-  { title: "Children's Play Areas", desc: 'Safe, creative zones for the youngest residents.', colSpan: 'col-span-1 md:col-span-1' },
+  { title: 'Pickleball Court', desc: 'State-of-the-art courts for active recreation.', colSpan: 'col-span-1 md:col-span-2', image: 'https://www.koltepatil.com/assets/uploads/gallery/178478725029496962.jpg' },
+  { title: 'Riverside Walkway', desc: 'Tranquil paths tracing the water\'s edge.', colSpan: 'col-span-1 md:col-span-1', image: 'https://www.koltepatil.com/assets/uploads/gallery/17847871871558473491.jpg' },
+  { title: 'Central Landscaped Boulevard', desc: 'A lush green artery connecting the community.', colSpan: 'col-span-1 md:col-span-3', image: 'https://www.koltepatil.com/assets/uploads/gallery/1784787123820805146.jpg' },
+  { title: 'Family Gathering Zones', desc: 'Intimate spaces designed for connection.', colSpan: 'col-span-1 md:col-span-1', image: 'https://www.koltepatil.com/assets/uploads/gallery/17847870511644671891.jpg' },
+  { title: 'Wellness & Leisure', desc: 'Holistic spaces for mind and body rejuvenation.', colSpan: 'col-span-1 md:col-span-2', image: 'https://www.koltepatil.com/assets/uploads/gallery/17847869771007144168.jpg' },
+  { title: 'Landscaped Plazas', desc: 'Architecturally stunning outdoor squares.', colSpan: 'col-span-1 md:col-span-2', image: 'https://www.koltepatil.com/assets/uploads/gallery/17847868911484090893.jpg' },
+  { title: "Children's Play Areas", desc: 'Safe, creative zones for the youngest residents.', colSpan: 'col-span-1 md:col-span-1', image: 'https://www.koltepatil.com/assets/uploads/overview/17847862141319131306.jpg' },
 ];
 
 export default function AmenitiesPage() {
@@ -56,9 +57,11 @@ export default function AmenitiesPage() {
               whileInView={{ opacity: 1, scale: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.8, delay: i * 0.1 }}
-              className={`${item.colSpan} aspect-[4/3] md:aspect-auto md:min-h-[300px] bg-[#05140D] rounded-3xl border border-white/10 p-8 relative overflow-hidden group hover:border-[#d4af37]/30 transition-colors duration-500`}
+              className={`${item.colSpan} aspect-[4/3] md:aspect-auto md:min-h-[300px] bg-[#05140D] rounded-3xl border border-white/10 p-8 relative overflow-hidden group hover:border-[#d4af37]/50 transition-colors duration-500`}
             >
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(212,175,55,0.05)_0%,rgba(10,25,15,0)_100%)] opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+              <Image src={item.image} alt={item.title} fill className="object-cover opacity-50 mix-blend-luminosity group-hover:scale-110 group-hover:opacity-80 transition-all duration-700 ease-out" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0B2B1B] via-[#0B2B1B]/40 to-transparent z-[5]" />
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(212,175,55,0.05)_0%,rgba(10,25,15,0)_100%)] opacity-0 group-hover:opacity-100 transition-opacity z-10 duration-700" />
               
               <div className="absolute bottom-8 left-8 right-8 z-10">
                 <h3 className="text-2xl font-light text-white mb-2 group-hover:text-[#e5c158] transition-colors duration-500">{item.title}</h3>

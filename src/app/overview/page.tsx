@@ -3,6 +3,7 @@
 
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
+import Image from 'next/image';
 
 export default function OverviewPage() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -72,12 +73,14 @@ export default function OverviewPage() {
                   A life where river, hills, sky, and nature converge seamlessly, minutes from the everyday conveniences of Sinhgad Road.
                 </p>
               </div>
-              <div className="aspect-square bg-gradient-to-br from-forest-800 to-forest-950 rounded-2xl border border-white/10 p-8 flex flex-col justify-end relative overflow-hidden group">
-                  <div className="absolute inset-0 bg-[url('/noise.png')] opacity-[0.05] mix-blend-overlay" />
-                  <div className="absolute inset-0 bg-[#d4af37]/5 group-hover:bg-[#d4af37]/10 transition-colors duration-700" />
-                  <h3 className="text-8xl font-light text-white/20 absolute top-8 left-8">21</h3>
-                  <div>
-                    <p className="text-[#d4af37] uppercase tracking-widest text-sm mb-2">Preserved Landscape</p>
+              <div className="aspect-square bg-forest-950 rounded-2xl border border-white/10 p-8 flex flex-col justify-end relative overflow-hidden group">
+                  <Image src="https://www.koltepatil.com/assets/uploads/overview/17847862141319131306.jpg" alt="21 Acres Landscape" fill className="object-cover opacity-60 mix-blend-luminosity group-hover:scale-105 group-hover:opacity-90 transition-all duration-1000 ease-out" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0B2B1B] via-transparent to-transparent z-10" />
+                  <div className="absolute inset-0 bg-[url('/noise.png')] opacity-[0.05] mix-blend-overlay z-10" />
+                  
+                  <div className="relative z-20">
+                    <h3 className="text-8xl font-light text-white/30 absolute -top-8 left-0">21</h3>
+                    <p className="text-[#d4af37] uppercase tracking-widest text-sm mb-2 mt-20">Preserved Landscape</p>
                     <p className="text-2xl text-white font-light">Acres of lush, riverside nature.</p>
                   </div>
               </div>
@@ -91,15 +94,18 @@ export default function OverviewPage() {
               transition={{ duration: 1 }}
               className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
             >
-              <div className="order-2 md:order-1 aspect-[4/5] bg-gradient-to-tr from-forest-950 to-forest-800 rounded-2xl border border-white/10 p-8 flex flex-col justify-between relative overflow-hidden group">
-                <div className="absolute inset-0 bg-[url('/noise.png')] opacity-[0.05] mix-blend-overlay" />
-                <div className="flex justify-between items-start w-full relative z-10">
+              <div className="order-2 md:order-1 aspect-[4/5] bg-forest-950 rounded-2xl border border-white/10 p-8 flex flex-col justify-between relative overflow-hidden group">
+                <Image src="https://www.koltepatil.com/assets/uploads/gallery/1784787123820805146.jpg" alt="The Residences" fill className="object-cover opacity-60 mix-blend-luminosity group-hover:scale-105 group-hover:opacity-90 transition-all duration-1000 ease-out" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0B2B1B] via-transparent to-[#0B2B1B]/80 z-10" />
+                <div className="absolute inset-0 bg-[url('/noise.png')] opacity-[0.05] mix-blend-overlay z-10" />
+                
+                <div className="flex justify-between items-start w-full relative z-20">
                    <span className="text-[#e5c158] text-lg">Phase 1</span>
-                   <span className="text-white/50 text-sm tracking-widest uppercase">Now Open</span>
+                   <span className="text-white/80 text-xs tracking-[0.2em] uppercase border border-white/20 px-3 py-1 rounded-full backdrop-blur-sm">Now Open</span>
                 </div>
-                <div className="relative z-10">
+                <div className="relative z-20">
                   <h3 className="text-4xl font-light text-white mb-4">2 & 3 Bed</h3>
-                  <p className="text-white/60">Designed around complete openness.</p>
+                  <p className="text-white/70 font-light">Designed around complete openness.</p>
                 </div>
               </div>
               <div className="order-1 md:order-2">
