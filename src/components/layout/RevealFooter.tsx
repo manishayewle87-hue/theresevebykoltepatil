@@ -23,7 +23,7 @@ export default function RevealFooter() {
       </div>
 
       <div className="relative z-20 w-full container mx-auto px-6 md:px-12 pb-12 pt-32 h-full flex flex-col justify-end">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8 mb-12">
           
           {/* Brand */}
           <div className="flex flex-col">
@@ -43,6 +43,18 @@ export default function RevealFooter() {
               <li><Link href="/amenities" className="hover:text-[#d4af37] transition-colors">The Privileges</Link></li>
               <li><Link href="/floor-plans" className="hover:text-[#d4af37] transition-colors">Residences</Link></li>
               <li><Link href="/insights" className="hover:text-[#d4af37] transition-colors">Insights</Link></li>
+            </ul>
+          </div>
+
+          {/* Kolte Patil Universe */}
+          <div className="flex flex-col">
+            <h3 className="text-[10px] uppercase tracking-[0.3em] text-white/40 mb-8 font-bold">Kolte Patil Universe</h3>
+            <ul className="space-y-4 font-light text-sm text-white/80">
+              <li><a href="https://www.koltepatil.com/life-republic" target="_blank" rel="noopener noreferrer" className="hover:text-[#d4af37] transition-colors">Life Republic, Hinjewadi</a></li>
+              <li><a href="https://www.koltepatil.com/24k" target="_blank" rel="noopener noreferrer" className="hover:text-[#d4af37] transition-colors">24K Luxury, Baner</a></li>
+              <li><a href="https://www.koltepatil.com/ivy-estate" target="_blank" rel="noopener noreferrer" className="hover:text-[#d4af37] transition-colors">Ivy Estate, Wagholi</a></li>
+              <li><a href="https://www.koltepatil.com/universe" target="_blank" rel="noopener noreferrer" className="hover:text-[#d4af37] transition-colors">Universe, Hinjewadi</a></li>
+              <li><a href="https://www.koltepatil.com" target="_blank" rel="noopener noreferrer" className="text-[#d4af37] hover:text-white transition-colors">Explore All Projects →</a></li>
             </ul>
           </div>
 

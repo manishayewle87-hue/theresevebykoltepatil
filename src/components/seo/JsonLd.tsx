@@ -8,20 +8,23 @@ export default function JsonLd() {
       {
         "@type": "Organization",
         "@id": "https://thereserve.koltepatil.digital/#organization",
-        "name": "Kolte-Patil Developers",
-        "url": "https://thereserve.koltepatil.digital",
+        "name": "Kolte-Patil Developers Ltd",
+        "url": "https://www.koltepatil.com",
         "logo": {
           "@type": "ImageObject",
           "url": "https://thereserve.koltepatil.digital/kolte-patil-logo.jpg",
-          "caption": "Kolte-Patil Developers Logo"
+          "caption": "Kolte-Patil Developers Ltd Logo"
         },
         "telephone": "+91-0000000000",
         "email": "sales@koltepatil.com",
-        "description": "Pune's leading real estate developer with over 30 years of excellence.",
+        "description": "Pune's leading real estate developer with over 3 decades of excellence, shaping the skyline of Pune, Mumbai, and Bengaluru.",
+        "foundingDate": "1991",
+        "knowsAbout": ["Pune Real Estate Market", "Luxury Housing", "Townships", "Commercial Real Estate"],
         "sameAs": [
           "https://www.facebook.com/KoltePatilDevelopers",
           "https://www.linkedin.com/company/kolte-patil-developers-ltd",
-          "https://www.instagram.com/koltepatil"
+          "https://www.instagram.com/koltepatil",
+          "https://en.wikipedia.org/wiki/Kolte-Patil_Developers"
         ]
       },
       {
