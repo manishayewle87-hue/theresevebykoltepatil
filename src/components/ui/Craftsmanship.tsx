@@ -63,8 +63,7 @@ export default function Craftsmanship() {
               <Image 
                 src={item.src}
                 alt={item.title}
-                fill
-                className="object-cover transition-transform duration-[2s] group-hover:scale-105"
+                fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover transition-transform duration-[2s] group-hover:scale-105"
               />
             </motion.div>
             <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500"></div>
@@ -95,8 +94,7 @@ export default function Craftsmanship() {
                 <Image 
                   src={selectedImage.src}
                   alt={selectedImage.title}
-                  fill
-                  className="object-cover md:object-contain" // Contain works better in lightbox so nothing is cropped
+                  fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover md:object-contain" // Contain works better in lightbox so nothing is cropped
                 />
               </motion.div>
               

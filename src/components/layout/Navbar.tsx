@@ -65,8 +65,7 @@ export default function Navbar() {
                 <Image 
                   src="/kolte-patil-logo.jpg" 
                   alt="Kolte Patil Developers" 
-                  fill
-                  className="object-contain p-1"
+                  fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-contain p-1"
                 />
               </div>
             </div>

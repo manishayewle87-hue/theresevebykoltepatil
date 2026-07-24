@@ -52,8 +52,7 @@ export default function MasterLayoutPage() {
              <Image 
                 src="https://www.koltepatil.com/assets/uploads/gallery/178478725029496962.jpg" 
                 alt="The Reserve Master Layout" 
-                fill 
-                className="object-cover hover:scale-105 transition-transform duration-1000 ease-out" 
+                fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-1000 ease-out" 
              />
              <div className="absolute inset-0 bg-gradient-to-t from-[#05140D] to-transparent opacity-60"></div>
              <div className="absolute bottom-8 left-8">

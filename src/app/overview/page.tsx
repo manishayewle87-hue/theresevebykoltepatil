@@ -74,7 +74,7 @@ export default function OverviewPage() {
                 </p>
               </div>
               <div className="aspect-square bg-forest-950 rounded-2xl border border-white/10 p-8 flex flex-col justify-end relative overflow-hidden group">
-                  <Image src="https://www.koltepatil.com/assets/uploads/overview/17847862141319131306.jpg" alt="21 Acres Landscape" fill className="object-cover opacity-60 mix-blend-luminosity group-hover:scale-105 group-hover:opacity-90 transition-all duration-1000 ease-out" />
+                  <Image src="https://www.koltepatil.com/assets/uploads/overview/17847862141319131306.jpg" alt="21 Acres Landscape" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover opacity-60 mix-blend-luminosity group-hover:scale-105 group-hover:opacity-90 transition-all duration-1000 ease-out" />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0B2B1B] via-transparent to-transparent z-10" />
                   <div className="absolute inset-0 bg-[url('/noise.png')] opacity-[0.05] mix-blend-overlay z-10" />
                   
@@ -95,7 +95,7 @@ export default function OverviewPage() {
               className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
             >
               <div className="order-2 md:order-1 aspect-[4/5] bg-forest-950 rounded-2xl border border-white/10 p-8 flex flex-col justify-between relative overflow-hidden group">
-                <Image src="https://www.koltepatil.com/assets/uploads/gallery/1784787123820805146.jpg" alt="The Residences" fill className="object-cover opacity-60 mix-blend-luminosity group-hover:scale-105 group-hover:opacity-90 transition-all duration-1000 ease-out" />
+                <Image src="https://www.koltepatil.com/assets/uploads/gallery/1784787123820805146.jpg" alt="The Residences" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover opacity-60 mix-blend-luminosity group-hover:scale-105 group-hover:opacity-90 transition-all duration-1000 ease-out" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0B2B1B] via-transparent to-[#0B2B1B]/80 z-10" />
                 <div className="absolute inset-0 bg-[url('/noise.png')] opacity-[0.05] mix-blend-overlay z-10" />
                 

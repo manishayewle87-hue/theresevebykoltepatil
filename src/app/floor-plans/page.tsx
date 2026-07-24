@@ -80,8 +80,7 @@ export default function FloorPlansPage() {
                        ? "https://www.koltepatil.com/assets/uploads/project_floor_plan/17847883381772140324.png"
                        : "https://www.koltepatil.com/assets/uploads/project_floor_plan/17847883381772140324.png"} 
                      alt={`${activePlan} Floor Plan`}
-                     fill
-                     className="object-contain p-4 hover:scale-[1.02] transition-transform duration-700"
+                     fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-contain p-4 hover:scale-[1.02] transition-transform duration-700"
                    />
                  </div>
               </div>

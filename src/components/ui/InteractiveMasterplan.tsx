@@ -58,8 +58,7 @@ export default function InteractiveMasterplan() {
       <Image
         src="https://www.koltepatil.com/assets/uploads/gallery/178478725029496962.jpg"
         alt="Masterplan Aerial View"
-        fill
-        className="object-cover opacity-50 grayscale transition-all duration-1000 group-hover:scale-105 group-hover:opacity-40"
+        fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover opacity-50 grayscale transition-all duration-1000 group-hover:scale-105 group-hover:opacity-40"
       />
 
       {/* SVG Interaction Layer */}

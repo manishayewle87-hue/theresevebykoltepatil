@@ -15,7 +15,7 @@ export default function SpecificationsPage() {
     <main className="min-h-screen bg-[#0B2B1B] text-white relative pt-32 pb-24 selection:bg-[#d4af37] selection:text-[#0B2B1B]">
       <div className="absolute inset-0 bg-[url('/noise.png')] opacity-[0.03] mix-blend-overlay pointer-events-none z-10" />
       <div className="absolute inset-0 z-0 opacity-10">
-        <Image src="https://www.koltepatil.com/assets/uploads/gallery/17847869771007144168.jpg" alt="Luxury Specifications" fill className="object-cover mix-blend-luminosity" />
+        <Image src="https://www.koltepatil.com/assets/uploads/gallery/17847869771007144168.jpg" alt="Luxury Specifications" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover mix-blend-luminosity" />
         <div className="absolute inset-0 bg-gradient-to-b from-[#0B2B1B] via-transparent to-[#0B2B1B]" />
       </div>
       

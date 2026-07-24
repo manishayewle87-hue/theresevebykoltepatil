@@ -59,7 +59,7 @@ export default function AmenitiesPage() {
               transition={{ duration: 0.8, delay: i * 0.1 }}
               className={`${item.colSpan} aspect-[4/3] md:aspect-auto md:min-h-[300px] bg-[#05140D] rounded-3xl border border-white/10 p-8 relative overflow-hidden group hover:border-[#d4af37]/50 transition-colors duration-500`}
             >
-              <Image src={item.image} alt={item.title} fill className="object-cover opacity-50 mix-blend-luminosity group-hover:scale-110 group-hover:opacity-80 transition-all duration-700 ease-out" />
+              <Image src={item.image} alt={item.title} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover opacity-50 mix-blend-luminosity group-hover:scale-110 group-hover:opacity-80 transition-all duration-700 ease-out" />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0B2B1B] via-[#0B2B1B]/40 to-transparent z-[5]" />
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(212,175,55,0.05)_0%,rgba(10,25,15,0)_100%)] opacity-0 group-hover:opacity-100 transition-opacity z-10 duration-700" />
               

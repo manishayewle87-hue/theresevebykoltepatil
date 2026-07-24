@@ -18,8 +18,7 @@ export default function TheVision() {
           <Image priority 
             src="https://www.koltepatil.com/assets/uploads/gallery/178478725029496962.jpg"
             alt="The Vision Hero"
-            fill
-            className="object-cover opacity-30"
+            fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover opacity-30"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-slate-950/80 via-transparent to-slate-950"></div>
         </motion.div>
@@ -83,8 +82,7 @@ export default function TheVision() {
                   <Image 
                     src="https://www.koltepatil.com/assets/uploads/gallery/17847871871558473491.jpg"
                     alt="Architectural Details"
-                    fill
-                    className="object-cover mix-blend-luminosity opacity-80"
+                    fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover mix-blend-luminosity opacity-80"
                   />
                 </motion.div>
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>

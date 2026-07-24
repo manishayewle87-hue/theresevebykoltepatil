@@ -46,23 +46,37 @@ export async function POST(req: NextRequest) {
     }
 
     // ----------------------------------------------------------------------
-    // CRM WEBHOOK SIMULATION (Salesforce / HubSpot / LeadSquared)
+    // REAL-TIME CRM WEBHOOK (Salesforce / HubSpot / LeadSquared)
     // ----------------------------------------------------------------------
-    // In a production environment, you would POST this payload to your CRM.
-    const crmPayload = {
-      leadName: name,
-      leadEmail: email,
-      leadPhone: phone,
-      leadSource: source || 'Organic SEO',
-      project: 'The Reserve by Kolte Patil',
-      timestamp: new Date().toISOString(),
-    };
-
-    console.log("=== NEW HIGH INTENT LEAD CAPTURED ===");
-    console.log(JSON.stringify(crmPayload, null, 2));
+    const webhookUrl = process.env.CRM_WEBHOOK_URL;
     
-    // Simulate API delay
-    await new Promise((resolve) => setTimeout(resolve, 800));
+    if (webhookUrl) {
+      const crmPayload = {
+        leadName: name,
+        leadEmail: email,
+        leadPhone: phone,
+        leadSource: source || 'Organic SEO',
+        project: 'The Reserve by Kolte Patil',
+        timestamp: new Date().toISOString(),
+      };
+      
+      console.log(`Pushing lead to CRM: ${email || phone}`);
+      
+      const crmResponse = await fetch(webhookUrl, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(crmPayload),
+      });
+      
+      if (!crmResponse.ok) {
+        console.error('CRM Webhook failed with status:', crmResponse.status);
+      }
+    } else {
+      console.log("=== CRM WEBHOOK URL NOT SET, SIMULATING LEAD CAPTURE ===");
+      console.log(`Name: ${name} | Email: ${email} | Phone: ${phone}`);
+      // Simulate API delay
+      await new Promise((resolve) => setTimeout(resolve, 800));
+    }
 
     return NextResponse.json(
       { success: true, message: 'Lead routed to sales team successfully.' },

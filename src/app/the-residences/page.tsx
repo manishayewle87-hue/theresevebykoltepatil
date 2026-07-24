@@ -22,8 +22,7 @@ export default function TheResidences() {
           <Image priority 
             src="https://www.koltepatil.com/assets/uploads/gallery/178478725029496962.jpg"
             alt="The Residences Hero"
-            fill
-            className="object-cover opacity-40 mix-blend-luminosity"
+            fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover opacity-40 mix-blend-luminosity"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-slate-950/80 via-transparent to-slate-950"></div>
         </motion.div>
@@ -77,8 +76,7 @@ export default function TheResidences() {
               <Image 
                 src="https://www.koltepatil.com/assets/uploads/gallery/17847871871558473491.jpg"
                 alt="Interior Render"
-                fill
-                className="object-cover opacity-80"
+                fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover opacity-80"
               />
             </motion.div>
           </div>

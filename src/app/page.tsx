@@ -102,8 +102,7 @@ export default function Home() {
             <Image 
               src="https://www.koltepatil.com/assets/uploads/overview/17847862141319131306.jpg" 
               alt="Texture" 
-              fill 
-              className="object-cover grayscale" 
+              fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover grayscale" 
             />
           </div>
           
@@ -162,7 +161,7 @@ export default function Home() {
               onMouseEnter={() => setCursorType('explore')} onMouseLeave={() => setCursorType('default')}
             >
               <motion.div className="absolute inset-0 w-full h-[120%]" style={{ y: imgY1 as any }}>
-                <Image src="https://www.koltepatil.com/assets/uploads/gallery/17847869771007144168.jpg" alt="The Club" fill className="object-cover group-hover:scale-105 transition-transform duration-[2s] ease-out" />
+                <Image src="https://www.koltepatil.com/assets/uploads/gallery/17847869771007144168.jpg" alt="The Club" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover group-hover:scale-105 transition-transform duration-[2s] ease-out" />
               </motion.div>
               <div className="absolute inset-0 bg-gradient-to-t from-[#0B2B1B]/90 via-[#0B2B1B]/10 to-transparent mix-blend-multiply"></div>
               <div className="absolute bottom-0 left-0 p-10 md:p-12 z-10">
@@ -184,7 +183,7 @@ export default function Home() {
               </div>
               <div className="relative h-64 w-full rounded-2xl overflow-hidden mt-8 shadow-inner">
                 <motion.div className="absolute inset-0 w-full h-[120%]" style={{ y: imgY2 as any }}>
-                  <Image src="https://www.koltepatil.com/assets/uploads/gallery/1784787123820805146.jpg" alt="Greenery" fill className="object-cover group-hover:scale-110 transition-transform duration-[3s]" />
+                  <Image src="https://www.koltepatil.com/assets/uploads/gallery/1784787123820805146.jpg" alt="Greenery" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover group-hover:scale-110 transition-transform duration-[3s]" />
                 </motion.div>
               </div>
             </motion.div>
@@ -196,7 +195,7 @@ export default function Home() {
             >
               <div className="absolute inset-0 w-full h-[120%] z-0">
                 <motion.div className="w-full h-full" style={{ y: imgY3 as any }}>
-                  <Image src="https://www.koltepatil.com/assets/uploads/gallery/17847870511644671891.jpg" alt="Smart Home" fill className="object-cover opacity-20 group-hover:opacity-40 transition-opacity duration-1000" />
+                  <Image src="https://www.koltepatil.com/assets/uploads/gallery/17847870511644671891.jpg" alt="Smart Home" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover opacity-20 group-hover:opacity-40 transition-opacity duration-1000" />
                 </motion.div>
               </div>
               <div className="absolute inset-0 bg-gradient-to-t from-white via-white/60 to-transparent"></div>
@@ -217,7 +216,7 @@ export default function Home() {
               </div>
               <div className="relative h-full w-full md:w-1/2 min-h-[200px] rounded-[2rem] overflow-hidden">
                 <motion.div className="absolute inset-0 w-full h-[120%]" style={{ y: imgY1 as any }}>
-                  <Image src="https://www.koltepatil.com/assets/uploads/gallery/17847868911484090893.jpg" alt="Interior" fill className="object-cover group-hover:scale-105 transition-transform duration-[2s]" />
+                  <Image src="https://www.koltepatil.com/assets/uploads/gallery/17847868911484090893.jpg" alt="Interior" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover group-hover:scale-105 transition-transform duration-[2s]" />
                 </motion.div>
               </div>
             </motion.div>

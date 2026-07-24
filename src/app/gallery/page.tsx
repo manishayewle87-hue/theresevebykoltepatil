@@ -57,8 +57,7 @@ export default function GalleryPage() {
               <Image 
                 src={img.src} 
                 alt={img.alt} 
-                fill
-                className="object-cover transition-transform duration-700 group-hover:scale-110"
+                fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover transition-transform duration-700 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div className="absolute bottom-6 left-6 right-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">

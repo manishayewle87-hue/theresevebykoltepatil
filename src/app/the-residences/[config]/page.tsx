@@ -61,8 +61,7 @@ export default async function ConfigurationPage({ params }: { params: Promise<{ 
           <Image 
             src="https://www.koltepatil.com/assets/uploads/gallery/178478725029496962.jpg"
             alt="Luxury Interior"
-            fill
-            className="object-cover opacity-10 mix-blend-luminosity grayscale"
+            fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover opacity-10 mix-blend-luminosity grayscale"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-slate-950/80 via-transparent to-slate-950"></div>
         </div>
