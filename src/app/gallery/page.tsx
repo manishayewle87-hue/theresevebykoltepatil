@@ -2,6 +2,7 @@ import React from 'react';
 import RevealFooter from "@/components/layout/RevealFooter";
 import Image from "next/image";
 import Script from "next/script";
+import TiltCard from "@/components/ui/TiltCard";
 
 export const metadata = {
   title: "Project Gallery | Kolte Patil The Reserve",
@@ -50,22 +51,22 @@ export default function GalleryPage() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {images.map((img, idx) => (
-            <div key={idx} className="group relative w-full h-[400px] overflow-hidden rounded-xl border border-slate-800">
+            <TiltCard key={idx} className="w-full h-[400px]">
               <Image 
                 src={img.src} 
                 alt={img.alt} 
                 fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover transition-transform duration-700 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-500"></div>
-              <div className="absolute bottom-6 left-6 right-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+              <div className="absolute bottom-6 left-6 right-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 z-[60]">
                 <span className="font-sans text-xs tracking-widest text-[#d4af37] uppercase font-bold block mb-1">
                   Render
                 </span>
-                <h3 className="font-serif text-xl text-white">{img.caption}</h3>
+                <h3 className="font-serif text-xl text-white drop-shadow-lg">{img.caption}</h3>
               </div>
-            </div>
+            </TiltCard>
           ))}
         </div>
       </main>

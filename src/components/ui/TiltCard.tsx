@@ -1,40 +1,35 @@
 "use client";
 
-import { useRef, useState } from "react";
-import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
+import { useRef } from "react";
+import { motion, useMotionValue, useSpring, useTransform, useMotionTemplate } from "framer-motion";
 
 export default function TiltCard({ children, className = "" }: { children: React.ReactNode, className?: string }) {
   const ref = useRef<HTMLDivElement>(null);
   
-  const x = useMotionValue(0);
-  const y = useMotionValue(0);
+  const mouseX = useMotionValue(0.5);
+  const mouseY = useMotionValue(0.5);
 
-  // Smooth springs for the rotation
-  const mouseXSpring = useSpring(x, { stiffness: 150, damping: 20 });
-  const mouseYSpring = useSpring(y, { stiffness: 150, damping: 20 });
+  const xSpring = useSpring(mouseX, { stiffness: 300, damping: 40 });
+  const ySpring = useSpring(mouseY, { stiffness: 300, damping: 40 });
 
-  // Transform coordinates into rotation angles (max 10 degrees)
-  const rotateX = useTransform(mouseYSpring, [-0.5, 0.5], ["10deg", "-10deg"]);
-  const rotateY = useTransform(mouseXSpring, [-0.5, 0.5], ["-10deg", "10deg"]);
+  const rotateX = useTransform(ySpring, [0, 1], ["15deg", "-15deg"]);
+  const rotateY = useTransform(xSpring, [0, 1], ["-15deg", "15deg"]);
+  
+  const glareX = useTransform(xSpring, [0, 1], ["0%", "100%"]);
+  const glareY = useTransform(ySpring, [0, 1], ["0%", "100%"]);
+  
+  const background = useMotionTemplate`radial-gradient(circle at ${glareX} ${glareY}, rgba(255, 255, 255, 0.4), transparent 50%)`;
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     if (!ref.current) return;
-    
     const rect = ref.current.getBoundingClientRect();
-    const width = rect.width;
-    const height = rect.height;
-    
-    // Normalized coordinates (-0.5 to 0.5)
-    const mouseX = (e.clientX - rect.left) / width - 0.5;
-    const mouseY = (e.clientY - rect.top) / height - 0.5;
-    
-    x.set(mouseX);
-    y.set(mouseY);
+    mouseX.set((e.clientX - rect.left) / rect.width);
+    mouseY.set((e.clientY - rect.top) / rect.height);
   };
 
   const handleMouseLeave = () => {
-    x.set(0);
-    y.set(0);
+    mouseX.set(0.5);
+    mouseY.set(0.5);
   };
 
   return (
@@ -47,12 +42,16 @@ export default function TiltCard({ children, className = "" }: { children: React
         rotateY,
         transformStyle: "preserve-3d",
       }}
-      className={`relative [perspective:1000px] ${className}`}
+      className={`relative [perspective:1200px] group ${className}`}
     >
       <div 
-        className="w-full h-full relative" 
+        className="w-full h-full relative overflow-hidden rounded-xl shadow-2xl transition-shadow duration-500 group-hover:shadow-[0_20px_50px_rgba(212,175,55,0.15)]" 
         style={{ transform: "translateZ(30px)", transformStyle: "preserve-3d" }}
       >
+        <motion.div 
+          className="absolute inset-0 z-50 pointer-events-none mix-blend-overlay transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+          style={{ background }}
+        />
         {children}
       </div>
     </motion.div>
