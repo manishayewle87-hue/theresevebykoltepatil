@@ -1,7 +1,5 @@
 "use client";
 
-import Navbar from "@/components/layout/Navbar";
-import RevealFooter from "@/components/layout/RevealFooter";
 import Image from "next/image";
 import Link from "next/link";
 import { useCursor } from "@/context/CursorContext";
@@ -47,7 +45,6 @@ export default function Home() {
 
   return (
     <div className="relative bg-white text-[#0B2B1B] selection:bg-[#d4af37] selection:text-white overflow-hidden">
-      <Navbar />
 
       {/* Inject Fluid Background behind everything */}
       <FluidBackground />
@@ -227,12 +224,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 
-        ========================================================================
-        4. THE REVEAL FOOTER
-        ========================================================================
-      */}
-      <RevealFooter />
     </div>
   );
 }

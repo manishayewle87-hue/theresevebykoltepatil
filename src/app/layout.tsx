@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google';
 import "./globals.css";
+import Navbar from "@/components/layout/Navbar";
+import RevealFooter from "@/components/layout/RevealFooter";
 import GlobalCursor from "@/components/ui/GlobalCursor";
 import { CursorProvider } from "@/context/CursorContext";
 import { ConciergeProvider } from "@/context/ConciergeContext";
@@ -127,7 +129,9 @@ export default function RootLayout({
               <AmbientAudio />
               <ConciergePanel />
               <FloatingAction />
+              <Navbar />
               {children}
+              <RevealFooter />
             </LenisProvider>
           </ConciergeProvider>
         </CursorProvider>
