@@ -6,7 +6,7 @@ import { Button } from "../ui/Button";
 
 export default function RevealFooter() {
   return (
-    <footer className="fixed bottom-0 left-0 w-full h-[100vh] -z-10 bg-white flex flex-col justify-end overflow-hidden">
+    <footer className="fixed bottom-0 left-0 w-full h-[100svh] -z-10 bg-[#0B2B1B] flex flex-col justify-end overflow-hidden">
       
       {/* Background Video Layer */}
       <div className="absolute inset-0 z-0">

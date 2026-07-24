@@ -140,7 +140,7 @@ export default function Navbar() {
             animate={{ opacity: 1, backdropFilter: "blur(30px)" }}
             exit={{ opacity: 0, backdropFilter: "blur(0px)" }}
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            className="fixed inset-0 z-[90] bg-[#0B2B1B]/95 flex flex-col md:flex-row overflow-hidden"
+            className="fixed inset-0 h-[100dvh] z-[90] bg-[#0B2B1B]/95 flex flex-col md:flex-row overflow-hidden"
           >
             {/* Split Screen Image for Tablets/Desktop */}
             <motion.div 

@@ -130,7 +130,7 @@ export default function RootLayout({
               <ConciergePanel />
               <FloatingAction />
               <Navbar />
-              <div className="relative z-10 mb-[100vh] rounded-b-[3rem] md:rounded-b-[5rem] overflow-hidden shadow-2xl">
+              <div className="relative z-10 mb-[100svh] bg-[#0B2B1B] rounded-b-[3rem] md:rounded-b-[5rem] overflow-hidden shadow-2xl">
                 {children}
               </div>
               <RevealFooter />
