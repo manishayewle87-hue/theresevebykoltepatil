@@ -114,7 +114,7 @@ export default function RootLayout({
       <head>
         <meta name="google-site-verification" content="_KeXkPdmvdlGxf7txGc-eGMTTLpaxsssiNgaIHAX_IA" />
       </head>
-      <body className="min-h-full flex flex-col font-sans bg-[var(--background)] text-[var(--foreground)] selection:bg-[#d4af37] selection:text-white">
+      <body className="min-h-full flex flex-col font-sans bg-[#0B2B1B] text-[var(--foreground)] selection:bg-[#d4af37] selection:text-white">
         {process.env.NEXT_PUBLIC_GA_ID && <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />}
         {process.env.NEXT_PUBLIC_GTM_ID && <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID} />}
         {process.env.NEXT_PUBLIC_META_PIXEL_ID && (
@@ -145,7 +145,7 @@ export default function RootLayout({
               <ConciergePanel />
               <FloatingAction />
               <Navbar />
-              <div className="relative z-10 mb-[100svh] bg-[#0B2B1B] rounded-b-[3rem] md:rounded-b-[5rem] overflow-hidden shadow-2xl">
+              <div className="relative z-10 isolate transform-gpu mb-[100svh] bg-[#0B2B1B] rounded-b-[3rem] md:rounded-b-[5rem] overflow-hidden shadow-2xl">
                 {children}
               </div>
               <RevealFooter />
