@@ -1,7 +1,16 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import Image from 'next/image';
+import dynamic from 'next/dynamic';
+
+const ArchitecturalModel3D = dynamic(() => import('@/components/ui/ArchitecturalModel3D'), { 
+  ssr: false,
+  loading: () => (
+    <div className="w-full h-full flex items-center justify-center bg-[#05140D]">
+      <div className="text-[#d4af37] text-sm tracking-widest uppercase animate-pulse">Loading Digital Twin...</div>
+    </div>
+  )
+});
 
 export default function MasterLayoutPage() {
   return (
@@ -39,27 +48,14 @@ export default function MasterLayoutPage() {
           </motion.p>
         </div>
 
-        {/* Masterplan Placeholder (Since no specific image provided, building a luxury UI representation) */}
+        {/* 3D Masterplan Engine */}
         <motion.div 
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.2, delay: 0.6 }}
-          className="relative aspect-video bg-[#05140D] rounded-3xl border border-white/10 overflow-hidden group mb-12"
+          className="relative w-full h-[60vh] md:h-[75vh] bg-[#05140D] rounded-3xl border border-white/10 overflow-hidden mb-12 shadow-2xl"
         >
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(212,175,55,0.05)_0%,rgba(10,25,15,1)_100%)] z-0" />
-          
-          <div className="absolute inset-0 z-10">
-             <Image 
-                src="https://www.koltepatil.com/assets/uploads/gallery/178478725029496962.jpg" 
-                alt="The Reserve Master Layout" 
-                fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-1000 ease-out" 
-             />
-             <div className="absolute inset-0 bg-gradient-to-t from-[#05140D] to-transparent opacity-60"></div>
-             <div className="absolute bottom-8 left-8">
-               <h3 className="text-3xl font-light text-white mb-2 shadow-sm">Interactive Masterplan</h3>
-               <p className="text-[#d4af37] text-sm tracking-widest uppercase">Explore the 21.03 Acres</p>
-             </div>
-          </div>
+          <ArchitecturalModel3D />
         </motion.div>
 
         {/* Zones */}
