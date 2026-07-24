@@ -1,7 +1,7 @@
 import Link from "next/link";
-import { InsightMeta } from "@/lib/mdx";
+import { InsightFrontmatter } from "@/lib/mdx";
 
-export default function RelatedArticles({ articles, title = "Further Reading" }: { articles: InsightMeta[], title?: string }) {
+export default function RelatedArticles({ articles, title = "Further Reading" }: { articles: InsightFrontmatter[], title?: string }) {
   if (!articles || articles.length === 0) return null;
 
   return (
