@@ -52,9 +52,9 @@ export default function Navbar() {
         className="fixed top-6 left-0 right-0 z-[100] flex justify-center px-4 md:px-0 pointer-events-none"
       >
         <div 
-          className={`pointer-events-auto flex items-center justify-between transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] overflow-hidden ${
+          className={`pointer-events-auto flex items-center justify-between transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] ${
             isScrolled 
-              ? "bg-white/80 backdrop-blur-2xl shadow-[0_10px_40px_rgba(0,0,0,0.08)] py-2 px-4 rounded-full border border-white/40 w-full max-w-5xl md:max-w-4xl" 
+              ? "bg-white/80 backdrop-blur-2xl shadow-[0_10px_40px_rgba(0,0,0,0.08)] py-2 px-4 rounded-full border border-white/40 w-full md:max-w-4xl lg:max-w-5xl xl:max-w-6xl" 
               : "bg-transparent py-4 px-6 w-full max-w-7xl"
           }`}
         >
@@ -82,13 +82,13 @@ export default function Navbar() {
           </Link>
 
           {/* DESKTOP LINKS (Fluidly hide on mobile) */}
-          <div className="hidden lg:flex items-center gap-6 xl:gap-8 mx-auto">
+          <div className="hidden lg:flex items-center gap-4 xl:gap-8 mx-auto">
             {navLinks.map((link) => (
               <Link 
                 key={link.name} 
                 href={link.href}
                 onClick={handleNavClick}
-                className={`text-[10px] xl:text-xs uppercase tracking-widest font-bold hover:text-[#d4af37] transition-colors relative group ${isScrolled ? "text-[#0B2B1B]" : "text-[#0B2B1B]/80"}`}
+                className={`text-[9px] xl:text-xs uppercase tracking-widest font-bold hover:text-[#d4af37] transition-colors relative group whitespace-nowrap ${isScrolled ? "text-[#0B2B1B]" : "text-[#0B2B1B]/80"}`}
               >
                 {link.name}
                 <span className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-0 h-[2px] bg-[#d4af37] transition-all duration-300 group-hover:w-full"></span>

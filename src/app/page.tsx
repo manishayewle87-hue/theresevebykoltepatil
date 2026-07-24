@@ -73,7 +73,7 @@ export default function Home() {
 
           <motion.h1 
             style={{ scale: textScale, opacity: textOpacity }}
-            className="font-serif text-[10vw] font-bold tracking-tighter text-[#0B2B1B] mix-blend-normal z-10 text-center uppercase"
+            className="font-serif text-[7.5vw] whitespace-nowrap font-bold tracking-tighter text-[#0B2B1B] mix-blend-normal z-10 text-center uppercase"
           >
             The Reserve
           </motion.h1>
