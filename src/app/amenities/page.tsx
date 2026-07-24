@@ -1,97 +1,81 @@
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
+'use client';
 
-export const metadata = {
-  title: "World-Class Amenities | The Reserve by Kolte Patil",
-  description: "Experience luxury living with our curated world-class amenities including an infinity pool, private cinema, and wellness spa at The Reserve.",
-};
+import { motion } from 'framer-motion';
+
+const amenitiesList = [
+  { title: 'Pickleball Court', desc: 'State-of-the-art courts for active recreation.', colSpan: 'col-span-1 md:col-span-2' },
+  { title: 'Riverside Walkway', desc: 'Tranquil paths tracing the water\'s edge.', colSpan: 'col-span-1 md:col-span-1' },
+  { title: 'Central Landscaped Boulevard', desc: 'A lush green artery connecting the community.', colSpan: 'col-span-1 md:col-span-3' },
+  { title: 'Family Gathering Zones', desc: 'Intimate spaces designed for connection.', colSpan: 'col-span-1 md:col-span-1' },
+  { title: 'Wellness & Leisure', desc: 'Holistic spaces for mind and body rejuvenation.', colSpan: 'col-span-1 md:col-span-2' },
+  { title: 'Landscaped Plazas', desc: 'Architecturally stunning outdoor squares.', colSpan: 'col-span-1 md:col-span-2' },
+  { title: "Children's Play Areas", desc: 'Safe, creative zones for the youngest residents.', colSpan: 'col-span-1 md:col-span-1' },
+];
 
 export default function AmenitiesPage() {
-    const amenitiesList = [
-    {
-      category: "Wellness & Spa",
-      items: [
-        { name: "Infinity Edge Pool", desc: "Temperature-controlled pool with panoramic city views." },
-        { name: "Holistic Spa", desc: "Therapy rooms, sauna, and steam facilities designed by wellness experts." },
-        { name: "State-of-the-Art Gymnasium", desc: "Equipped with the latest Technogym apparatus and private training studios." }
-      ],
-      image: "https://www.koltepatil.com/assets/uploads/gallery/178478725029496962.jpg"
-    },
-    {
-      category: "Entertainment & Leisure",
-      items: [
-        { name: "Private Cinema", desc: "Acoustically treated screening room with plush seating for 20 guests." },
-        { name: "The Reserve Club", desc: "An exclusive resident lounge featuring a curated library and cigar room." },
-        { name: "Private Dining Area", desc: "A chef's kitchen and dining space for hosting intimate gatherings." }
-      ],
-      image: "https://www.koltepatil.com/assets/uploads/gallery/17847871871558473491.jpg"
-    },
-    {
-      category: "Outdoor & Nature",
-      items: [
-        { name: "Zen Gardens", desc: "Meticulously landscaped Japanese-inspired gardens for meditation." },
-        { name: "Sky Promenade", desc: "A 400ft high walkway connecting towers, featuring observation decks." },
-        { name: "Kids' Play Sanctuary", desc: "Safe, interactive outdoor spaces designed for cognitive development." }
-      ],
-      image: "https://www.koltepatil.com/assets/uploads/gallery/1784787123820805146.jpg"
-    }
-  ];
-
   return (
-    <>
+    <main className="min-h-screen bg-forest-900 text-white relative pt-32 pb-24 selection:bg-gold-500 selection:text-forest-900">
+      <div className="absolute inset-0 bg-[url('/noise.png')] opacity-[0.03] mix-blend-overlay pointer-events-none z-10" />
       
-      <Navbar />
-      <main className="flex-1 w-full flex flex-col bg-[#151515] text-white">
+      <div className="container mx-auto px-6 relative z-20">
         
-        {/* Page Header */}
-        <section className="pt-40 pb-20 px-6 md:px-12">
-          <div className="container mx-auto text-center">
-            <span className="text-[#B28A4A] tracking-widest uppercase text-xs font-semibold mb-6 block">The Club</span>
-            <h1 className="font-serif text-5xl md:text-7xl mb-8 leading-tight max-w-4xl mx-auto">
-              A Life of <span className="italic font-light text-[#8C7853]">Unrivaled</span> Leisure
-            </h1>
-            <p className="max-w-2xl mx-auto text-gray-400 font-light text-lg">
-              Spanning over 50,000 sq.ft., the amenities at The Reserve are designed to cater to every facet of your lifestyle, offering sanctuaries of wellness, entertainment, and nature.
-            </p>
-          </div>
-        </section>
+        {/* Header */}
+        <div className="mb-16 md:mb-24 max-w-3xl">
+          <motion.p 
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="text-gold-500 tracking-[0.2em] text-sm uppercase mb-4 font-medium"
+          >
+            The Lifestyle
+          </motion.p>
+          <motion.h1 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.2 }}
+            className="text-4xl md:text-6xl font-light tracking-tight mb-6"
+          >
+            Project Amenities
+          </motion.h1>
+          <motion.p 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 0.4 }}
+            className="text-lg md:text-xl text-white/70 font-light"
+          >
+            A curated collection of experiences designed to elevate everyday living. 21.03 acres of landscape preserved just for you.
+          </motion.p>
+        </div>
 
-        {/* Amenities Categories */}
-        <section className="py-20">
-          <div className="container mx-auto px-6 md:px-12 flex flex-col gap-32">
-            {amenitiesList.map((category, idx) => (
-              <div key={idx} className="flex flex-col lg:flex-row gap-16 items-start">
-                
-                {/* Category Content */}
-                <div className="w-full lg:w-1/3 sticky top-32">
-                  <h2 className="font-serif text-3xl md:text-4xl mb-12 text-[#FAF8F3] border-l-2 border-[#B28A4A] pl-6">
-                    {category.category}
-                  </h2>
-                  <div className="flex flex-col gap-10 pl-6">
-                    {category.items.map((item, i) => (
-                      <div key={i}>
-                        <h3 className="text-xl font-medium tracking-wide mb-3 text-[#E6E0D4]">{item.name}</h3>
-                        <p className="text-gray-400 font-light text-sm leading-relaxed">{item.desc}</p>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Category Image */}
-                <div className="w-full lg:w-2/3 h-[500px] md:h-[800px] relative overflow-hidden group">
-                  <div 
-                    className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-105"
-                    style={{ backgroundImage: `url(${category.image})` }}
-                  ></div>
-                </div>
-
+        {/* Bento Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {amenitiesList.map((item, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, scale: 0.95, y: 20 }}
+              whileInView={{ opacity: 1, scale: 1, y: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.8, delay: i * 0.1 }}
+              className={`${item.colSpan} aspect-[4/3] md:aspect-auto md:min-h-[300px] bg-forest-950 rounded-3xl border border-white/10 p-8 relative overflow-hidden group hover:border-gold-500/30 transition-colors duration-500`}
+            >
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(212,175,55,0.05)_0%,rgba(10,25,15,0)_100%)] opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+              
+              <div className="absolute bottom-8 left-8 right-8 z-10">
+                <h3 className="text-2xl font-light text-white mb-2 group-hover:text-gold-400 transition-colors duration-500">{item.title}</h3>
+                <p className="text-white/50 text-sm font-light transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">{item.desc}</p>
               </div>
-            ))}
-          </div>
-        </section>
 
-      </main>
-      <Footer />
-    </>
+              {/* Decorative Element */}
+              <div className="absolute top-8 right-8 w-12 h-12 rounded-full border border-white/10 flex items-center justify-center opacity-50 group-hover:bg-gold-500/10 group-hover:border-gold-500/30 group-hover:text-gold-500 transition-all duration-500">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1} stroke="currentColor" className="w-5 h-5">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                </svg>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+
+      </div>
+    </main>
   );
 }

@@ -40,16 +40,18 @@ export default function Navbar() {
           behavior: 'smooth'
         });
       }
+    } else {
+      setIsMobileMenuOpen(false);
     }
   };
 
   const navLinks = [
-    { name: "Overview", href: "#overview" },
-    { name: "Master Layout", href: "#master-plan" },
-    { name: "Floor Plans", href: "#floor-plans" },
-    { name: "Amenities", href: "#amenities" },
-    { name: "Specifications", href: "#specifications" },
-    { name: "Location", href: "#location" }
+    { name: "Overview", href: "/overview" },
+    { name: "Master Layout", href: "/master-layout" },
+    { name: "Floor Plans", href: "/floor-plans" },
+    { name: "Amenities", href: "/amenities" },
+    { name: "Specifications", href: "/specifications" },
+    { name: "Location", href: "/location" }
   ];
 
   return (
