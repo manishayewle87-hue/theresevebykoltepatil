@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import { Inter, Playfair_Display, Space_Grotesk } from "next/font/google";
 import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google';
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
@@ -19,6 +19,7 @@ import MarketPulseToast from "@/components/ui/MarketPulseToast";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import Script from "next/script";
 import dynamic from 'next/dynamic';
+import { cookies } from "next/headers";
 
 const StickyCTA = dynamic(() => import('@/components/layout/StickyCTA'));
 const WhatsAppWidget = dynamic(() => import('@/components/layout/WhatsAppWidget'));
@@ -108,6 +109,9 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const cookieStore = cookies();
+  const preloaderShown = cookieStore.has('preloader_shown');
+
   return (
     <html
       lang="en"
@@ -141,7 +145,7 @@ export default function RootLayout({
           <ConciergeProvider>
             <PulseProvider>
               <LenisProvider>
-                <Preloader />
+                <Preloader showPreloader={!preloaderShown} />
                 <Breadcrumbs />
                 <GlobalCursor />
                 <AmbientAudio />

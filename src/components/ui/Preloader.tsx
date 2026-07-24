@@ -4,14 +4,12 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-export default function Preloader() {
-  const [isLoading, setIsLoading] = useState(true);
+export default function Preloader({ showPreloader = true }: { showPreloader?: boolean }) {
+  const [isLoading, setIsLoading] = useState(showPreloader);
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
-    const hasLoaded = sessionStorage.getItem("hasLoadedTheReserveGlobal");
-    if (hasLoaded) {
-      setIsLoading(false);
+    if (!showPreloader) {
       return;
     }
 
@@ -32,7 +30,7 @@ export default function Preloader() {
 
     const timer = setTimeout(() => {
       setIsLoading(false);
-      sessionStorage.setItem("hasLoadedTheReserveGlobal", "true");
+      document.cookie = "preloader_shown=true; path=/; max-age=86400"; // Expires in 24 hours
     }, 2400); // Slight hold at 100%
 
     return () => {
