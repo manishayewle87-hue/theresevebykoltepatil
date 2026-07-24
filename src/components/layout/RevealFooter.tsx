@@ -37,10 +37,10 @@ export default function RevealFooter() {
           <div className="flex flex-col">
             <h3 className="text-[10px] uppercase tracking-[0.3em] text-white/40 mb-8 font-bold">Explore</h3>
             <ul className="space-y-4 font-light text-sm text-white/80">
-              <li><Link href="#overview" className="hover:text-[#d4af37] transition-colors">The Narrative</Link></li>
-              <li><Link href="#master-plan" className="hover:text-[#d4af37] transition-colors">Masterplan</Link></li>
-              <li><Link href="#amenities" className="hover:text-[#d4af37] transition-colors">The Privileges</Link></li>
-              <li><Link href="#floor-plans" className="hover:text-[#d4af37] transition-colors">Residences</Link></li>
+              <li><Link href="/overview" className="hover:text-[#d4af37] transition-colors">The Narrative</Link></li>
+              <li><Link href="/master-layout" className="hover:text-[#d4af37] transition-colors">Masterplan</Link></li>
+              <li><Link href="/amenities" className="hover:text-[#d4af37] transition-colors">The Privileges</Link></li>
+              <li><Link href="/floor-plans" className="hover:text-[#d4af37] transition-colors">Residences</Link></li>
               <li><Link href="/insights" className="hover:text-[#d4af37] transition-colors">Insights</Link></li>
             </ul>
           </div>

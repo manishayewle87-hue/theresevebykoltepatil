@@ -25,24 +25,8 @@ export default function Navbar() {
     setIsScrolled(latest > 50);
   });
 
-  const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, href: string) => {
-    if (href.startsWith('#')) {
-      e.preventDefault();
-      const element = document.querySelector(href);
-      if (element) {
-        setIsMobileMenuOpen(false);
-        const offset = 80;
-        const elementPosition = element.getBoundingClientRect().top;
-        const offsetPosition = elementPosition + window.scrollY - offset;
-        
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: 'smooth'
-        });
-      }
-    } else {
-      setIsMobileMenuOpen(false);
-    }
+  const handleNavClick = () => {
+    setIsMobileMenuOpen(false);
   };
 
   const navLinks = [
@@ -103,7 +87,7 @@ export default function Navbar() {
               <Link 
                 key={link.name} 
                 href={link.href}
-                onClick={(e) => handleSmoothScroll(e, link.href)}
+                onClick={handleNavClick}
                 className={`text-[10px] xl:text-xs uppercase tracking-widest font-bold hover:text-[#d4af37] transition-colors relative group ${isScrolled ? "text-[#0B2B1B]" : "text-[#0B2B1B]/80"}`}
               >
                 {link.name}
@@ -193,7 +177,7 @@ export default function Navbar() {
                   >
                     <Link
                       href={link.href}
-                      onClick={(e) => handleSmoothScroll(e, link.href)}
+                      onClick={handleNavClick}
                       className="font-serif text-5xl md:text-7xl capitalize font-bold text-white hover:text-[#d4af37] transition-all duration-500 flex items-center gap-6 group"
                     >
                       <span className="text-sm font-sans text-white/30 tracking-widest group-hover:text-[#d4af37] transition-colors mt-2">0{i+1}</span>

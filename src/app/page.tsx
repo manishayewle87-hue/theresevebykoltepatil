@@ -95,7 +95,7 @@ export default function Home() {
         2. STICKY SCROLL STORYTELLING WITH FLUID OVERLAPS
         ========================================================================
       */}
-      <section id="overview" ref={storyRef} className="relative h-[300vh] bg-transparent z-20 -mt-16 sm:-mt-24 md:-mt-32">
+      <section ref={storyRef} className="relative h-[300vh] bg-transparent z-20 -mt-16 sm:-mt-24 md:-mt-32">
         <div className="sticky top-0 h-screen w-full flex items-center justify-center px-6 overflow-hidden rounded-[5rem] bg-white/70 backdrop-blur-3xl shadow-xl">
           <div className="absolute inset-0 z-0 opacity-[0.03]">
             <Image 
@@ -119,14 +119,14 @@ export default function Home() {
               
               <div className="mt-16 flex flex-col sm:flex-row gap-6">
                 <MagneticButton>
-                  <div className="px-8 py-4 bg-[#0B2B1B] text-white font-sans tracking-[0.2em] uppercase text-xs font-bold rounded-full shadow-2xl hover:bg-[#d4af37] hover:text-[#0B2B1B] transition-colors">
+                  <Link href="/contact" className="px-8 py-4 bg-[#0B2B1B] text-white font-sans tracking-[0.2em] uppercase text-xs font-bold rounded-full shadow-2xl hover:bg-[#d4af37] hover:text-[#0B2B1B] transition-colors block">
                     Book a Site Visit
-                  </div>
+                  </Link>
                 </MagneticButton>
                 <MagneticButton>
-                  <div className="px-8 py-4 bg-white text-[#0B2B1B] border border-[#0B2B1B]/10 font-sans tracking-[0.2em] uppercase text-xs font-bold rounded-full shadow-lg hover:shadow-xl transition-shadow">
+                  <Link href="/overview" className="px-8 py-4 bg-white text-[#0B2B1B] border border-[#0B2B1B]/10 font-sans tracking-[0.2em] uppercase text-xs font-bold rounded-full shadow-lg hover:shadow-xl transition-shadow block">
                     Download Brochure
-                  </div>
+                  </Link>
                 </MagneticButton>
               </div>
             </motion.div>
@@ -144,7 +144,7 @@ export default function Home() {
         3. THE FLUID BENTO BOX AMENITIES GRID (ADVANCED PARALLAX)
         ========================================================================
       */}
-      <section id="amenities" ref={bentoRef} className="relative z-40 bg-white/80 backdrop-blur-2xl py-32 md:py-48 rounded-[5rem] -mt-16 shadow-[0_-20px_50px_rgba(0,0,0,0.05)] border border-white/50">
+      <section ref={bentoRef} className="relative z-40 bg-white/80 backdrop-blur-2xl py-32 md:py-48 rounded-[5rem] -mt-16 shadow-[0_-20px_50px_rgba(0,0,0,0.05)] border border-white/50">
         <div className="container mx-auto px-6 md:px-12">
           <div className="mb-20 md:mb-32 max-w-2xl">
             <span className="font-sans text-[10px] tracking-[0.4em] uppercase text-[#d4af37] font-bold block mb-4">The Privileges</span>
