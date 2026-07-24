@@ -106,7 +106,8 @@ export default function InvestmentDashboard() {
                 <Tooltip 
                   contentStyle={{ backgroundColor: 'rgba(0,0,0,0.8)', borderColor: 'rgba(255,255,255,0.1)', borderRadius: '8px', color: '#fff' }} 
                   itemStyle={{ color: '#fff', fontSize: '12px' }}
-                  formatter={(value: number) => formatCurrency(Number(value))}
+                  // @ts-expect-error recharts type mismatch
+                  formatter={(value: any) => formatCurrency(Number(value))}
                 />
                 <Area type="monotone" dataKey="Property Value" stroke="#fe9a17" strokeWidth={3} fillOpacity={1} fill="url(#colorValue)" />
                 <Area type="monotone" dataKey="Total Investment" stroke="#ffffff" strokeWidth={1} fillOpacity={1} fill="url(#colorCost)" />

@@ -46,7 +46,7 @@ export default function Preloader() {
       {isLoading && (
         <motion.div
           key="cinematic-preloader"
-          className="fixed inset-0 z-[9999] flex items-center justify-center bg-[#0B2B1B] text-[#d4af37] overflow-hidden"
+          className="fixed inset-0 z-[999] flex items-center justify-center bg-[#0B2B1B] text-[#d4af37] overflow-hidden"
           exit={{ 
             y: "-100%", 
             transition: { duration: 1.2, ease: [0.76, 0, 0.24, 1] } 

@@ -12,7 +12,7 @@ export default function WhatsAppWidget() {
       initial={{ scale: 0 }}
       animate={{ scale: 1 }}
       whileHover={{ scale: 1.1 }}
-      className="fixed bottom-24 right-6 md:bottom-8 md:right-8 z-50 w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center shadow-[0_0_20px_rgba(37,211,102,0.4)] cursor-pointer"
+      className="fixed bottom-24 right-6 md:bottom-8 md:right-8 z-[90] w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center shadow-[0_0_20px_rgba(37,211,102,0.4)] cursor-pointer"
       aria-label="Chat on WhatsApp"
     >
       <svg
