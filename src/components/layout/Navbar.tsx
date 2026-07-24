@@ -50,8 +50,8 @@ export default function Navbar() {
         className={cn(
           "fixed top-0 left-0 w-full z-[100] transition-all duration-700",
           isScrolled || isMobileMenuOpen
-            ? "bg-slate-950 shadow-md shadow-black/50 border-b-[3px] border-transparent"
-            : "bg-slate-950/70 backdrop-blur-md border-b-[3px] border-transparent"
+            ? "bg-white/90 backdrop-blur-xl shadow-md shadow-black/5 border-b-[3px] border-transparent"
+            : "bg-white/50 backdrop-blur-md border-b-[3px] border-transparent"
         )}
         style={{
           borderBottomColor: 'transparent',
@@ -61,7 +61,7 @@ export default function Navbar() {
         <div className="px-6 md:px-12 flex items-center justify-between py-4">
           <Link href="/" className="flex items-center gap-1 z-50 group" onClick={() => setIsMobileMenuOpen(false)}>
             <div className="flex flex-col">
-              <span className="font-serif text-2xl tracking-[0.15em] text-slate-100 group-hover:text-[#d4af37] transition-cinematic uppercase">
+              <span className="font-serif text-2xl tracking-[0.15em] text-[#0B2B1B] group-hover:text-[#d4af37] transition-cinematic uppercase drop-shadow-sm">
                 The Reserve
               </span>
               <span className="font-sans text-[8px] tracking-[0.3em] uppercase text-slate-400 text-left mt-1 hidden md:block">
@@ -70,7 +70,7 @@ export default function Navbar() {
             </div>
             
             {/* Corporate Logo - With Frosted White Pill for Dark Mode */}
-            <div className="relative h-8 w-24 md:h-12 md:w-32 block transition-transform duration-500 hover:scale-105 ml-2 border-l border-slate-700 pl-4">
+            <div className="relative h-8 w-24 md:h-12 md:w-32 block transition-transform duration-500 hover:scale-105 ml-2 border-l border-[#0B2B1B]/20 pl-4">
               <div className="w-full h-full bg-white/95 backdrop-blur-md rounded-md p-1.5 shadow-inner">
                 <Image 
                   src="/kolte-patil-logo.jpg" 
@@ -88,7 +88,7 @@ export default function Navbar() {
               <Link 
                 key={link.name} 
                 href={link.href}
-                className="text-xs uppercase tracking-widest font-bold text-slate-300 hover:text-[#d4af37] transition-colors relative group"
+                className="text-xs uppercase tracking-widest font-bold text-[#0B2B1B]/80 hover:text-[#d4af37] transition-colors relative group"
               >
                 {link.name}
                 <span className="absolute -bottom-2 left-0 w-0 h-[2px] bg-[#d4af37] transition-all duration-300 group-hover:w-full"></span>
@@ -109,7 +109,7 @@ export default function Navbar() {
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               aria-label={isMobileMenuOpen ? "Close navigation menu" : "Open navigation menu"}
               aria-expanded={isMobileMenuOpen}
-              className="text-slate-100 text-xs tracking-[0.3em] uppercase font-bold hover:text-[#d4af37] transition-colors z-[60] relative"
+              className="text-[#0B2B1B] text-xs tracking-[0.3em] uppercase font-bold hover:text-[#d4af37] transition-colors z-[60] relative"
             >
               {isMobileMenuOpen ? "CLOSE" : "MENU"}
             </button>
@@ -124,12 +124,12 @@ export default function Navbar() {
             animate={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)" }}
             exit={{ clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0 100%)" }}
             transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1] }}
-            className="fixed inset-0 z-[90] bg-slate-950 flex flex-col md:flex-row"
+            className="fixed inset-0 z-[90] bg-[#0B2B1B] flex flex-col md:flex-row"
           >
             {/* Split Screen Image for Tablets */}
             <div className="hidden md:block w-1/2 h-full relative border-r border-slate-800">
               <div className="absolute inset-0 bg-[url('https://www.koltepatil.com/assets/uploads/gallery/178478725029496962.jpg')] bg-cover bg-center opacity-40 mix-blend-luminosity"></div>
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent to-slate-950"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[#0B2B1B]"></div>
             </div>
             
             {/* Menu Items */}
@@ -156,7 +156,7 @@ export default function Navbar() {
                     <Link
                       href={link.href}
                       onClick={() => setIsMobileMenuOpen(false)}
-                      className="font-serif text-4xl md:text-5xl uppercase font-bold text-slate-100 hover:text-[#d4af37] transition-all duration-500 flex items-center gap-4 group"
+                      className="font-serif text-4xl md:text-5xl uppercase font-bold text-white hover:text-[#d4af37] transition-all duration-500 flex items-center gap-4 group"
                     >
                       <span className="text-sm font-sans text-slate-500 tracking-widest group-hover:text-[#d4af37] transition-colors">0{i+1}</span>
                       {link.name}
@@ -169,10 +169,10 @@ export default function Navbar() {
                 initial={{ opacity: 0 }} 
                 animate={{ opacity: 1 }} 
                 transition={{ delay: 0.8 }}
-                className="mt-16 pt-8 border-t border-slate-800 flex flex-col gap-4"
+                className="mt-16 pt-8 border-t border-white/10 flex flex-col gap-4"
               >
                 <p className="font-sans text-[10px] tracking-[0.2em] uppercase text-slate-500">Contact Concierge</p>
-                <a href="tel:+910000000000" className="font-serif text-2xl text-[#d4af37] hover:text-slate-100 transition-colors">+91 98765 43210</a>
+                <a href="tel:+910000000000" className="font-serif text-2xl text-[#d4af37] hover:text-white transition-colors">+91 98765 43210</a>
               </motion.div>
             </div>
           </motion.div>

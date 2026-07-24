@@ -1,19 +1,18 @@
 @import "tailwindcss";
 
 @theme inline {
-  /* Minimalist Vision Palette */
-  --color-onyx: #09090b; 
-  --color-charcoal: #18181b;
-  --color-pure-black: #000000;
-  
-  /* Kolte Patil Brand Colors */
-  --color-kp-orange: #fd8e03;
-  --color-kp-orange-light: #ff9618;
-  --color-kp-yellow: #fada09;
-  
+  /* Enterprise Luxury Palette */
+  --color-forest-green: #0B2B1B;
+  --color-forest-green-light: #12402A;
+  --color-luxury-gold: #D4AF37;
   --color-pure-white: #FFFFFF;
-  --color-platinum: #E5E7EB;
-  --color-zinc-400: #A1A1AA;
+  --color-charcoal-black: #111111;
+  --color-light-grey: #F5F5F5;
+  
+  /* Accents */
+  --color-warm-beige: #FDFBF7;
+  --color-soft-bronze: #CD7F32;
+  --color-muted-green: #2C4C3B;
 
   /* Typography */
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
@@ -21,9 +20,9 @@
 }
 
 :root {
-  /* Ultra-Premium Onyx Dark Background */
-  --background: var(--color-onyx);
-  --foreground: var(--color-pure-white);
+  /* Light Airy Background */
+  --background: var(--color-pure-white);
+  --foreground: var(--color-forest-green);
 }
 
 body {
@@ -46,23 +45,38 @@ html, body {
   background: var(--color-platinum);
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--color-zinc-400);
-  border-radius: 4px;
+  background: var(--color-forest-green);
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-kp-orange);
+  background: var(--color-luxury-gold);
 }
 
 /* Kolte Patil Gradient Text */
 .text-gradient-champagne {
-  background: linear-gradient(90deg, var(--color-kp-yellow) 0%, var(--color-kp-orange) 100%);
+  background: linear-gradient(90deg, var(--color-luxury-gold) 0%, var(--color-soft-bronze) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 /* Elegant Thin Borders */
 .border-champagne-thin {
-  border: 1px solid rgba(253, 142, 3, 0.3);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+/* Glassmorphism Utilities */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+}
+
+.glass-panel-dark {
+  background: rgba(11, 43, 27, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(212, 175, 55, 0.15);
 }
 
 /* Cinematic Slow Transitions */
