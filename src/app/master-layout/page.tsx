@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 export default function MasterLayoutPage() {
   return (
@@ -47,15 +48,17 @@ export default function MasterLayoutPage() {
         >
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(212,175,55,0.05)_0%,rgba(10,25,15,1)_100%)] z-0" />
           
-          <div className="absolute inset-0 z-10 flex items-center justify-center">
-             <div className="text-center">
-                <div className="w-16 h-16 rounded-full border border-[#d4af37]/30 flex items-center justify-center mx-auto mb-6 bg-[#d4af37]/10 text-[#d4af37]">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5m.75-9 3-3 2.148 2.148A12.061 12.061 0 0 1 16.5 7.605" />
-                  </svg>
-                </div>
-                <h3 className="text-2xl font-light text-white mb-2">Interactive Site Plan</h3>
-                <p className="text-white/50 text-sm tracking-widest uppercase">Asset Rendering Pending</p>
+          <div className="absolute inset-0 z-10">
+             <Image 
+                src="https://www.koltepatil.com/assets/uploads/gallery/178478725029496962.jpg" 
+                alt="The Reserve Master Layout" 
+                fill 
+                className="object-cover hover:scale-105 transition-transform duration-1000 ease-out" 
+             />
+             <div className="absolute inset-0 bg-gradient-to-t from-[#05140D] to-transparent opacity-60"></div>
+             <div className="absolute bottom-8 left-8">
+               <h3 className="text-3xl font-light text-white mb-2 shadow-sm">Interactive Masterplan</h3>
+               <p className="text-[#d4af37] text-sm tracking-widest uppercase">Explore the 21.03 Acres</p>
              </div>
           </div>
         </motion.div>

@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const locations = [
   { category: "Education", name: "Orchids The International School", distance: "~4 KM", desc: "Quality education for kids, just a stone's throw away" },
@@ -54,17 +55,14 @@ export default function LocationPage() {
             className="lg:w-2/3 aspect-video bg-[#05140D] rounded-3xl border border-white/10 relative overflow-hidden group w-full"
           >
             <div className="absolute inset-0 bg-[url('/noise.png')] opacity-[0.05] mix-blend-overlay" />
-            <div className="absolute inset-0 flex items-center justify-center">
-               <div className="text-center">
-                  <div className="w-16 h-16 rounded-full border border-[#d4af37]/30 flex items-center justify-center mx-auto mb-6 bg-[#d4af37]/10 text-[#d4af37]">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
-                    </svg>
-                  </div>
-                  <h3 className="text-2xl font-light text-white mb-2">Interactive Map</h3>
-                  <p className="text-white/50 text-sm tracking-widest uppercase">Location Data Pending</p>
-               </div>
+            <div className="absolute inset-0 z-10">
+               <Image 
+                 src="https://www.koltepatil.com/assets/uploads/projects/map_image/17847905231331533846.jpg" 
+                 alt="The Reserve Location Map Sinhgad Road"
+                 fill
+                 className="object-cover hover:scale-105 transition-transform duration-1000 ease-out"
+               />
+               <div className="absolute inset-0 bg-[#05140D]/20 group-hover:bg-transparent transition-colors duration-700"></div>
             </div>
           </motion.div>
 

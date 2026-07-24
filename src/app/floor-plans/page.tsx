@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { useState } from 'react';
+import Image from 'next/image';
 
 export default function FloorPlansPage() {
   const [activePlan, setActivePlan] = useState<'3BHK' | '2BHK'>('3BHK');
@@ -71,21 +72,30 @@ export default function FloorPlansPage() {
             <div className="aspect-[4/3] w-full bg-[#05140D] rounded-3xl border border-white/10 relative overflow-hidden flex items-center justify-center group">
               <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(212,175,55,0.05)_0%,rgba(10,25,15,1)_100%)] z-0" />
               
-              {/* Fake Schematic Lines */}
-              <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCI+CjxyZWN0IHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMDUpIiBzdHJva2Utd2lkdGg9IjEiLz4KPC9zdmc+')] opacity-50 z-0" />
+              {/* Official Blueprint Rendering */}
+              <div className="absolute inset-0 z-10 w-full h-full p-8 md:p-16">
+                 <div className="relative w-full h-full border-2 border-white/10 rounded-2xl bg-white/5 overflow-hidden backdrop-blur-sm">
+                   <Image 
+                     src={activePlan === '2BHK' 
+                       ? "https://www.koltepatil.com/assets/uploads/project_floor_plan/17847883381772140324.png"
+                       : "https://www.koltepatil.com/assets/uploads/project_floor_plan/17847883381772140324.png"} 
+                     alt={`${activePlan} Floor Plan`}
+                     fill
+                     className="object-contain p-4 hover:scale-[1.02] transition-transform duration-700"
+                   />
+                 </div>
+              </div>
 
-              <div className="relative z-10 text-center transition-all duration-500" key={activePlan}>
+              <div className="absolute bottom-8 right-8 z-20 text-right pointer-events-none hidden md:block">
                 <motion.div 
-                  initial={{ opacity: 0, scale: 0.95 }}
-                  animate={{ opacity: 1, scale: 1 }}
+                  initial={{ opacity: 0, x: 20 }}
+                  animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.5 }}
                 >
-                  <h3 className="text-3xl font-light text-white mb-2">{activePlan} Layout</h3>
-                  <p className="text-[#d4af37]/80 text-sm uppercase tracking-widest mb-6">Detailed Schematic Pending</p>
+                  <h3 className="text-3xl font-light text-white mb-2 shadow-sm">{activePlan} Layout</h3>
                   
-                  <div className="flex gap-4 justify-center">
-                    <span className="px-4 py-2 rounded-full border border-white/10 bg-white/5 text-xs text-white/70">Cross Ventilation</span>
-                    <span className="px-4 py-2 rounded-full border border-white/10 bg-white/5 text-xs text-white/70">Natural Light</span>
+                  <div className="flex gap-2 justify-end mt-4">
+                    <span className="px-3 py-1 rounded border border-[#d4af37]/30 bg-[#d4af37]/10 text-[10px] text-[#d4af37] uppercase tracking-widest backdrop-blur-md">Cross Ventilation</span>
                   </div>
                 </motion.div>
               </div>
