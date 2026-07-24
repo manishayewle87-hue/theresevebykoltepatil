@@ -14,7 +14,7 @@ export default function LuxuryTicker() {
   ];
 
   return (
-    <div className="w-full bg-slate-950 py-4 border-y border-[#d4af37]/20 overflow-hidden relative z-20 flex">
+    <div className="w-full bg-white py-6 border-y border-[#0B2B1B]/10 overflow-hidden relative z-30 flex shadow-sm">
       <motion.div
         animate={{ x: [0, -1000] }}
         transition={{
@@ -30,10 +30,10 @@ export default function LuxuryTicker() {
         {/* Repeat the array a few times to ensure seamless infinite scroll */}
         {[...keywords, ...keywords, ...keywords].map((word, i) => (
           <div key={i} className="flex items-center gap-8">
-            <span className="font-sans text-xs md:text-sm tracking-[0.3em] uppercase text-slate-300 font-bold">
+            <span className="font-serif text-2xl md:text-3xl tracking-wide uppercase text-[#0B2B1B] font-bold">
               {word}
             </span>
-            <span className="w-1.5 h-1.5 rounded-full bg-[#d4af37]"></span>
+            <span className="text-[#d4af37] text-2xl">✦</span>
           </div>
         ))}
       </motion.div>
