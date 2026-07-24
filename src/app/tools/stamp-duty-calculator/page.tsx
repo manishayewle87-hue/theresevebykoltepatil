@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from 'react';
-import Navbar from "@/components/layout/Navbar";
 import RevealFooter from "@/components/layout/RevealFooter";
 import { motion } from "framer-motion";
 
@@ -28,10 +27,7 @@ export default function StampDutyCalculator() {
   return (
     <div className="relative bg-slate-950 text-slate-100 min-h-screen flex flex-col selection:bg-[#d4af37] selection:text-white">
       <title>Stamp Duty Calculator Pune, Maharashtra | Kolte Patil</title>
-      <meta name="description" content="Calculate exact stamp duty and registration charges for buying property in Pune, Maharashtra. Includes 1% female homebuyer concession logic." />
-      
-      <Navbar />
-      
+      <meta name="description" content="Calculate exact stamp duty and registration charges for buying property in Pune, Maharashtra. Includes 1% female homebuyer concession logic." />      
       <main className="flex-1 container mx-auto px-6 py-40 z-10 relative max-w-5xl">
         <div className="text-center mb-16">
           <span className="font-sans text-[10px] md:text-xs tracking-[0.4em] uppercase text-[#d4af37] mb-6 block font-bold">

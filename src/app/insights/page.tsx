@@ -1,7 +1,5 @@
 import Link from 'next/link';
 import { getAllInsights } from '@/lib/mdx';
-import Navbar from '@/components/layout/Navbar';
-import Footer from '@/components/layout/Footer';
 
 export const metadata = {
   title: 'Insights & Market Reports | The Reserve',
@@ -12,9 +10,7 @@ export default function InsightsPage() {
   const insights = getAllInsights();
 
   return (
-    <>
-      <Navbar />
-      <main className="flex-1 w-full flex flex-col bg-[#151515] text-white pt-40 pb-20">
+    <>      <main className="flex-1 w-full flex flex-col bg-[#151515] text-white pt-40 pb-20">
         <div className="container mx-auto px-6 md:px-12">
           <div className="mb-20 text-center max-w-3xl mx-auto">
             <span className="text-[#B28A4A] tracking-widest uppercase text-xs font-semibold mb-6 block">Market Intelligence</span>
@@ -49,8 +45,6 @@ export default function InsightsPage() {
             ))}
           </div>
         </div>
-      </main>
-      <Footer />
-    </>
+      </main>    </>
   );
 }

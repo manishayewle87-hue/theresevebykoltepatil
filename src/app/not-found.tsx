@@ -2,13 +2,10 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import Navbar from "@/components/layout/Navbar";
 
 export default function NotFound() {
   return (
     <div className="relative bg-slate-950 text-slate-100 min-h-screen selection:bg-[#d4af37] selection:text-white flex flex-col">
-      <Navbar />
-
       <main className="flex-grow flex flex-col justify-center items-center text-center px-6 relative overflow-hidden">
         
         {/* Subtle background noise/glow */}

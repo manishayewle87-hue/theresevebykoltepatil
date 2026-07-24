@@ -1,5 +1,4 @@
 import React from 'react';
-import Navbar from "@/components/layout/Navbar";
 import RevealFooter from "@/components/layout/RevealFooter";
 import Script from "next/script";
 
@@ -26,9 +25,7 @@ export default function VirtualTourPage() {
         id="video-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(videoSchema) }}
-      />
-      <Navbar />
-      
+      />      
       <main className="flex-1 container mx-auto px-6 py-40 z-10 relative max-w-6xl">
         <div className="text-center mb-16">
           <span className="font-sans text-[10px] md:text-xs tracking-[0.4em] uppercase text-[#d4af37] mb-6 block font-bold">

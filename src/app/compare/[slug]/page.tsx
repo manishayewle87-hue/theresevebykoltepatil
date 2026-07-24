@@ -1,7 +1,5 @@
 import { getCompareBySlug, getAllCompares } from '@/lib/mdx';
 import { MDXRemote } from 'next-mdx-remote/rsc';
-import Navbar from '@/components/layout/Navbar';
-import Footer from '@/components/layout/Footer';
 import { notFound } from 'next/navigation';
 import Script from 'next/script';
 import AISummaryBox from '@/components/seo/AISummaryBox';
@@ -79,9 +77,7 @@ export default async function ComparePost({ params }: { params: Promise<{ slug: 
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         strategy="beforeInteractive"
-      />
-      <Navbar />
-      <main className="flex-1 w-full flex flex-col bg-[#151515] text-white pt-32 pb-20">
+      />      <main className="flex-1 w-full flex flex-col bg-[#151515] text-white pt-32 pb-20">
         {post.meta.coverImage && (
           <div className="w-full h-[40vh] md:h-[60vh] relative mb-16">
             <div 
@@ -118,8 +114,6 @@ export default async function ComparePost({ params }: { params: Promise<{ slug: 
             </button>
           </div>
         </article>
-      </main>
-      <Footer />
-    </>
+      </main>    </>
   );
 }

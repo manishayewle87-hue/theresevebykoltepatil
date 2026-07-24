@@ -1,5 +1,3 @@
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
 import Link from "next/link";
 
 export const metadata = {
@@ -15,9 +13,7 @@ export default function BlogPage() {
   ];
 
   return (
-    <>
-      <Navbar />
-      <main className="flex-1 w-full flex flex-col bg-[#FAF8F3]">
+    <>      <main className="flex-1 w-full flex flex-col bg-[#FAF8F3]">
         <section className="pt-40 pb-20 px-6 md:px-12 bg-slate-950">
           <div className="container mx-auto text-center">
             <h1 className="font-serif text-5xl md:text-7xl mb-8 leading-tight text-[#151515]">
@@ -44,8 +40,6 @@ export default function BlogPage() {
             </div>
           </div>
         </section>
-      </main>
-      <Footer />
-    </>
+      </main>    </>
   );
 }

@@ -1,5 +1,3 @@
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
 import { Button } from "@/components/ui/Button";
 import Image from "next/image";
 
@@ -31,10 +29,7 @@ export default function ResidencesPage() {
   ];
 
   return (
-    <>
-      
-      <Navbar />
-      <main className="flex-1 w-full flex flex-col bg-[#FAF8F3]">
+    <>      <main className="flex-1 w-full flex flex-col bg-[#FAF8F3]">
         
         {/* Page Header */}
         <section className="pt-40 pb-20 px-6 md:px-12 bg-[#151515] text-white">
@@ -102,8 +97,6 @@ export default function ResidencesPage() {
           </div>
         </section>
         
-      </main>
-      <Footer />
-    </>
+      </main>    </>
   );
 }

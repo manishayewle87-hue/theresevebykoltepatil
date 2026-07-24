@@ -1,6 +1,5 @@
 "use client";
 
-import Navbar from "@/components/layout/Navbar";
 import RevealFooter from "@/components/layout/RevealFooter";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
@@ -12,8 +11,6 @@ export default function TheVision() {
 
   return (
     <div className="relative bg-slate-950 text-slate-100 selection:bg-[#d4af37] selection:text-white">
-      <Navbar />
-
       {/* Cinematic Parallax Hero */}
       <div className="h-screen w-full relative overflow-hidden flex flex-col justify-center shadow-2xl">
         <motion.div style={{ y: heroY }} className="absolute inset-0 z-0">

@@ -1,5 +1,3 @@
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
 
 export const metadata = {
   title: "The Developer | Kolte Patil",
@@ -8,9 +6,7 @@ export const metadata = {
 
 export default function DeveloperPage() {
   return (
-    <>
-      <Navbar />
-      <main className="flex-1 w-full flex flex-col bg-[#FAF8F3]">
+    <>      <main className="flex-1 w-full flex flex-col bg-[#FAF8F3]">
         <section className="pt-40 pb-20 px-6 md:px-12 bg-slate-950">
           <div className="container mx-auto text-center max-w-4xl">
             <span className="text-[#B28A4A] tracking-widest uppercase text-xs font-semibold mb-6 block">The Legacy</span>
@@ -42,8 +38,6 @@ export default function DeveloperPage() {
             </div>
           </div>
         </section>
-      </main>
-      <Footer />
-    </>
+      </main>    </>
   );
 }

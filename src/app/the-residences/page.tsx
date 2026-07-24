@@ -1,6 +1,5 @@
 "use client";
 
-import Navbar from "@/components/layout/Navbar";
 import RevealFooter from "@/components/layout/RevealFooter";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
@@ -17,8 +16,6 @@ export default function TheResidences() {
 
   return (
     <div className="relative bg-slate-950 text-slate-100 selection:bg-[#d4af37] selection:text-white">
-      <Navbar />
-
       {/* Cinematic Hero */}
       <div className="h-[80vh] w-full relative overflow-hidden flex flex-col justify-center items-center text-center shadow-2xl border-b border-[#d4af37]/20">
         <motion.div style={{ y: heroY }} className="absolute inset-0 z-0">

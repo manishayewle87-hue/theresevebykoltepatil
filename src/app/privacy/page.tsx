@@ -1,11 +1,7 @@
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
 
 export default function PrivacyPage() {
   return (
-    <>
-      <Navbar />
-      <main className="flex-1 w-full flex flex-col bg-[#FAF8F3]">
+    <>      <main className="flex-1 w-full flex flex-col bg-[#FAF8F3]">
         <section className="pt-40 pb-20 px-6 md:px-12 bg-slate-950">
           <div className="container mx-auto max-w-4xl text-center">
             <h1 className="font-serif text-4xl md:text-5xl mb-8 leading-tight text-[#151515]">Privacy Policy</h1>
@@ -21,8 +17,6 @@ export default function PrivacyPage() {
             <p>We collect and use Users personal information for the following purposes: To improve customer service, to personalize user experience, and to send periodic emails regarding project updates.</p>
           </div>
         </section>
-      </main>
-      <Footer />
-    </>
+      </main>    </>
   );
 }

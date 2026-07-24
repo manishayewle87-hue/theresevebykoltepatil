@@ -1,8 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
 import { Button } from "@/components/ui/Button";
 
 export default function InvestmentPage() {
@@ -21,9 +19,7 @@ export default function InvestmentPage() {
   };
 
   return (
-    <>
-      <Navbar />
-      <main className="flex-1 w-full flex flex-col bg-[#FAF8F3]">
+    <>      <main className="flex-1 w-full flex flex-col bg-[#FAF8F3]">
         <section className="pt-40 pb-20 px-6 md:px-12 bg-slate-950">
           <div className="container mx-auto text-center">
             <span className="text-[#B28A4A] tracking-widest uppercase text-xs font-semibold mb-6 block">Investment</span>
@@ -72,8 +68,6 @@ export default function InvestmentPage() {
             </div>
           </div>
         </section>
-      </main>
-      <Footer />
-    </>
+      </main>    </>
   );
 }

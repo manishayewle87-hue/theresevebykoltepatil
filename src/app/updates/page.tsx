@@ -1,5 +1,3 @@
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
 
 export const metadata = {
   title: "Construction Updates | The Reserve",
@@ -13,9 +11,7 @@ export default function UpdatesPage() {
   ];
 
   return (
-    <>
-      <Navbar />
-      <main className="flex-1 w-full flex flex-col bg-[#151515] text-white">
+    <>      <main className="flex-1 w-full flex flex-col bg-[#151515] text-white">
         <section className="pt-40 pb-20 px-6 md:px-12">
           <div className="container mx-auto text-center">
             <h1 className="font-serif text-5xl md:text-7xl mb-8 leading-tight">Construction Updates</h1>
@@ -38,8 +34,6 @@ export default function UpdatesPage() {
             ))}
           </div>
         </section>
-      </main>
-      <Footer />
-    </>
+      </main>    </>
   );
 }

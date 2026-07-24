@@ -1,6 +1,5 @@
 "use client";
 
-import Navbar from "@/components/layout/Navbar";
 import RevealFooter from "@/components/layout/RevealFooter";
 import HorizontalScroll from "@/components/ui/HorizontalScroll";
 import Image from "next/image";
@@ -29,8 +28,6 @@ export default function TheClub() {
 
   return (
     <div className="relative bg-slate-950 text-slate-100 selection:bg-[#d4af37] selection:text-white">
-      <Navbar />
-
       <main className="relative z-10 bg-slate-950 mb-[100vh] min-h-screen pb-32 overflow-hidden">
         
         {/* Cinematic Parallax Hero */}

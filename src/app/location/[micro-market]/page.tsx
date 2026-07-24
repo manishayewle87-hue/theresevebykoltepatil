@@ -1,4 +1,3 @@
-import Navbar from "@/components/layout/Navbar";
 import RevealFooter from "@/components/layout/RevealFooter";
 import { locationData } from "@/lib/seoData";
 import { notFound } from "next/navigation";
@@ -31,9 +30,7 @@ export default async function LocationMicroMarket({ params }: { params: Promise<
   }
 
   return (
-    <div className="relative bg-slate-950 text-slate-100 min-h-screen flex flex-col">
-      <Navbar />
-      
+    <div className="relative bg-slate-950 text-slate-100 min-h-screen flex flex-col">      
       <main className="flex-1 flex flex-col justify-center items-center text-center px-6 py-40 z-10 relative">
         {/* Abstract Background Layer */}
         <div className="absolute inset-0 z-0 overflow-hidden">

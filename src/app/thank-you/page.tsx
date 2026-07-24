@@ -1,14 +1,10 @@
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
 import { Button } from "@/components/ui/Button";
 import Link from "next/link";
 import { CheckCircle } from "lucide-react";
 
 export default function ThankYouPage() {
   return (
-    <>
-      <Navbar />
-      <main className="flex-1 w-full flex flex-col bg-[#FAF8F3]">
+    <>      <main className="flex-1 w-full flex flex-col bg-[#FAF8F3]">
         <section className="pt-40 pb-20 px-6 md:px-12 min-h-[80vh] flex items-center justify-center">
           <div className="container mx-auto text-center flex flex-col items-center">
             <CheckCircle className="w-16 h-16 text-[#B28A4A] mb-8" />
@@ -25,8 +21,6 @@ export default function ThankYouPage() {
             </Link>
           </div>
         </section>
-      </main>
-      <Footer />
-    </>
+      </main>    </>
   );
 }
