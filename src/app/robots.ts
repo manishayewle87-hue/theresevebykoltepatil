@@ -24,16 +24,27 @@ export default function robots(): MetadataRoute.Robots {
           'Bytespider',
           'Amazonbot',
           'Diffbot',
-          'Applebot-Extended'
+          'Applebot-Extended',
+          'AhrefsBot',
+          'SemrushBot',
+          'MJ12bot',
+          'DotBot',
+          'PetalBot',
+          'Baiduspider',
+          'YandexBot',
+          'Barkrowler',
+          'SeekportBot'
         ],
         disallow: '/',
       },
       {
         userAgent: '*',
         allow: '/',
-        disallow: ['/api/', '/private/'],
+        disallow: ['/api/', '/private/', '/_next/', '/static/'],
+        crawlDelay: 2,
       },
     ],
     sitemap: `${baseUrl}/sitemap.xml`,
+    host: baseUrl,
   };
 }

@@ -11,6 +11,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // 1. Core Static Pages
   const staticRoutes = [
     '',
+    '/overview',
+    '/master-layout',
+    '/amenities',
+    '/specifications',
     '/the-vision',
     '/the-club',
     '/the-residences',
@@ -20,6 +24,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/virtual-tour',
     '/faq',
     '/floor-plans',
+    '/contact',
+    '/developer',
+    '/privacy',
+    '/terms',
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
