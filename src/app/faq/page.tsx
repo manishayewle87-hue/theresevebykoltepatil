@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import RevealFooter from "@/components/layout/RevealFooter";
 import Script from "next/script";

@@ -1,0 +1,219 @@
+
+> thereservebykoltepatil@0.1.0 lint
+> eslint
+
+
+/Users/vikasyewle/Documents/thereservebykoltepatil/src/app/api/og/route.tsx
+  103:12  warning  'e' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/vikasyewle/Documents/thereservebykoltepatil/src/app/blog/page.tsx
+  1:8  warning  'Link' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/vikasyewle/Documents/thereservebykoltepatil/src/app/compare/[slug]/page.tsx
+  31:12  warning  'e' is defined but never used             @typescript-eslint/no-unused-vars
+  44:12  warning  'e' is defined but never used             @typescript-eslint/no-unused-vars
+  62:17  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  63:17  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  64:16  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  65:17  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  66:17  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  67:16  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  68:25  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/vikasyewle/Documents/thereservebykoltepatil/src/app/developer/page.tsx
+  18:58  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  18:85  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+/Users/vikasyewle/Documents/thereservebykoltepatil/src/app/faq/page.tsx
+  64:64  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+/Users/vikasyewle/Documents/thereservebykoltepatil/src/app/gallery/page.tsx
+  49:69  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+/Users/vikasyewle/Documents/thereservebykoltepatil/src/app/guides/[pillar]/page.tsx
+   31:12  warning  'e' is defined but never used             @typescript-eslint/no-unused-vars
+   44:12  warning  'e' is defined but never used             @typescript-eslint/no-unused-vars
+   98:17  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   99:17  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  100:16  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  101:17  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  102:17  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  103:16  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  104:25  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/vikasyewle/Documents/thereservebykoltepatil/src/app/insights/[slug]/page.tsx
+  32:12  warning  'e' is defined but never used             @typescript-eslint/no-unused-vars
+  45:12  warning  'e' is defined but never used             @typescript-eslint/no-unused-vars
+  63:17  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  64:17  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  65:16  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  66:17  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  67:17  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  68:16  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  69:25  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/vikasyewle/Documents/thereservebykoltepatil/src/app/location/page.tsx
+  44:56  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+/Users/vikasyewle/Documents/thereservebykoltepatil/src/app/overview/page.tsx
+   23:28   error  Unexpected any. Specify a different type                         @typescript-eslint/no-explicit-any
+  134:83   error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  136:244  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+/Users/vikasyewle/Documents/thereservebykoltepatil/src/app/page.tsx
+  118:31  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  163:93  error  Unexpected any. Specify a different type                         @typescript-eslint/no-explicit-any
+  185:95  error  Unexpected any. Specify a different type                         @typescript-eslint/no-explicit-any
+  197:76  error  Unexpected any. Specify a different type                         @typescript-eslint/no-explicit-any
+  218:95  error  Unexpected any. Specify a different type                         @typescript-eslint/no-explicit-any
+
+/Users/vikasyewle/Documents/thereservebykoltepatil/src/app/residences/page.tsx
+  2:8  warning  'Image' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/vikasyewle/Documents/thereservebykoltepatil/src/app/terms/page.tsx
+  15:65  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  15:71  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+/Users/vikasyewle/Documents/thereservebykoltepatil/src/app/the-club/page.tsx
+  93:132  error  Comments inside children section of tag should be placed inside braces  react/jsx-no-comment-textnodes
+
+/Users/vikasyewle/Documents/thereservebykoltepatil/src/app/the-vision/page.tsx
+  66:28   error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  69:24   error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  69:150  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+/Users/vikasyewle/Documents/thereservebykoltepatil/src/app/tools/emi-calculator/page.tsx
+   6:8  warning  'Head' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             @typescript-eslint/no-unused-vars
+  23:7  error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+/Users/vikasyewle/Documents/thereservebykoltepatil/src/app/tools/emi-calculator/page.tsx:23:7
+  21 |     if (P > 0 && R > 0 && N > 0) {
+  22 |       const emiCalc = (P * R * Math.pow(1 + R, N)) / (Math.pow(1 + R, N) - 1);
+> 23 |       setEmi(Math.round(emiCalc));
+     |       ^^^^^^ Avoid calling setState() directly within an effect
+  24 |       setTotalInterest(Math.round((emiCalc * N) - P));
+  25 |     } else {
+  26 |       setEmi(0);  react-hooks/set-state-in-effect
+  31:9  warning  'totalPayment' is assigned a value but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            @typescript-eslint/no-unused-vars
+
+/Users/vikasyewle/Documents/thereservebykoltepatil/src/components/home/VisionaryQuote.tsx
+  20:13   error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  20:202  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+
+/Users/vikasyewle/Documents/thereservebykoltepatil/src/components/layout/Navbar.tsx
+  3:20  warning  'useEffect' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/vikasyewle/Documents/thereservebykoltepatil/src/components/layout/RevealFooter.tsx
+  32:20  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+/Users/vikasyewle/Documents/thereservebykoltepatil/src/components/seo/JsonLd.tsx
+  121:5  warning  `next/script`'s `beforeInteractive` strategy should not be used outside of `pages/_document.js`. See: https://nextjs.org/docs/messages/no-before-interactive-script-outside-document  @next/next/no-before-interactive-script-outside-document
+
+/Users/vikasyewle/Documents/thereservebykoltepatil/src/components/ui/CommandPalette.tsx
+  109:42  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  109:50  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+
+/Users/vikasyewle/Documents/thereservebykoltepatil/src/components/ui/ConciergePanel.tsx
+  29:53  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  30:18  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/vikasyewle/Documents/thereservebykoltepatil/src/components/ui/DayNightSlider.tsx
+   4:10  warning  'motion' is defined but never used                                                                                                  @typescript-eslint/no-unused-vars
+   4:18  warning  'useMotionValue' is defined but never used                                                                                          @typescript-eslint/no-unused-vars
+   4:34  warning  'useTransform' is defined but never used                                                                                            @typescript-eslint/no-unused-vars
+  43:6   warning  React Hook useEffect has missing dependencies: 'onMouseMove' and 'onTouchMove'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+/Users/vikasyewle/Documents/thereservebykoltepatil/src/components/ui/FluidBackground.tsx
+  10:5  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+/Users/vikasyewle/Documents/thereservebykoltepatil/src/components/ui/FluidBackground.tsx:10:5
+   8 |
+   9 |   useEffect(() => {
+> 10 |     setIsMounted(true);
+     |     ^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  11 |   }, []);
+  12 |
+  13 |   if (!isMounted) return null;  react-hooks/set-state-in-effect
+
+/Users/vikasyewle/Documents/thereservebykoltepatil/src/components/ui/GlobalCursor.tsx
+  20:5  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+/Users/vikasyewle/Documents/thereservebykoltepatil/src/components/ui/GlobalCursor.tsx:20:5
+  18 |   useEffect(() => {
+  19 |     if (window.matchMedia("(pointer: coarse)").matches) return;
+> 20 |     setIsVisible(true);
+     |     ^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  21 |
+  22 |     const handleMouseMove = (e: MouseEvent) => {
+  23 |       mouseX.set(e.clientX);  react-hooks/set-state-in-effect
+
+/Users/vikasyewle/Documents/thereservebykoltepatil/src/components/ui/GlobalGlobe.tsx
+  40:9  warning  'points' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+/Users/vikasyewle/Documents/thereservebykoltepatil/src/components/ui/InvestmentDashboard.tsx
+    4:34  warning  'YAxis' is defined but never used               @typescript-eslint/no-unused-vars
+   17:9   warning  'totalPaid' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  109:38  error    Unexpected any. Specify a different type        @typescript-eslint/no-explicit-any
+
+/Users/vikasyewle/Documents/thereservebykoltepatil/src/components/ui/LuxuryCursor.tsx
+  27:5  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+/Users/vikasyewle/Documents/thereservebykoltepatil/src/components/ui/LuxuryCursor.tsx:27:5
+  25 |     if (window.matchMedia("(pointer: coarse)").matches) return;
+  26 |     
+> 27 |     setIsVisible(true);
+     |     ^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  28 |
+  29 |     const handleMouseMove = (e: MouseEvent) => {
+  30 |       mouseX.set(e.clientX - 16); // Center the 32px cursor  react-hooks/set-state-in-effect
+
+/Users/vikasyewle/Documents/thereservebykoltepatil/src/components/ui/Preloader.tsx
+  12:7  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+/Users/vikasyewle/Documents/thereservebykoltepatil/src/components/ui/Preloader.tsx:12:7
+  10 |     const hasLoaded = sessionStorage.getItem("hasLoadedTheReserveGlobal");
+  11 |     if (hasLoaded) {
+> 12 |       setIsLoading(false);
+     |       ^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  13 |       return;
+  14 |     }
+  15 |  react-hooks/set-state-in-effect
+
+/Users/vikasyewle/Documents/thereservebykoltepatil/src/components/ui/SplitText.tsx
+  60:45  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/vikasyewle/Documents/thereservebykoltepatil/src/components/ui/TiltCard.tsx
+  3:18  warning  'useState' is defined but never used  @typescript-eslint/no-unused-vars
+
+✖ 75 problems (54 errors, 21 warnings)
+
