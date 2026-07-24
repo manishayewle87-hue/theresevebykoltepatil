@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation';
 import Script from 'next/script';
 import AISummaryBox from '@/components/seo/AISummaryBox';
 import InternalLinkingMesh from '@/components/seo/InternalLinkingMesh';
+import RelatedArticles from '@/components/ui/RelatedArticles';
 
 export const revalidate = 3600; // ISR: Revalidate every hour
 
@@ -150,6 +151,8 @@ export default async function GuidePost({ params }: { params: Promise<{ pillar: 
               Request VIP Access
             </button>
           </div>
+          
+          <RelatedArticles articles={getAllGuides().filter((a: any) => a.slug !== post.slug).slice(0, 3).map((a: any) => a.meta)} />
         </article>
       </main>    </>
   );

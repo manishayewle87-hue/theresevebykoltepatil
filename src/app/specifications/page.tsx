@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import SplitText from '@/components/ui/SplitText';
 
 const specs = [
   { category: "Flooring", details: ["Imported Marble in Living & Dining", "Premium Vitrified Tiles in Bedrooms", "Anti-skid Ceramic Tiles in Terraces"] },
@@ -31,14 +32,11 @@ export default function SpecificationsPage() {
           >
             The Details
           </motion.p>
-          <motion.h1 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.2 }}
+          <SplitText
+            text="Project Specifications"
             className="text-4xl md:text-6xl font-light tracking-tight mb-6"
-          >
-            Project Specifications
-          </motion.h1>
+            delay={0.2}
+          />
           <motion.p 
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
