@@ -98,7 +98,7 @@ export default function Home() {
         2. STICKY SCROLL STORYTELLING WITH FLUID OVERLAPS
         ========================================================================
       */}
-      <section id="overview" ref={storyRef} className="relative h-[300vh] bg-transparent z-20 -mt-32">
+      <section id="overview" ref={storyRef} className="relative h-[300vh] bg-transparent z-20 -mt-16 sm:-mt-24 md:-mt-32">
         <div className="sticky top-0 h-screen w-full flex items-center justify-center px-6 overflow-hidden rounded-[5rem] bg-white/70 backdrop-blur-3xl shadow-xl">
           <div className="absolute inset-0 z-0 opacity-[0.03]">
             <Image 
@@ -138,7 +138,7 @@ export default function Home() {
       </section>
 
       {/* CONTINUOUS MARQUEE FLOW */}
-      <div className="-mt-12 relative z-30 transform -rotate-1 scale-105 shadow-2xl">
+      <div className="-mt-8 md:-mt-12 relative z-30 transform -rotate-1 scale-110 shadow-2xl overflow-hidden">
         <LuxuryTicker />
       </div>
 
