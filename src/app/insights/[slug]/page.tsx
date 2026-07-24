@@ -6,6 +6,7 @@ import { notFound } from 'next/navigation';
 import Script from 'next/script';
 import AISummaryBox from '@/components/seo/AISummaryBox';
 import InternalLinkingMesh from '@/components/seo/InternalLinkingMesh';
+import RelatedArticles from '@/components/ui/RelatedArticles';
 
 export const revalidate = 3600;
 
@@ -117,6 +118,8 @@ export default async function InsightPost({ params }: { params: Promise<{ slug: 
               Request VIP Access
             </button>
           </div>
+
+          <RelatedArticles articles={getAllInsights().filter(a => a.slug !== post.slug).slice(0, 3).map(a => a.meta)} />
         </article>
       </main>
       <Footer />

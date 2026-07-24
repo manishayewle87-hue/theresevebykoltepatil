@@ -4,6 +4,7 @@ import { configData } from "@/lib/seoData";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
+import Script from "next/script";
 
 export async function generateStaticParams() {
   return Object.keys(configData).map((cfg) => ({
@@ -30,8 +31,32 @@ export default async function ConfigurationPage({ params }: { params: Promise<{ 
     notFound();
   }
 
+  const productSchema = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": `${data.title} at The Reserve`,
+    "description": data.excerpt,
+    "image": "https://www.koltepatil.com/assets/uploads/gallery/178478725029496962.jpg",
+    "brand": {
+      "@type": "Brand",
+      "name": "Kolte Patil"
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": `https://thereserve.koltepatil.digital/the-residences/${resolvedParams.config}`,
+      "priceCurrency": "INR",
+      "price": "15000000", // Dynamic fallback price
+      "availability": "https://schema.org/InStock"
+    }
+  };
+
   return (
     <div className="relative bg-slate-950 text-slate-100 min-h-screen flex flex-col">
+      <Script
+        id={`product-schema-${resolvedParams.config}`}
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
+      />
       <Navbar />
       
       <main className="flex-1 flex flex-col justify-center items-center text-center px-6 py-40 z-10 relative">

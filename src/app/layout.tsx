@@ -13,6 +13,7 @@ import Preloader from "@/components/ui/Preloader";
 import NoiseOverlay from "@/components/ui/NoiseOverlay";
 import JsonLd from "@/components/seo/JsonLd";
 import LenisProvider from "@/components/ui/LenisProvider";
+import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import Script from "next/script";
 import dynamic from 'next/dynamic';
 
@@ -122,6 +123,7 @@ export default function RootLayout({
           <ConciergeProvider>
             <LenisProvider>
               <Preloader />
+              <Breadcrumbs />
               <GlobalCursor />
               <AmbientAudio />
               <ConciergePanel />
