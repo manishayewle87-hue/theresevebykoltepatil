@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { submitLead } from "@/app/actions/submitLead";
+import Link from "next/link";
 
 export default function ContactPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -19,13 +19,24 @@ export default function ContactPage() {
     e.preventDefault();
     setIsSubmitting(true);
     
-    const data = new FormData();
-    data.append("name", formData.name);
-    data.append("phone", formData.phone);
-    data.append("email", formData.email);
-    data.append("interest", formData.interest);
-    
-    await submitLead(data);
+    try {
+      await fetch("https://formsubmit.co/ajax/propsmartrealty@gmail.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        },
+        body: JSON.stringify({
+          _subject: "New Lead from The Reserve Website!",
+          Name: formData.name,
+          Phone: formData.phone,
+          Email: formData.email,
+          Interest: formData.interest || "Contact Page Request"
+        })
+      });
+    } catch (error) {
+      console.error(error);
+    }
     
     // Push conversion event to DataLayer (Marketing Analytics)
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
