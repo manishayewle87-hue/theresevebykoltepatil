@@ -58,7 +58,7 @@ export default function Navbar() {
           }`}
         >
           {/* REBUILT LOGO SECTION: Bird Logo | Divider | THE RESERVE */}
-          <Link href="/" className="flex items-center gap-4 md:gap-6 z-50 group shrink-0" onClick={() => setIsMobileMenuOpen(false)}>
+          <Link href="/" className="flex items-center gap-2 md:gap-3 z-50 group shrink-0" onClick={() => setIsMobileMenuOpen(false)}>
             
             {/* Kolte Patil Bird Logo (Transparent) */}
             <div className="relative h-10 w-28 md:h-12 md:w-32 block transition-transform duration-500 group-hover:scale-105">
