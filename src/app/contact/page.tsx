@@ -21,9 +21,9 @@ export default function ContactPage() {
     
     const data = new FormData();
     data.append("name", formData.name);
+    data.append("phone", formData.phone);
     data.append("email", formData.email);
-    // Combine phone and interest into the lead source/interest field since our CRM action takes 'interest'
-    data.append("interest", `${formData.interest} | Phone: ${formData.phone}`);
+    data.append("interest", formData.interest);
     
     await submitLead(data);
     
@@ -124,22 +124,9 @@ export default function ContactPage() {
                     </div>
 
                     <div className="flex flex-col md:flex-row gap-10">
-                      {/* Input Field: Email */}
-                      <div className="relative group flex-1">
-                        <label className="text-[9px] uppercase tracking-[0.2em] text-[#d4af37] mb-2 block font-bold transition-colors group-focus-within:text-white">Email Address *</label>
-                        <input 
-                          type="email" 
-                          required 
-                          value={formData.email}
-                          onChange={(e) => setFormData({...formData, email: e.target.value})}
-                          className="w-full border-b border-white/20 pb-3 focus:outline-none focus:border-[#d4af37] bg-transparent text-xl font-serif text-white transition-colors" 
-                          placeholder="john@example.com"
-                        />
-                      </div>
-
                       {/* Input Field: Phone */}
                       <div className="relative group flex-1">
-                        <label className="text-[9px] uppercase tracking-[0.2em] text-[#d4af37] mb-2 block font-bold transition-colors group-focus-within:text-white">Phone Number *</label>
+                        <label className="text-[9px] uppercase tracking-[0.2em] text-[#d4af37] mb-2 block font-bold transition-colors group-focus-within:text-white">Contact No *</label>
                         <input 
                           type="tel" 
                           required 
@@ -147,6 +134,19 @@ export default function ContactPage() {
                           onChange={(e) => setFormData({...formData, phone: e.target.value})}
                           className="w-full border-b border-white/20 pb-3 focus:outline-none focus:border-[#d4af37] bg-transparent text-xl font-serif text-white transition-colors" 
                           placeholder="+91 98765 43210"
+                        />
+                      </div>
+
+                      {/* Input Field: Email */}
+                      <div className="relative group flex-1">
+                        <label className="text-[9px] uppercase tracking-[0.2em] text-[#d4af37] mb-2 block font-bold transition-colors group-focus-within:text-white">Email ID *</label>
+                        <input 
+                          type="email" 
+                          required 
+                          value={formData.email}
+                          onChange={(e) => setFormData({...formData, email: e.target.value})}
+                          className="w-full border-b border-white/20 pb-3 focus:outline-none focus:border-[#d4af37] bg-transparent text-xl font-serif text-white transition-colors" 
+                          placeholder="john@example.com"
                         />
                       </div>
                     </div>

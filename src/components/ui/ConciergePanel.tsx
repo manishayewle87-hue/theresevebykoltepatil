@@ -9,7 +9,7 @@ export default function ConciergePanel() {
   const { isConciergeOpen, setIsConciergeOpen } = useConcierge();
   const [step, setStep] = useState(1);
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [formData, setFormData] = useState({ name: "", email: "", interest: "" });
+  const [formData, setFormData] = useState({ name: "", phone: "", email: "", interest: "" });
 
   const handleNext = () => setStep(2);
   const handleBack = () => setStep(1);
@@ -20,6 +20,7 @@ export default function ConciergePanel() {
     
     const data = new FormData();
     data.append("name", formData.name);
+    data.append("phone", formData.phone);
     data.append("email", formData.email);
     data.append("interest", formData.interest);
     
@@ -39,7 +40,7 @@ export default function ConciergePanel() {
     setTimeout(() => {
       setIsConciergeOpen(false);
       setStep(1);
-      setFormData({ name: "", email: "", interest: "" });
+      setFormData({ name: "", phone: "", email: "", interest: "" });
     }, 3000);
   };
 
@@ -87,8 +88,15 @@ export default function ConciergePanel() {
                       className="bg-transparent border-b border-white/20 pb-4 text-3xl font-serif text-white focus:outline-none focus:border-[#d4af37] placeholder:text-white/20 transition-colors"
                     />
                     <input 
+                      type="tel" 
+                      placeholder="Contact No" 
+                      value={formData.phone}
+                      onChange={(e) => setFormData({...formData, phone: e.target.value})}
+                      className="bg-transparent border-b border-white/20 pb-4 text-3xl font-serif text-white focus:outline-none focus:border-[#d4af37] placeholder:text-white/20 transition-colors"
+                    />
+                    <input 
                       type="email" 
-                      placeholder="Your Email Address" 
+                      placeholder="Email ID" 
                       value={formData.email}
                       onChange={(e) => setFormData({...formData, email: e.target.value})}
                       className="bg-transparent border-b border-white/20 pb-4 text-3xl font-serif text-white focus:outline-none focus:border-[#d4af37] placeholder:text-white/20 transition-colors"
@@ -99,7 +107,7 @@ export default function ConciergePanel() {
                     <button 
                       onClick={handleNext}
                       aria-label="Continue to next step"
-                      disabled={!formData.name || !formData.email}
+                      disabled={!formData.name || (!formData.email && !formData.phone)}
                       className="px-12 py-4 bg-white text-black font-sans text-[10px] tracking-[0.2em] uppercase font-bold hover:bg-[#d4af37] transition-colors disabled:opacity-50"
                     >
                       Continue &rarr;

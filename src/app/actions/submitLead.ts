@@ -3,9 +3,10 @@
 export async function submitLead(formData: FormData) {
   const name = formData.get("name");
   const email = formData.get("email");
+  const phone = formData.get("phone");
   
-  if (!name || !email) {
-    return { success: false, message: "Name and email are required." };
+  if (!name || (!email && !phone)) {
+    return { success: false, message: "Name and either email or phone are required." };
   }
 
   // Simulate network latency for a high-end luxury feel
@@ -25,6 +26,7 @@ export async function submitLead(formData: FormData) {
         body: JSON.stringify({
           leadName: name,
           leadEmail: email,
+          leadPhone: phone,
           leadSource: formData.get("interest") || "Organic SEO",
           project: "The Reserve by Kolte Patil",
           timestamp: new Date().toISOString()
@@ -36,7 +38,7 @@ export async function submitLead(formData: FormData) {
     }
   } else {
     // Local fallback
-    console.log(`[LEAD CAPTURED] Name: ${name}, Email: ${email}`);
+    console.log(`[LEAD CAPTURED] Name: ${name}, Phone: ${phone}, Email: ${email}`);
   }
 
   return { success: true, message: "Your inquiry has been received. Our concierge will contact you shortly." };
