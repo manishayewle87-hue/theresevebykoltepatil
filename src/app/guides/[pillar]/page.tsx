@@ -151,7 +151,7 @@ export default async function GuidePost({ params }: { params: Promise<{ pillar: 
             </button>
           </div>
           
-          <RelatedArticles articles={getAllGuides().filter((a: unknown) => a.slug !== post.slug).slice(0, 3).map((a: unknown) => a.meta)} />
+          <RelatedArticles articles={getAllGuides().filter((a: any) => a.slug !== post.slug).slice(0, 3).map((a: any) => a.meta)} />
         </article>
       </main>    </>
   );
