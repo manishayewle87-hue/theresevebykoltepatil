@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display, Space_Grotesk } from "next/font/google";
+import { Inter, Playfair_Display,} from "next/font/google";
 import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google';
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";

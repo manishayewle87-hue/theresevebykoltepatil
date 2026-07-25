@@ -1,4 +1,4 @@
-/* eslint-disable react-hooks/set-state-in-effect */
+ 
 "use client";
 
 import { useEffect, useState } from "react";
@@ -37,6 +37,7 @@ export default function Preloader({ showPreloader = true }: { showPreloader?: bo
       clearTimeout(timer);
       clearInterval(interval);
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

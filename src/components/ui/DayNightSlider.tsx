@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import { motion, useMotionValue, useTransform } from "framer-motion";
+
 
 export default function DayNightSlider() {
   const [sliderPosition, setSliderPosition] = useState(50);
@@ -40,6 +40,7 @@ export default function DayNightSlider() {
       window.removeEventListener("touchmove", onTouchMove);
       window.removeEventListener("touchend", stopDragging);
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

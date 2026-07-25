@@ -14,7 +14,7 @@ export default function InvestmentDashboard() {
   const r = interest / 12 / 100;
   const n = years * 12;
   const emi = (principal * r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
-  const totalPaid = (emi * n) + (amount * (downPayment / 100));
+  const _totalPaid = (emi * n) + (amount * (downPayment / 100));
 
   // Generate chart data for appreciation vs cost over the tenure
   const data = Array.from({ length: years + 1 }).map((_, i) => {
@@ -106,7 +106,7 @@ export default function InvestmentDashboard() {
                 <Tooltip 
                   contentStyle={{ backgroundColor: 'rgba(0,0,0,0.8)', borderColor: 'rgba(255,255,255,0.1)', borderRadius: '8px', color: '#fff' }} 
                   itemStyle={{ color: '#fff', fontSize: '12px' }}
-                  formatter={(value: any) => formatCurrency(Number(value))}
+                  formatter={(value: unknown) => formatCurrency(Number(value))}
                 />
                 <Area type="monotone" dataKey="Property Value" stroke="#fe9a17" strokeWidth={3} fillOpacity={1} fill="url(#colorValue)" />
                 <Area type="monotone" dataKey="Total Investment" stroke="#ffffff" strokeWidth={1} fillOpacity={1} fill="url(#colorCost)" />

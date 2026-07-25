@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: { params: Promise<{ pillar: s
         images: [{ url: ogUrl, width: 1200, height: 630 }],
       },
     };
-  } catch (e) {
+  } catch {
     return {
       title: 'Guide Not Found',
     };
@@ -42,7 +42,7 @@ export default async function GuidePost({ params }: { params: Promise<{ pillar: 
   
   try {
     post = getGuideBySlug(resolvedParams.pillar);
-  } catch (e) {
+  } catch {
     notFound();
   }
 
@@ -96,13 +96,13 @@ export default async function GuidePost({ params }: { params: Promise<{ pillar: 
   ];
 
   const components = {
-    h1: (props: any) => <h1 className="font-serif text-4xl mt-12 mb-6 text-white" {...props} />,
-    h2: (props: any) => <h2 className="font-serif text-3xl mt-10 mb-5 text-[#E6E0D4]" {...props} />,
-    p: (props: any) => <p className="text-gray-300 font-light leading-relaxed mb-6 text-lg" {...props} />,
-    ul: (props: any) => <ul className="list-disc pl-6 mb-6 text-gray-300 font-light" {...props} />,
-    li: (props: any) => <li className="mb-2" {...props} />,
-    a: (props: any) => <a className="text-[#B28A4A] hover:underline" {...props} />,
-    blockquote: (props: any) => <blockquote className="border-l-2 border-[#B28A4A] pl-6 my-8 italic text-xl text-gray-400 font-serif" {...props} />,
+    h1: (props: unknown) => <h1 className="font-serif text-4xl mt-12 mb-6 text-white" {...props} />,
+    h2: (props: unknown) => <h2 className="font-serif text-3xl mt-10 mb-5 text-[#E6E0D4]" {...props} />,
+    p: (props: unknown) => <p className="text-gray-300 font-light leading-relaxed mb-6 text-lg" {...props} />,
+    ul: (props: unknown) => <ul className="list-disc pl-6 mb-6 text-gray-300 font-light" {...props} />,
+    li: (props: unknown) => <li className="mb-2" {...props} />,
+    a: (props: unknown) => <a className="text-[#B28A4A] hover:underline" {...props} />,
+    blockquote: (props: unknown) => <blockquote className="border-l-2 border-[#B28A4A] pl-6 my-8 italic text-xl text-gray-400 font-serif" {...props} />,
     AISummaryBox,
     InternalLinkingMesh,
   };
@@ -151,7 +151,7 @@ export default async function GuidePost({ params }: { params: Promise<{ pillar: 
             </button>
           </div>
           
-          <RelatedArticles articles={getAllGuides().filter((a: any) => a.slug !== post.slug).slice(0, 3).map((a: any) => a.meta)} />
+          <RelatedArticles articles={getAllGuides().filter((a: unknown) => a.slug !== post.slug).slice(0, 3).map((a: unknown) => a.meta)} />
         </article>
       </main>    </>
   );

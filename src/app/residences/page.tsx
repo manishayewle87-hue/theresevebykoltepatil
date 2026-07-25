@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/Button";
-import Image from "next/image";
+
 
 export const metadata = {
   title: "Luxury Residences | The Reserve by Kolte Patil",

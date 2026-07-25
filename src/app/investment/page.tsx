@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "@/components/ui/Button";
+
 import dynamic from 'next/dynamic';
 
 const InvestmentDashboard = dynamic(() => import('@/components/ui/InvestmentDashboard'), {

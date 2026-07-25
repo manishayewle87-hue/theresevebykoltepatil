@@ -37,7 +37,7 @@ function Curve({ start, end, radius }: { start: number[], end: number[], radius:
     return new THREE.QuadraticBezierCurve3(vStart, midPoint, vEnd);
   }, [start, end, radius]);
 
-  const points = useMemo(() => curve.getPoints(50), [curve]);
+  const _points = useMemo(() => curve.getPoints(50), [curve]);
   
   // Use a tube geometry to draw the glowing arc
   return (
