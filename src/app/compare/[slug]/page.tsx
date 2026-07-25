@@ -59,13 +59,13 @@ export default async function ComparePost({ params }: { params: Promise<{ slug: 
   };
 
   const components = {
-    h1: (props: unknown) => <h1 className="font-serif text-4xl mt-12 mb-6 text-white" {...props} />,
-    h2: (props: unknown) => <h2 className="font-serif text-3xl mt-10 mb-5 text-[#E6E0D4]" {...props} />,
-    p: (props: unknown) => <p className="text-gray-300 font-light leading-relaxed mb-6 text-lg" {...props} />,
-    ul: (props: unknown) => <ul className="list-disc pl-6 mb-6 text-gray-300 font-light" {...props} />,
-    li: (props: unknown) => <li className="mb-2" {...props} />,
-    a: (props: unknown) => <a className="text-[#B28A4A] hover:underline" {...props} />,
-    blockquote: (props: unknown) => <blockquote className="border-l-2 border-[#B28A4A] pl-6 my-8 italic text-xl text-gray-400 font-serif" {...props} />,
+    h1: (props: any /* eslint-disable-line @typescript-eslint/no-explicit-any */) => <h1 className="font-serif text-4xl mt-12 mb-6 text-white" {...props} />,
+    h2: (props: any /* eslint-disable-line @typescript-eslint/no-explicit-any */) => <h2 className="font-serif text-3xl mt-10 mb-5 text-[#E6E0D4]" {...props} />,
+    p: (props: any /* eslint-disable-line @typescript-eslint/no-explicit-any */) => <p className="text-gray-300 font-light leading-relaxed mb-6 text-lg" {...props} />,
+    ul: (props: any /* eslint-disable-line @typescript-eslint/no-explicit-any */) => <ul className="list-disc pl-6 mb-6 text-gray-300 font-light" {...props} />,
+    li: (props: any /* eslint-disable-line @typescript-eslint/no-explicit-any */) => <li className="mb-2" {...props} />,
+    a: (props: any /* eslint-disable-line @typescript-eslint/no-explicit-any */) => <a className="text-[#B28A4A] hover:underline" {...props} />,
+    blockquote: (props: any /* eslint-disable-line @typescript-eslint/no-explicit-any */) => <blockquote className="border-l-2 border-[#B28A4A] pl-6 my-8 italic text-xl text-gray-400 font-serif" {...props} />,
     AISummaryBox,
     InternalLinkingMesh,
   };
