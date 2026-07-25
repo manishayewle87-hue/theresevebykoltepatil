@@ -1,8 +1,7 @@
 "use client";
 
-import { useState,} from "react";
+import { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from "framer-motion";
 import { useConcierge } from "@/context/ConciergeContext";
 import MagneticButton from "@/components/ui/MagneticButton";

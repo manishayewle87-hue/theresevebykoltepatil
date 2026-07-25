@@ -28,7 +28,9 @@ export default function ContactPage() {
     await submitLead(data);
     
     // Push conversion event to DataLayer (Marketing Analytics)
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     if (typeof window !== "undefined" && (window as any).dataLayer) {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       (window as any).dataLayer.push({
         event: "generate_lead_contact_page",
         lead_source: formData.interest,
