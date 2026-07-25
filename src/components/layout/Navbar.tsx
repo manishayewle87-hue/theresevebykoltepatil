@@ -57,26 +57,13 @@ export default function Navbar() {
               : "bg-transparent py-4 px-6 w-full max-w-7xl"
           }`}
         >
-          {/* LOGO */}
+          {/* TEXT LOGO - ULTRA MODERN */}
           <Link href="/" className="flex items-center gap-4 z-50 group shrink-0" onClick={() => setIsMobileMenuOpen(false)}>
-            <div className="relative h-12 w-36 md:h-14 md:w-44 block transition-transform duration-500 group-hover:scale-105">
-                <Image 
-                  src="/kolte-patil-logo.jpg" 
-                  alt="Kolte Patil Developers" 
-                  fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" 
-                  className={`object-contain transition-all duration-500 ${isScrolled ? 'mix-blend-multiply' : 'invert mix-blend-screen'}`}
-                />
+            <div className="flex flex-col">
+              <span className={`font-serif text-2xl md:text-3xl tracking-[0.2em] uppercase transition-colors duration-500 ${isScrolled ? "text-[#0B2B1B]" : "text-white"}`}>
+                THE RESERVE
+              </span>
             </div>
-            {!isScrolled && (
-              <div className="flex flex-col opacity-0 md:opacity-100 transition-opacity duration-500">
-                <span className="font-serif text-xl tracking-[0.15em] text-[#0B2B1B] uppercase">
-                  The Reserve
-                </span>
-                <span className="font-sans text-[8px] tracking-[0.3em] uppercase text-[#0B2B1B]/60 text-left">
-                  by Kolte Patil
-                </span>
-              </div>
-            )}
           </Link>
 
           {/* DESKTOP LINKS (Fluidly hide on mobile) */}

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display,} from "next/font/google";
+import { Outfit, Cinzel } from "next/font/google";
 import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google';
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
@@ -25,14 +25,14 @@ const StickyCTA = dynamic(() => import('@/components/layout/StickyCTA'));
 const WhatsAppWidget = dynamic(() => import('@/components/layout/WhatsAppWidget'));
 const CommandPalette = dynamic(() => import('@/components/ui/CommandPalette'));
 
-const inter = Inter({
-  variable: "--font-inter",
+const outfit = Outfit({
+  variable: "--font-outfit",
   subsets: ["latin"],
   display: "swap",
 });
 
-const playfair = Playfair_Display({
-  variable: "--font-playfair",
+const cinzel = Cinzel({
+  variable: "--font-cinzel",
   subsets: ["latin"],
   display: "swap",
 });
@@ -115,7 +115,7 @@ export default async function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${playfair.variable} h-full antialiased`}
+      className={`${outfit.variable} ${cinzel.variable} h-full antialiased`}
     >
       <head>
         <meta name="google-site-verification" content="_KeXkPdmvdlGxf7txGc-eGMTTLpaxsssiNgaIHAX_IA" />
