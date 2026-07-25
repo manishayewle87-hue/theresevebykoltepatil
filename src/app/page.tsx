@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import MagneticButton from "@/components/ui/MagneticButton";
 import FluidBackground from "@/components/ui/FluidBackground";
 import LuxuryTicker from "@/components/home/LuxuryTicker";
+import DayNightSlider from "@/components/ui/DayNightSlider";
 
 export default function Home() {
   const { setCursorType } = useCursor();
@@ -102,8 +103,25 @@ export default function Home() {
         <LuxuryTicker />
       </div>
 
+      {/* 2.5 DAY/NIGHT SLIDER SHOWCASE */}
+      <section className="relative z-30 py-32 bg-[#0B2B1B] overflow-hidden -mt-6 rounded-[3rem]">
+        <div className="container mx-auto px-6 md:px-12 flex flex-col items-center">
+          <div className="mb-16 text-center max-w-2xl">
+            <span className="font-sans text-[10px] tracking-[0.4em] uppercase text-[#d4af37] font-bold block mb-4">Architectural Brilliance</span>
+            <h2 className="font-serif text-4xl md:text-6xl text-white leading-tight">
+              A masterpiece, from <span className="italic font-light">dawn till dusk.</span>
+            </h2>
+            <p className="mt-6 text-white/50 font-sans text-sm tracking-widest uppercase">Drag to explore the transformation</p>
+          </div>
+          
+          <div className="w-full max-w-6xl mx-auto shadow-[0_0_100px_rgba(212,175,55,0.15)] rounded-[3rem]">
+            <DayNightSlider />
+          </div>
+        </div>
+      </section>
+
       {/* 3. SIMPLIFIED BENTO BOX GRID (NO PARALLAX) */}
-      <section className="relative z-40 bg-[#FAFAFA] py-32 md:py-48 rounded-[3rem] -mt-6">
+      <section className="relative z-40 bg-[#FAFAFA] py-32 md:py-48 rounded-[3rem] -mt-6 shadow-2xl">
         <div className="container mx-auto px-6 md:px-12">
           <div className="mb-16 md:mb-24 max-w-2xl">
             <span className="font-sans text-[10px] tracking-[0.4em] uppercase text-[#d4af37] font-bold block mb-4">The Privileges</span>
