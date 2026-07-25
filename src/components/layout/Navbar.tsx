@@ -59,14 +59,13 @@ export default function Navbar() {
         >
           {/* LOGO */}
           <Link href="/" className="flex items-center gap-4 z-50 group shrink-0" onClick={() => setIsMobileMenuOpen(false)}>
-            <div className="relative h-8 w-24 md:h-10 md:w-32 block transition-transform duration-500 group-hover:scale-105">
-              <div className="w-full h-full bg-white/95 backdrop-blur-md rounded-full p-1.5 shadow-sm border border-black/5">
+            <div className="relative h-12 w-36 md:h-14 md:w-44 block transition-transform duration-500 group-hover:scale-105">
                 <Image 
                   src="/kolte-patil-logo.jpg" 
                   alt="Kolte Patil Developers" 
-                  fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-contain p-1"
+                  fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" 
+                  className={`object-contain transition-all duration-500 ${isScrolled ? 'mix-blend-multiply' : 'invert mix-blend-screen'}`}
                 />
-              </div>
             </div>
             {!isScrolled && (
               <div className="flex flex-col opacity-0 md:opacity-100 transition-opacity duration-500">
